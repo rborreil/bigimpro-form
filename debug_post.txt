@@ -1,0 +1,8 @@
+Array
+(
+    [nom] => Borreil
+    [prenom] => Robin
+    [email] => robinborreil2@gmail.com
+    [sujet] => Test formulaire
+    [message] => Test
+)

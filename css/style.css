@@ -1,0 +1,11 @@
+.hero-gradient {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    min-height: 100vh;
+}
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.transition-smooth {
+    transition: all 0.3s ease;
+}

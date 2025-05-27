@@ -20,9 +20,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Nettoyer les données
     $nom = isset($_POST['nom']) ? htmlspecialchars($_POST['nom'], ENT_QUOTES, 'UTF-8') : '';
     $prenom = isset($_POST['prenom']) ? htmlspecialchars($_POST['prenom'], ENT_QUOTES, 'UTF-8') : '';
+    $entreprise = isset($_POST['entreprise']) ? htmlspecialchars($_POST['entreprise'], ENT_QUOTES, 'UTF-8') : '';
+    $poste = isset($_POST['poste']) ? htmlspecialchars($_POST['poste'], ENT_QUOTES, 'UTF-8') : '';
     $email = isset($_POST['email']) ? htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8') : '';
     $sujet = isset($_POST['sujet']) ? htmlspecialchars($_POST['sujet'], ENT_QUOTES, 'UTF-8') : '';
     $message = isset($_POST['message']) ? nl2br(htmlspecialchars($_POST['message'], ENT_QUOTES, 'UTF-8')) : '';
+    $consentement = isset($_POST['consentement']) ? htmlspecialchars($_POST['consentement'], ENT_QUOTES, 'UTF-8') : '';
 
     // 3. Configuration PHPMailer
     $mail = new PHPMailer(true);
@@ -44,8 +47,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->Body = "
             <strong>Nom :</strong> $nom<br>
             <strong>Prénom :</strong> $prenom<br>
+            <strong>Entreprise :</strong> $entreprise<br>
+            <strong>Poste Occupé :</strong> $poste<br>
             <strong>Email :</strong> $email<br>
-            <strong>Message :</strong><br>$message
+            <strong>Message :</strong><br>$message<br>
+            <strong>Consentement :</strong> $consentement<br>
         ";
 
         $mail->send();

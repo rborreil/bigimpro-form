@@ -35,6 +35,80 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
+  // DARK MODE TOGGLE
+  const themeToggle = document.getElementById('theme-toggle');
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+  });
+
+  // LANG TOGGLE
+  const langSwitch = document.getElementById('lang-switch');
+
+  const translations = {
+    'fr': {
+      'Accueil': 'Accueil',
+      'Services': 'Services',
+      'Formations': 'Formations',
+      'Méthodologie': 'Méthodologie',
+      'Contact': 'Contact',
+      'Nos Services Professionnels': 'Nos Services Professionnels',
+      'En savoir plus →': 'En savoir plus →',
+      'Voir toutes nos formations': 'Voir toutes nos formations',
+      'Notre Approche Pédagogique': 'Notre Approche Pédagogique',
+      'Ils nous ont fait confiance': 'Ils nous ont fait confiance',
+      'Contactez-nous': 'Contactez-nous',
+      'Envoyez-nous un message': 'Envoyez-nous un message',
+      'Nom': 'Nom',
+      'Prénom': 'Prénom',
+      'Entreprise': 'Entreprise',
+      'Poste Occupé': 'Poste Occupé',
+      'Email': 'Email',
+      'Tél.': 'Tél.',
+      'Sujet': 'Sujet',
+      'Message': 'Message',
+      'Envoyer le message': 'Envoyer le message',
+    },
+    'en': {
+      'Accueil': 'Home',
+      'Services': 'Services',
+      'Formations': 'Training',
+      'Méthodologie': 'Methodology',
+      'Contact': 'Contact',
+      'Nos Services Professionnels': 'Our Professional Services',
+      'En savoir plus →': 'Learn more →',
+      'Voir toutes nos formations': 'See all our trainings',
+      'Notre Approche Pédagogique': 'Our Educational Approach',
+      'Ils nous ont fait confiance': 'They trusted us',
+      'Contactez-nous': 'Contact us',
+      'Envoyez-nous un message': 'Send us a message',
+      'Nom': 'Last Name',
+      'Prénom': 'First Name',
+      'Entreprise': 'Company',
+      'Poste Occupé': 'Position',
+      'Email': 'Email',
+      'Tél.': 'Phone',
+      'Sujet': 'Subject',
+      'Message': 'Message',
+      'Envoyer le message': 'Send Message',
+    }
+  };
+
+  let currentLang = 'fr';
+
+  langSwitch.addEventListener('click', () => {
+    currentLang = currentLang === 'fr' ? 'en' : 'fr';
+    translatePage();
+  });
+
+  function translatePage() {
+    document.querySelectorAll('a, h2, h3, h4, p, label, button').forEach(el => {
+      if (translations['fr'][el.innerText]) {
+        el.innerText = translations[currentLang][el.innerText] || el.innerText;
+      }
+    });
+  }
+
+
   // Back to top button
   const backToTopButton = document.getElementById('back-to-top');
 
@@ -54,6 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
       behavior: 'smooth'
     });
   });
+
 
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {

@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Transition Navbar
   const logo = document.getElementById("logo");
-  const bgNav = document.getElementById("bg-nav");
 
   window.addEventListener("scroll", function () {
     if (window.scrollY > 650) {
@@ -36,78 +35,124 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // DARK MODE TOGGLE
-  // const themeToggle = document.getElementById('theme-toggle');
-  // themeToggle.addEventListener('click', () => {
-  //   document.documentElement.classList.toggle('dark');
-  // });
+  const themeToggle = document.getElementById('theme-toggle');
+  const logoImg = document.querySelector('#logo img'); // On cible l'image à l'intérieur du div #logo
+  // Au début de ton DOMContentLoaded principal :
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (savedTheme) {
+    if (savedTheme === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  } else if (prefersDark) {
+    // Si pas de choix et que le système est dark, on active dark
+    document.documentElement.classList.add('dark');
+  }
+  setLogoBasedOnTheme();
+
+  // Switch logo dark / light mode
+  function setLogoBasedOnTheme() {
+    if (document.documentElement.classList.contains('dark')) {
+      logoImg.src = './img/bigimpro (500 x 200 px)-nobg-darkmode.png'; // Logo pour mode sombre
+    } else {
+      logoImg.src = './img/bigimpro (500 x 200 px)-nobg.png'; // Logo pour mode clair
+    }
+  }
+
+  // Click sur le bouton
+  themeToggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+    setLogoBasedOnTheme();
+    // Optionnel : mémoriser le choix de thème
+    if (document.documentElement.classList.contains('dark')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
+
 
 
   // LANG TOGGLE
-  // const langSwitch = document.getElementById('lang-switch');
+  const langSwitch = document.getElementById('lang-switch');
 
-  // const translations = {
-  //   'fr': {
-  //     'Accueil': 'Accueil',
-  //     'Services': 'Services',
-  //     'Formations': 'Formations',
-  //     'Méthodologie': 'Méthodologie',
-  //     'Contact': 'Contact',
-  //     'Nos Services Professionnels': 'Nos Services Professionnels',
-  //     'En savoir plus →': 'En savoir plus →',
-  //     'Voir toutes nos formations': 'Voir toutes nos formations',
-  //     'Notre Approche Pédagogique': 'Notre Approche Pédagogique',
-  //     'Ils nous ont fait confiance': 'Ils nous ont fait confiance',
-  //     'Contactez-nous': 'Contactez-nous',
-  //     'Envoyez-nous un message': 'Envoyez-nous un message',
-  //     'Nom': 'Nom',
-  //     'Prénom': 'Prénom',
-  //     'Entreprise': 'Entreprise',
-  //     'Poste Occupé': 'Poste Occupé',
-  //     'Email': 'Email',
-  //     'Tél.': 'Tél.',
-  //     'Sujet': 'Sujet',
-  //     'Message': 'Message',
-  //     'Envoyer le message': 'Envoyer le message',
-  //   },
-  //   'en': {
-  //     'Accueil': 'Home',
-  //     'Services': 'Services',
-  //     'Formations': 'Training',
-  //     'Méthodologie': 'Methodology',
-  //     'Contact': 'Contact',
-  //     'Nos Services Professionnels': 'Our Professional Services',
-  //     'En savoir plus →': 'Learn more →',
-  //     'Voir toutes nos formations': 'See all our trainings',
-  //     'Notre Approche Pédagogique': 'Our Educational Approach',
-  //     'Ils nous ont fait confiance': 'They trusted us',
-  //     'Contactez-nous': 'Contact us',
-  //     'Envoyez-nous un message': 'Send us a message',
-  //     'Nom': 'Last Name',
-  //     'Prénom': 'First Name',
-  //     'Entreprise': 'Company',
-  //     'Poste Occupé': 'Position',
-  //     'Email': 'Email',
-  //     'Tél.': 'Phone',
-  //     'Sujet': 'Subject',
-  //     'Message': 'Message',
-  //     'Envoyer le message': 'Send Message',
-  //   }
-  // };
+  const translations = {
+    'fr': {
+      'Accueil': 'Accueil',
+      'Services': 'Services',
+      'Formations': 'Formations',
+      'Méthodologie': 'Méthodologie',
+      'Contact': 'Contact',
+      'Nos Services Professionnels': 'Nos Services Professionnels',
+      'Nos Domaines de Formation': 'Nos Domaines de Formation',
+      'En savoir plus →': 'En savoir plus →',
+      'Voir toutes nos formations': 'Voir toutes nos formations',
+      'Notre Approche Pédagogique': 'Notre Approche Pédagogique',
+      'Ils nous ont fait confiance': 'Ils nous ont fait confiance',
+      'Contactez-nous': 'Contactez-nous',
+      'Envoyez-nous un message': 'Envoyez-nous un message',
+      'Nom': 'Nom',
+      'Prénom': 'Prénom',
+      'Entreprise': 'Entreprise',
+      'Poste Occupé': 'Poste Occupé',
+      'Email': 'Email',
+      'Tél.': 'Tél.',
+      'Sujet': 'Sujet',
+      'Message': 'Message',
+      'Envoyer le message': 'Envoyer le message',
+    },
+    'en': {
+      'Accueil': 'Home',
+      'Services': 'Services',
+      'Formations': 'Training',
+      'Méthodologie': 'Methodology',
+      'Contact': 'Contact',
+      'Nos Services Professionnels': 'Our Professional Services',
+      'Nos Domaines de Formation': 'Our Training Areas',
+      'En savoir plus →': 'Learn more →',
+      'Voir toutes nos formations': 'See all our trainings',
+      'Notre Approche Pédagogique': 'Our Educational Approach',
+      'Ils nous ont fait confiance': 'They trusted us',
+      'Contactez-nous': 'Contact us',
+      'Envoyez-nous un message': 'Send us a message',
+      'Nom': 'Last Name',
+      'Prénom': 'First Name',
+      'Entreprise': 'Company',
+      'Poste Occupé': 'Position',
+      'Email': 'Email',
+      'Tél.': 'Phone',
+      'Sujet': 'Subject',
+      'Message': 'Message',
+      'Envoyer le message': 'Send Message',
+    }
+  };
 
-  // let currentLang = 'fr';
+  let currentLang = 'fr';
 
-  // langSwitch.addEventListener('click', () => {
-  //   currentLang = currentLang === 'fr' ? 'en' : 'fr';
-  //   translatePage();
-  // });
+  langSwitch.addEventListener('click', () => {
+    currentLang = currentLang === 'fr' ? 'en' : 'fr';
+    translatePage();
+  });
 
-  // function translatePage() {
-  //   document.querySelectorAll('a, h2, h3, h4, p, label, button').forEach(el => {
-  //     if (translations['fr'][el.innerText]) {
-  //       el.innerText = translations[currentLang][el.innerText] || el.innerText;
-  //     }
-  //   });
-  // }
+  function translatePage() {
+    document.querySelectorAll('a, h2, h3, h4, p, label, button').forEach(el => {
+      const text = el.innerText.trim();
+
+      // Cherche la traduction inversée en fonction de currentLang
+      if (currentLang === 'en') {
+        // Si le texte actuel est dans les textes français, remplace par anglais
+        if (translations['fr'][text]) {
+          el.innerText = translations['en'][text];
+        }
+      } else {
+        // Si le texte actuel est dans les textes anglais, remplace par français
+        const frKey = Object.keys(translations['fr']).find(key => translations['en'][key] === text);
+        if (frKey) {
+          el.innerText = translations['fr'][frKey];
+        }
+      }
+    });
+  }
 
 
   // Back to top button

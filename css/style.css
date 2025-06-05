@@ -5,9 +5,8 @@
     background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
     min-height: 100vh;
 }
-.hero-gradient-dark {
-    background: #2c3e50;
-    min-height: 100vh;
+.dark .hero-gradient {
+    background: linear-gradient(135deg, #2c3e50 0%, #111827 100%); /* Dark version */
 }
 .card-hover:hover {
     transform: translateY(-5px);

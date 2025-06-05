@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big'Impro - Conseil & Formation Professionnelle</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Forcer dark mode par 'class' au lieu de 'media' (très important) -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        };
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -22,7 +28,7 @@
                             <i class="fas fa-chalkboard-teacher text-2xl"></i>
                         </div> -->
                         <div id="logo" class="w-60 transition-all duration-300 ease-in-out">
-                            <img src="./img/bigimpro (500 x 200 px)-nobg-darkmode.png" alt="Logo Big'Impro">
+                            <img src="./img/bigimpro (500 x 200 px)-nobg.png" alt="Logo Big'Impro">
                         </div>
                         <!-- <h1 class="text-2xl font-bold text-gray-800">Big'<span
                                 class="text-blue-600">Impro</span></h1> -->
@@ -31,23 +37,30 @@
 
                 <!-- Navigation Desktop -->
                 <nav class="hidden lg:flex space-x-8">
-                    <a href="#accueil" class="font-medium hover:text-blue-600 dark:hover:text-gray-400 dark:hover:text-blue-900 transition-smooth">Accueil</a>
-                    <a href="#services" class="font-medium hover:text-blue-600 dark:hover:text-gray-400 transition-smooth">Services</a>
-                    <a href="#formations" class="font-medium hover:text-blue-600 dark:hover:text-gray-400 transition-smooth">Formations</a>
-                    <a href="#methode" class="font-medium hover:text-blue-600 dark:hover:text-gray-400 transition-smooth">Méthodologie</a>
-                    <a href="#contact" class="font-medium hover:text-blue-600 dark:hover:text-gray-400 transition-smooth">Contact</a>
+                    <a href="#accueil"
+                        class="font-medium hover:text-blue-600 dark:hover:text-gray-400 dark:hover:text-blue-900 transition-smooth">Accueil</a>
+                    <a href="#services"
+                        class="font-medium hover:text-blue-600 dark:hover:text-gray-400 transition-smooth">Services</a>
+                    <a href="#formations"
+                        class="font-medium hover:text-blue-600 dark:hover:text-gray-400 transition-smooth">Formations</a>
+                    <a href="#methode"
+                        class="font-medium hover:text-blue-600 dark:hover:text-gray-400 transition-smooth">Méthodologie</a>
+                    <a href="#contact"
+                        class="font-medium hover:text-blue-600 dark:hover:text-gray-400 transition-smooth">Contact</a>
                 </nav>
 
                 <!-- Switches : Langue et Mode -->
-                <!-- <div class="flex items-center space-x-4">
-                    <button id="lang-switch" class="text-gray-600 hover:text-blue-600 dark:hover:text-gray-400 transition-smooth">
+                <div class="flex items-center space-x-4">
+                    <button id="lang-switch"
+                        class="text-gray-600 hover:text-blue-600 dark:hover:text-gray-400 transition-smooth">
                         🇫🇷 / 🇬🇧
                     </button>
 
-                    <button id="theme-toggle" class="text-gray-600 hover:text-blue-600 dark:hover:text-gray-400 transition-smooth">
+                    <button id="theme-toggle"
+                        class="text-gray-600 hover:text-blue-600 dark:hover:text-gray-400 transition-smooth">
                         ☀️ / 🌙
                     </button>
-                </div> -->
+                </div>
 
 
                 <!-- Mobile menu button -->
@@ -68,13 +81,14 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="accueil" class="hero-gradient dark:hero-gradient-dark text-white py-20 flex">
+    <section id="accueil" class="hero-gradient dark:hero-gradient text-white py-20 flex">
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
                 <h2 class="text-4xl md:text-5xl font-bold mb-6">L'improvisation théâtrale, un levier pour booster
                     vos
                     softskills</h2>
-                <p class="text-xl mb-8 opacity-90 dark:text-gray-300">Ateliers interactifs sur mesure pour améliorer la performance
+                <p class="text-xl mb-8 opacity-90 dark:text-gray-300">Ateliers interactifs sur mesure pour améliorer la
+                    performance
                     et l'efficacité de vos équipes.</p>
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                     <a href="#contact"
@@ -99,38 +113,45 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold">Nos Services Professionnels</h2>
                 <div class="w-24 h-1 bg-blue-600 dark:bg-blue-800 mx-auto my-6"></div>
-                <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-400">Nous proposons des solutions adaptées à vos besoins
+                <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-400">Nous proposons des solutions adaptées à
+                    vos besoins
                     spécifiques pour améliorer la performance de votre organisation.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Service 1 -->
                 <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md card-hover transition-smooth">
-                    <div class="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-blue-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <div
+                        class="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-blue-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-bullseye text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Formations & Événements</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Programmes adaptés à vos objectifs spécifiques et à votre secteur
+                    <p class="text-gray-600 dark:text-gray-400">Programmes adaptés à vos objectifs spécifiques et à
+                        votre secteur
                         d'activité.</p>
                 </div>
 
                 <!-- Service 2 -->
                 <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md card-hover transition-smooth">
-                    <div class="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-blue-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <div
+                        class="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-blue-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-chart-line text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Montée en Compétences</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Optimisation des compétences et développement du potentiel de vos équipes.
+                    <p class="text-gray-600 dark:text-gray-400">Optimisation des compétences et développement du
+                        potentiel de vos équipes.
                     </p>
                 </div>
 
                 <!-- Service 3 -->
                 <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md card-hover transition-smooth">
-                    <div class="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-blue-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                    <div
+                        class="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-blue-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-users text-2xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Méthode Certifiée</h3>
-                    <p class="text-gray-600 dark:text-gray-400">Renforcez la cohésion et la collaboration au sein de vos équipes.</p>
+                    <p class="text-gray-600 dark:text-gray-400">Renforcez la cohésion et la collaboration au sein de vos
+                        équipes.</p>
                 </div>
             </div>
         </div>
@@ -143,77 +164,93 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold">Nos Domaines de Formation</h2>
                 <div class="w-24 h-1 bg-blue-600 dark:bg-blue-800 mx-auto my-6"></div>
-                <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-400">Découvrez nos principaux domaines d'expertise en formation
+                <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-400">Découvrez nos principaux domaines
+                    d'expertise en formation
                     professionnelle.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Formation 1 -->
-                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
                     <img src="https://images.unsplash.com/photo-1659639237704-3b47330fe09e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29tbXVuaXF1ZXJ8ZW58MHx8MHx8fDA%3D"
                         alt="Communication" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Communication</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">Verbale, non verbale, écrite.</p>
-                        <a href="#" class="text-blue-600 dark:text-blue-800 font-medium hover:underline">En savoir plus →</a>
+                        <a href="#" class="text-blue-600 dark:text-blue-800 font-medium hover:underline">En savoir plus
+                            →</a>
                     </div>
                 </div>
 
                 <!-- Formation 2 -->
-                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
                     <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29sbGFib3JhdGlvbnxlbnwwfHwwfHx8MA%3D%3D"
                         alt="Collaboration et ouverture" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Collaboration & Ouverture</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">En favorisant les échanges et le partage.</p>
-                        <a href="#" class="text-blue-600 dark:text-blue-800 font-medium hover:underline">En savoir plus →</a>
+                        <a href="#" class="text-blue-600 dark:text-blue-800 font-medium hover:underline">En savoir plus
+                            →</a>
                     </div>
                 </div>
 
                 <!-- Formation 3 -->
-                <div class="bg-white dark:bg-gray-800 dark:bg-gray-800 rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
+                <div
+                    class="bg-white dark:bg-gray-800 dark:bg-gray-800 rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
                     <img src="https://plus.unsplash.com/premium_photo-1672759360872-791a5ba6e2cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3IlQzMlQTlhdGl2aXQlQzMlQTl8ZW58MHx8MHx8fDA%3D"
                         alt="Innovation et créativité" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Innovation & Créativité</h3>
-                        <p class="text-gray-600 dark:text-gray-400 dark:text-gray-400 mb-4">En activant la capacité à créer.</p>
-                        <a href="#" class="text-blue-600 dark:text-blue-800 dark:text-blue-800 font-medium hover:underline">En savoir plus →</a>
+                        <p class="text-gray-600 dark:text-gray-400 dark:text-gray-400 mb-4">En activant la capacité à
+                            créer.</p>
+                        <a href="#"
+                            class="text-blue-600 dark:text-blue-800 dark:text-blue-800 font-medium hover:underline">En
+                            savoir plus →</a>
                     </div>
                 </div>
 
                 <!-- Formation 4 -->
-                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
                     <img src="https://plus.unsplash.com/premium_photo-1682309792063-4ef5850d22b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGVhZGVyc2hpcHxlbnwwfHwwfHx8MA%3D%3D"
                         alt="Confiance en soi et leadership" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Confiance en Soi & Leadership</h3>
-                        <p class="text-gray-600 dark:text-gray-400 mb-4">En s'affirmant et en prenant confiance par le jeu.
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">En s'affirmant et en prenant confiance par le
+                            jeu.
                         </p>
-                        <a href="#" class="text-blue-600 dark:text-blue-800 font-medium hover:underline">En savoir plus →</a>
+                        <a href="#" class="text-blue-600 dark:text-blue-800 font-medium hover:underline">En savoir plus
+                            →</a>
                     </div>
                 </div>
 
                 <!-- Formation 5 -->
-                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
                     <img src="https://images.unsplash.com/photo-1732810876499-08e96a969266?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGFkYXB0YXRpb258ZW58MHx8MHx8fDA%3D"
                         alt="Adaptabilité" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Adaptabilité</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">En transformant les imprévus en opportunités.
                         </p>
-                        <a href="#" class="text-blue-600 dark:text-blue-800 font-medium hover:underline">En savoir plus →</a>
+                        <a href="#" class="text-blue-600 dark:text-blue-800 font-medium hover:underline">En savoir plus
+                            →</a>
                     </div>
                 </div>
 
                 <!-- Formation 6 -->
-                <div class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
                     <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVhbXxlbnwwfHwwfHx8MA%3D%3D"
                         alt="Cohésion d'équipe" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Cohésion d'équipe</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">En partageant des moments fédérateurs.
                         </p>
-                        <a href="#" class="text-blue-600 dark:text-blue-800 font-medium hover:underline">En savoir plus →</a>
+                        <a href="#" class="text-blue-600 dark:text-blue-800 font-medium hover:underline">En savoir plus
+                            →</a>
                     </div>
                 </div>
             </div>
@@ -233,8 +270,9 @@
             <div class="flex flex-col lg:flex-row items-center">
                 <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
                     <h2 class="text-3xl font-bold">Notre Approche Pédagogique</h2>
-                    <div class="w-24 h-1 bg-blue-600 my-8"></div>
-                    <p class="text-gray-600 dark:text-gray-400 mb-6">Notre méthodologie repose sur une approche pratique et interactive,
+                    <div class="w-24 h-1 bg-blue-600 dark:bg-blue-800 my-8"></div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">Notre méthodologie repose sur une approche pratique
+                        et interactive,
                         centrée sur les besoins réels des participants et de l'entreprise.</p>
 
                     <div class="space-y-6">
@@ -245,7 +283,8 @@
                             </div>
                             <div>
                                 <h4 class="font-semibold mb-2">Objectif</h4>
-                                <p class="text-gray-600 dark:text-gray-400 dark:text-gray-400">Travailler sur des compétences précises en impliquant les
+                                <p class="text-gray-600 dark:text-gray-400 dark:text-gray-400">Travailler sur des
+                                    compétences précises en impliquant les
                                     participants par le jeu.</p>
                             </div>
                         </div>
@@ -257,7 +296,8 @@
                             </div>
                             <div>
                                 <h4 class="font-semibold mb-2">Approche</h4>
-                                <p class="text-gray-600 dark:text-gray-400">Renforcer les soft skills clés tels que la communication,
+                                <p class="text-gray-600 dark:text-gray-400">Renforcer les soft skills clés tels que la
+                                    communication,
                                     l'adaptabilité et la créativité, en utilisant le jeu et l'interaction comme outils
                                     d'apprentissage.</p>
                             </div>
@@ -270,7 +310,8 @@
                             </div>
                             <div>
                                 <h4 class="font-semibold mb-2">Thématiques</h4>
-                                <p class="text-gray-600 dark:text-gray-400">Négociation & gestion des conflits, prévention des risques
+                                <p class="text-gray-600 dark:text-gray-400">Négociation & gestion des conflits,
+                                    prévention des risques
                                     psychosociaux, diversité & inclusion…</p>
                             </div>
                         </div>
@@ -291,7 +332,8 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold">Ils nous ont fait confiance</h2>
                 <div class="w-24 h-1 bg-white dark:bg-blue-800 mx-auto my-6"></div>
-                <p class="max-w-2xl mx-auto opacity-90 dark:text-gray-400">Découvrez ce que nos clients disent de nos formations.</p>
+                <p class="max-w-2xl mx-auto opacity-90 dark:text-gray-400">Découvrez ce que nos clients disent de nos
+                    formations.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -380,7 +422,8 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold">Contactez-nous</h2>
                 <div class="w-24 h-1 bg-blue-600 dark:bg-blue-800 mx-auto my-6"></div>
-                <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-400">Prêt à développer les compétences de votre équipe ?
+                <p class="max-w-2xl mx-auto text-gray-600 dark:text-gray-400">Prêt à développer les compétences de votre
+                    équipe ?
                     Parlons-en.</p>
             </div>
 
@@ -398,7 +441,8 @@
                                 </div>
                                 <div>
                                     <h4 class="font-medium mb-1">Adresse</h4>
-                                    <p class="text-gray-600 dark:text-gray-400 dark:text-gray-400">12 Rue des Entrepreneurs<br>75000 Paris, France</p>
+                                    <p class="text-gray-600 dark:text-gray-400 dark:text-gray-400">12 Rue des
+                                        Entrepreneurs<br>75000 Paris, France</p>
                                 </div>
                             </div>
 
@@ -443,7 +487,10 @@
                     <div>
                         <h3 class="text-xl font-semibold mt-12 mb-6">Nous rencontrer</h3>
                         <div class="w-full h-64 sm:h-96 rounded-lg overflow-hidden shadow-lg">
-                            <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2615.62221694107!2d2.0775422000000003!3d49.036791799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6f53b3473719b%3A0xea01f64f7bfd7770!2sZozan!5e0!3m2!1sfr!2sfr!4v1749046617951!5m2!1sfr!2sfr" allowfullscreen="allow" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe class="w-full h-full"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2615.62221694107!2d2.0775422000000003!3d49.036791799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6f53b3473719b%3A0xea01f64f7bfd7770!2sZozan!5e0!3m2!1sfr!2sfr!4v1749046617951!5m2!1sfr!2sfr"
+                                allowfullscreen="allow" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -455,7 +502,9 @@
 
                         <div class="grid md:grid-cols-2 gap-6 mb-10">
                             <div>
-                                <label for="nom" class="block text-gray-700 dark:text-gray-400 dark:text-gray-400 mb-2">Nom<span class="text-red-500">
+                                <label for="nom"
+                                    class="block text-gray-700 dark:text-gray-400 dark:text-gray-400 mb-2">Nom<span
+                                        class="text-red-500">
                                         *</span></label>
                                 <input type="text" id="nom" name="nom"
                                     class="w-full px-4 py-2 border border-gray-300 dark:border-gray-400 dark:border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-800 dark:bg-gray-800"
@@ -470,14 +519,16 @@
 
                         <div class="grid md:grid-cols-2 gap-6 mb-10">
                             <div>
-                                <label for="entreprise" class="block text-gray-700 dark:text-gray-400 mb-2">Entreprise<span
+                                <label for="entreprise"
+                                    class="block text-gray-700 dark:text-gray-400 mb-2">Entreprise<span
                                         class="text-red-500"> *</span></label>
                                 <input type="text" id="entreprise" name="entreprise"
                                     class="w-full px-4 py-2 border border-gray-300 dark:border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-800 dark:bg-gray-800"
                                     required>
                             </div>
                             <div>
-                                <label for="poste" class="block text-gray-700 dark:text-gray-400 mb-2">Poste Occupé</label>
+                                <label for="poste" class="block text-gray-700 dark:text-gray-400 mb-2">Poste
+                                    Occupé</label>
                                 <input type="text" id="poste" name="poste"
                                     class="w-full px-4 py-2 border border-gray-300 dark:border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-800 dark:bg-gray-800">
                             </div>
@@ -485,7 +536,8 @@
 
                         <div class="grid md:grid-cols-2 gap-6 mb-10">
                             <div>
-                                <label for="email" class="block text-gray-700 dark:text-gray-400 mb-2">Email<span class="text-red-500">
+                                <label for="email" class="block text-gray-700 dark:text-gray-400 mb-2">Email<span
+                                        class="text-red-500">
                                         *</span></label>
                                 <input type="email" id="email" name="email"
                                     class="w-full px-4 py-2 border border-gray-300 dark:border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-800 dark:bg-gray-800"
@@ -499,7 +551,8 @@
                         </div>
 
                         <div class="mb-10">
-                            <label for="sujet" class="block text-gray-700 dark:text-gray-400 mb-2">Sujet<span class="text-red-500">
+                            <label for="sujet" class="block text-gray-700 dark:text-gray-400 mb-2">Sujet<span
+                                    class="text-red-500">
                                     *</span></label>
                             <input type="text" id="sujet" name="sujet"
                                 class="w-full px-4 py-2 border border-gray-300 dark:border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-800 dark:bg-gray-800"
@@ -507,7 +560,8 @@
                         </div>
 
                         <div class="mb-10">
-                            <label for="message" class="block text-gray-700 dark:text-gray-400 mb-2">Message<span class="text-red-500">
+                            <label for="message" class="block text-gray-700 dark:text-gray-400 mb-2">Message<span
+                                    class="text-red-500">
                                     *</span></label>
                             <textarea id="message" rows="5" name="message"
                                 class="w-full px-4 py-2 border border-gray-300 dark:border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-800 dark:bg-gray-800"
@@ -517,8 +571,9 @@
                         <div class="mb-6">
                             <label class="dark:text-gray-400">
                                 <input type="checkbox" name="consentement" required>
-                                &nbsp;J’accepte que mes informations de contact soient temporairement stockées pour répondre à ma demande. Elles ne seront en aucun cas revendues ou utilisées à des fins marketing ou commerciale.<span
-                                    class="text-red-500"> *</span>
+                                &nbsp;J’accepte que mes informations de contact soient temporairement stockées pour
+                                répondre à ma demande. Elles ne seront en aucun cas revendues ou utilisées à des fins
+                                marketing ou commerciale.<span class="text-red-500"> *</span>
                             </label>
 
                             <p class="pt-4 dark:text-gray-400">
@@ -615,7 +670,7 @@
 
     <!-- Back to top button -->
     <button id="back-to-top"
-        class="lg:hidden fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+        class="lg:hidden fixed bottom-8 right-8 bg-blue-600 dark:bg-blue-800 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
         <i class="fas fa-arrow-up"></i>
     </button>
 

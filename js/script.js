@@ -77,55 +77,80 @@ document.addEventListener("DOMContentLoaded", function () {
   const langSwitch = document.getElementById('lang-switch');
 
   const translations = {
-    'fr': {
-      'Accueil': 'Accueil',
-      'Services': 'Services',
-      'Formations': 'Formations',
-      'Méthodologie': 'Méthodologie',
-      'Contact': 'Contact',
-      'Nos Services Professionnels': 'Nos Services Professionnels',
-      'Nos Domaines de Formation': 'Nos Domaines de Formation',
-      'En savoir plus →': 'En savoir plus →',
-      'Voir toutes nos formations': 'Voir toutes nos formations',
-      'Notre Approche Pédagogique': 'Notre Approche Pédagogique',
-      'Ils nous ont fait confiance': 'Ils nous ont fait confiance',
-      'Contactez-nous': 'Contactez-nous',
-      'Envoyez-nous un message': 'Envoyez-nous un message',
-      'Nom': 'Nom',
-      'Prénom': 'Prénom',
-      'Entreprise': 'Entreprise',
-      'Poste Occupé': 'Poste Occupé',
-      'Email': 'Email',
-      'Tél.': 'Tél.',
-      'Sujet': 'Sujet',
-      'Message': 'Message',
-      'Envoyer le message': 'Envoyer le message',
+    fr: {
+      heroTitle: "L'improvisation théâtrale, un levier pour booster vos softskills",
+      heroSubtitle: "Ateliers interactifs sur mesure pour améliorer la performance et l'efficacité de vos équipes.",
+      heroContactBtn: "Nous contacter",
+      heroServicesBtn: "Nos services",
+      servicesTitle: "Nos Services Professionnels",
+      servicesDescription: "Nous proposons des solutions adaptées à vos besoins spécifiques pour améliorer la performance de votre organisation.",
+      serviceTitleOne: "Formations & Événements",
+      serviceDescriptionOne: "Programmes adaptés à vos objectifs spécifiques et à votre secteur d'activité.",
+      serviceTitleTwo: "Montée en Compétences",
+      serviceDescriptionTwo: "Optimisation des compétences et développement du potentiel de vos équipes.",
+      serviceTitleThree: "Méthode Certifiée",
+      serviceDescriptionThree: "Renforcez la cohésion et la collaboration au sein de vos équipes.",
+      trainingTitle: "Nos Domaines de Formation",
+      trainingSubtitle: "Découvrez nos principaux domaines d'expertise en formation professionnelle.",
+      learnMore: "En savoir plus →",
+      seeAllTrainings: "Voir toutes nos formations",
+      approachTitle: "Notre Approche Pédagogique",
+      trustedUsTitle: "Ils nous ont fait confiance",
+      contactUsTitle: "Contactez-nous",
+      sendMessageTitle: "Envoyez-nous un message",
+      fieldLastName: "Nom",
+      fieldFirstName: "Prénom",
+      fieldCompany: "Entreprise",
+      fieldPosition: "Poste Occupé",
+      fieldEmail: "Email",
+      fieldPhone: "Tél.",
+      fieldSubject: "Sujet",
+      fieldMessage: "Message",
+      sendButton: "Envoyer le message",
+      testimonialsText1: "La formation en management a transformé notre façon de travailler. Nos équipes sont plus motivées et productives.",
+      testimonialsText2: "Approche très professionnelle et adaptée à nos besoins spécifiques. Les résultats ont été immédiats.",
+      testimonialsText3: "Formateurs compétents et pédagogues. Le suivi post-formation a été particulièrement apprécié.",
+      backToTop: "Retour en haut",
+      // Ajoute ici d'autres textes si besoin
     },
-    'en': {
-      'Accueil': 'Home',
-      'Services': 'Services',
-      'Formations': 'Training',
-      'Méthodologie': 'Methodology',
-      'Contact': 'Contact',
-      'Nos Services Professionnels': 'Our Professional Services',
-      'Nos Domaines de Formation': 'Our Training Areas',
-      'En savoir plus →': 'Learn more →',
-      'Voir toutes nos formations': 'See all our trainings',
-      'Notre Approche Pédagogique': 'Our Educational Approach',
-      'Ils nous ont fait confiance': 'They trusted us',
-      'Contactez-nous': 'Contact us',
-      'Envoyez-nous un message': 'Send us a message',
-      'Nom': 'Last Name',
-      'Prénom': 'First Name',
-      'Entreprise': 'Company',
-      'Poste Occupé': 'Position',
-      'Email': 'Email',
-      'Tél.': 'Phone',
-      'Sujet': 'Subject',
-      'Message': 'Message',
-      'Envoyer le message': 'Send Message',
+    en: {
+      heroTitle: "Theatrical improvisation, a lever to boost your soft skills",
+      heroSubtitle: "Custom interactive workshops to enhance your team's performance and efficiency.",
+      heroContactBtn: "Contact us",
+      heroServicesBtn: "Our services",
+      servicesTitle: "Our Professional Services",
+      servicesDescription: "We offer solutions tailored to your specific needs to improve your organization's performance.",
+      serviceTitleOne: "Training & Events",
+      serviceDescriptionOne: "Customized programs specifically designed for your goals and industry",
+      serviceTitleTwo: "Skills Development",
+      serviceDescriptionTwo: "Skills optimisation and improvement of your teams abilities.",
+      serviceTitleThree: "Certified Method",
+      serviceDescriptionThree: "Strengthen cohesion and collaboration within your teams.",
+      trainingTitle: "Our Training Areas",
+      trainingSubtitle: "Find out our main expertise areas for professional training.",
+      learnMore: "Learn more →",
+      seeAllTrainings: "See all our trainings",
+      approachTitle: "Our Educational Approach",
+      trustedUsTitle: "They trusted us",
+      contactUsTitle: "Contact us",
+      sendMessageTitle: "Send us a message",
+      fieldLastName: "Last Name",
+      fieldFirstName: "First Name",
+      fieldCompany: "Company",
+      fieldPosition: "Position",
+      fieldEmail: "Email",
+      fieldPhone: "Phone",
+      fieldSubject: "Subject",
+      fieldMessage: "Message",
+      sendButton: "Send Message",
+      testimonialsText1: "The management training transformed how we work. Our teams are more motivated and productive.",
+      testimonialsText2: "Very professional approach tailored to our specific needs. The results were immediate.",
+      testimonialsText3: "Competent and pedagogical trainers. The post-training follow-up was particularly appreciated.",
+      backToTop: "Back to top",
+      // Same here, add more as needed
     }
   };
+
 
   let currentLang = 'fr';
 
@@ -135,21 +160,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function translatePage() {
-    document.querySelectorAll('a, h2, h3, h4, p, label, button').forEach(el => {
-      const text = el.innerText.trim();
-
-      // Cherche la traduction inversée en fonction de currentLang
-      if (currentLang === 'en') {
-        // Si le texte actuel est dans les textes français, remplace par anglais
-        if (translations['fr'][text]) {
-          el.innerText = translations['en'][text];
-        }
-      } else {
-        // Si le texte actuel est dans les textes anglais, remplace par français
-        const frKey = Object.keys(translations['fr']).find(key => translations['en'][key] === text);
-        if (frKey) {
-          el.innerText = translations['fr'][frKey];
-        }
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[currentLang] && translations[currentLang][key]) {
+        el.innerText = translations[currentLang][key];
       }
     });
   }

@@ -78,6 +78,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const translations = {
     fr: {
+      menuTitleOne: "Accueil",
+      menuTitleTwo: "Services",
+      menuTitleThree: "Formations",
+      menuTitleFour: "Approche",
+      menuTitleFive: "Contact",
       heroTitle: "L'improvisation théâtrale, un levier pour booster vos softskills",
       heroSubtitle: "Ateliers interactifs sur mesure pour améliorer la performance et l'efficacité de vos équipes.",
       heroContactBtn: "Nous contacter",
@@ -114,6 +119,11 @@ document.addEventListener("DOMContentLoaded", function () {
       // Ajoute ici d'autres textes si besoin
     },
     en: {
+      menuTitleOne: "Home",
+      menuTitleTwo: "Services",
+      menuTitleThree: "Programs",
+      menuTitleFour: "Approach",
+      menuTitleFive: "Contact",
       heroTitle: "Theatrical improvisation, a lever to boost your soft skills",
       heroSubtitle: "Custom interactive workshops made to enhance your team's performance and efficiency.",
       heroContactBtn: "Contact us",

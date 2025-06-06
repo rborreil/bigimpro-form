@@ -50,17 +50,20 @@
                 </nav>
 
                 <!-- Switches : Langue et Mode -->
-                <div class="flex items-center space-x-4">
+                <div class="flex gap-4">
+                    <!-- Lang Switch -->
                     <button id="lang-switch"
-                        class="text-gray-600 hover:text-blue-600 dark:hover:text-gray-400 transition-smooth">
-                        🇫🇷 / 🇬🇧
+                        class="p-2 rounded-lg shadow-sm hover:scale-105 transform transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
+                        <svg id="lang-flag" class="w-6 h-6" alt="Switch Language" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#071b65"></rect><path d="M5.101,4h-.101c-1.981,0-3.615,1.444-3.933,3.334L26.899,28h.101c1.981,0,3.615-1.444,3.933-3.334L5.101,4Z" fill="#fff"></path><path d="M22.25,19h-2.5l9.934,7.947c.387-.353,.704-.777,.929-1.257l-8.363-6.691Z" fill="#b92932"></path><path d="M1.387,6.309l8.363,6.691h2.5L2.316,5.053c-.387,.353-.704,.777-.929,1.257Z" fill="#b92932"></path><path d="M5,28h.101L30.933,7.334c-.318-1.891-1.952-3.334-3.933-3.334h-.101L1.067,24.666c.318,1.891,1.952,3.334,3.933,3.334Z" fill="#fff"></path><rect x="13" y="4" width="6" height="24" fill="#fff"></rect><rect x="1" y="13" width="30" height="6" fill="#fff"></rect><rect x="14" y="4" width="4" height="24" fill="#b92932"></rect><rect x="14" y="1" width="4" height="30" transform="translate(32) rotate(90)" fill="#b92932"></rect><path d="M28.222,4.21l-9.222,7.376v1.414h.75l9.943-7.94c-.419-.384-.918-.671-1.471-.85Z" fill="#b92932"></path><path d="M2.328,26.957c.414,.374,.904,.656,1.447,.832l9.225-7.38v-1.408h-.75L2.328,26.957Z" fill="#b92932"></path><path d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z" opacity=".15"></path><path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path></svg>
                     </button>
 
+                    <!-- Theme Toggle -->
                     <button id="theme-toggle"
-                        class="text-gray-600 hover:text-blue-600 dark:hover:text-gray-400 transition-smooth">
-                        ☀️ / 🌙
+                        class="p-2 rounded-lg shadow-sm hover:scale-105 transform transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
+                        <span id="theme-icon" class="text-xl">🌙</span>
                     </button>
                 </div>
+
 
 
                 <!-- Mobile menu button -->
@@ -84,10 +87,12 @@
     <section id="accueil" class="hero-gradient dark:hero-gradient text-white py-20 flex">
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
-                <h2 data-i18n="heroTitle" class="text-4xl md:text-5xl font-bold mb-6">L'improvisation théâtrale, un levier pour booster
+                <h2 data-i18n="heroTitle" class="text-4xl md:text-5xl font-bold mb-6">L'improvisation théâtrale, un
+                    levier pour booster
                     vos
                     softskills</h2>
-                <p data-i18n="heroSubtitle" class="text-xl mb-8 opacity-90 dark:text-gray-300">Ateliers interactifs sur mesure pour améliorer la
+                <p data-i18n="heroSubtitle" class="text-xl mb-8 opacity-90 dark:text-gray-300">Ateliers interactifs sur
+                    mesure pour améliorer la
                     performance
                     et l'efficacité de vos équipes.</p>
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -113,7 +118,8 @@
             <div class="text-center mb-16">
                 <h2 data-i18n="servicesTitle" class="text-3xl font-bold">Nos Services Professionnels</h2>
                 <div class="w-24 h-1 bg-blue-600 dark:bg-blue-800 mx-auto my-6"></div>
-                <p data-i18n="servicesDescription" class="max-w-2xl mx-auto text-gray-600 dark:text-gray-400">Nous proposons des solutions adaptées à
+                <p data-i18n="servicesDescription" class="max-w-2xl mx-auto text-gray-600 dark:text-gray-400">Nous
+                    proposons des solutions adaptées à
                     vos besoins
                     spécifiques pour améliorer la performance de votre organisation.</p>
             </div>
@@ -126,7 +132,8 @@
                         <i class="fas fa-bullseye text-2xl"></i>
                     </div>
                     <h3 data-i18n="serviceTitleOne" class="text-xl font-semibold mb-3">Formations & Événements</h3>
-                    <p data-i18n="serviceDescriptionOne" class="text-gray-600 dark:text-gray-400">Programmes adaptés à vos objectifs spécifiques et à
+                    <p data-i18n="serviceDescriptionOne" class="text-gray-600 dark:text-gray-400">Programmes adaptés à
+                        vos objectifs spécifiques et à
                         votre secteur
                         d'activité.</p>
                 </div>
@@ -138,7 +145,8 @@
                         <i class="fas fa-chart-line text-2xl"></i>
                     </div>
                     <h3 data-i18n="serviceTitleTwo" class="text-xl font-semibold mb-3">Montée en Compétences</h3>
-                    <p data-i18n="serviceDescriptionTwo" class="text-gray-600 dark:text-gray-400">Optimisation des compétences et développement du
+                    <p data-i18n="serviceDescriptionTwo" class="text-gray-600 dark:text-gray-400">Optimisation des
+                        compétences et développement du
                         potentiel de vos équipes.
                     </p>
                 </div>
@@ -150,7 +158,8 @@
                         <i class="fas fa-users text-2xl"></i>
                     </div>
                     <h3 data-i18n="serviceTitleThree" class="text-xl font-semibold mb-3">Méthode Certifiée</h3>
-                    <p data-i18n="serviceDescriptionThree" class="text-gray-600 dark:text-gray-400">Renforcez la cohésion et la collaboration au sein de vos
+                    <p data-i18n="serviceDescriptionThree" class="text-gray-600 dark:text-gray-400">Renforcez la
+                        cohésion et la collaboration au sein de vos
                         équipes.</p>
                 </div>
             </div>
@@ -164,7 +173,8 @@
             <div class="text-center mb-16">
                 <h2 data-i18n="trainingTitle" class="text-3xl font-bold">Nos Domaines de Formation</h2>
                 <div class="w-24 h-1 bg-blue-600 dark:bg-blue-800 mx-auto my-6"></div>
-                <p data-i18n="trainingSubtitle" class="max-w-2xl mx-auto text-gray-600 dark:text-gray-400">Découvrez nos principaux domaines
+                <p data-i18n="trainingSubtitle" class="max-w-2xl mx-auto text-gray-600 dark:text-gray-400">Découvrez nos
+                    principaux domaines
                     d'expertise en formation
                     professionnelle.</p>
             </div>

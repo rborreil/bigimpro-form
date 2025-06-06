@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     en: {
       heroTitle: "Theatrical improvisation, a lever to boost your soft skills",
-      heroSubtitle: "Custom interactive workshops to enhance your team's performance and efficiency.",
+      heroSubtitle: "Custom interactive workshops made to enhance your team's performance and efficiency.",
       heroContactBtn: "Contact us",
       heroServicesBtn: "Our services",
       servicesTitle: "Our Professional Services",

@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
+
   // DARK MODE TOGGLE
   const themeToggle = document.querySelectorAll('.theme-toggle');
   const logoImg = document.querySelector('#logo img'); // On cible l'image à l'intérieur du div #logo
@@ -73,7 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   })
-
 
 
 
@@ -175,7 +175,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-
   function translatePage() {
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
@@ -186,7 +185,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
-  // Back to top button
+
+  // BACK TO TOP BUTTON
   const backToTopButton = document.getElementById('back-to-top');
 
   window.addEventListener('scroll', () => {
@@ -207,7 +207,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-  // Smooth scrolling for anchor links
+
+  // SMOOTH SCROLLING FOR ANCHOR LINKS
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -231,7 +232,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-  // Formulaire de contact - envoi AJAX
+
+  // FORMULAIRE DE CONTACT - ENVOI AJAX
   const form = document.getElementById("contact-form");
   const status = document.getElementById("form-status");
 

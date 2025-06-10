@@ -35,11 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // DARK MODE TOGGLE
-  const themeToggle = document.getElementById('theme-toggle');
+  const themeToggle = document.querySelectorAll('.theme-toggle');
   const logoImg = document.querySelector('#logo img'); // On cible l'image à l'intérieur du div #logo
   // Au début de ton DOMContentLoaded principal :
   const savedTheme = localStorage.getItem('theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
   if (savedTheme) {
     if (savedTheme === 'dark') {
       document.documentElement.classList.add('dark');
@@ -60,21 +61,24 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Click sur le bouton
-  themeToggle.addEventListener('click', () => {
-    document.documentElement.classList.toggle('dark');
-    setLogoBasedOnTheme();
-    // Optionnel : mémoriser le choix de thème
-    if (document.documentElement.classList.contains('dark')) {
-      localStorage.setItem('theme', 'dark');
-    } else {
-      localStorage.setItem('theme', 'light');
-    }
-  });
+  themeToggle.forEach(el => {
+    el.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      setLogoBasedOnTheme();
+      // Optionnel : mémoriser le choix de thème
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  })
+
 
 
 
   // LANG TOGGLE
-  const langSwitch = document.getElementById('lang-switch');
+  const langSwitch = document.querySelectorAll('.lang-switch');
 
   const translations = {
     fr: {
@@ -164,10 +168,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let currentLang = 'fr';
 
-  langSwitch.addEventListener('click', () => {
-    currentLang = currentLang === 'fr' ? 'en' : 'fr';
-    translatePage();
+  langSwitch.forEach(el => {
+    el.addEventListener('click', () => {
+      currentLang = currentLang === 'fr' ? 'en' : 'fr';
+      translatePage();
+    });
   });
+
 
   function translatePage() {
     document.querySelectorAll('[data-i18n]').forEach(el => {

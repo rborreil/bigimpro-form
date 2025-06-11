@@ -7,6 +7,16 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileMenu.classList.toggle('hidden');
   });
 
+  // Fermer le menu si clic à l'extérieur
+  document.addEventListener('click', (e) => {
+    const isClickInsideMenu = mobileMenu.contains(e.target);
+    const isClickOnButton = mobileMenuButton.contains(e.target);
+
+    if (!isClickInsideMenu && !isClickOnButton) {
+      mobileMenu.classList.add('hidden');
+    }
+  });
+
   // Transition Navbar
   const logo = document.getElementById("logo");
 
@@ -36,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // DARK MODE TOGGLE
-  const themeToggle = document.querySelectorAll('.theme-toggle');
   const logoImg = document.querySelector('#logo img'); // On cible l'image à l'intérieur du div #logo
   // Au début de ton DOMContentLoaded principal :
   const savedTheme = localStorage.getItem('theme');
@@ -61,7 +70,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Click sur le bouton
+  // Switch Clic Dark / Light Modes
+  const themeToggle = document.querySelectorAll('.theme-toggle');
   themeToggle.forEach(el => {
     el.addEventListener('click', () => {
       document.documentElement.classList.toggle('dark');
@@ -73,7 +83,24 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem('theme', 'light');
       }
     });
-  })
+  });
+
+  // Switch Moon / Sun Emojis
+  let currentThemeIcon = "🌚";
+  const icons = document.querySelectorAll('.theme-icon');
+
+  icons.forEach(el => {
+    el.addEventListener('click', () => {
+      // Bascule l'icône globalement
+      currentThemeIcon = currentThemeIcon === "🌚" ? "🔆" : "🌚";
+
+      // Mets à jour chaque bouton
+      icons.forEach(icon => {
+        icon.textContent = currentThemeIcon;
+      });
+    });
+  });
+
 
 
 
@@ -132,20 +159,52 @@ document.addEventListener("DOMContentLoaded", function () {
       trustedUsText3: '"Formateurs compétents et pédagogues. Le suivi post-formation a été particulièrement apprécié."',
       trustedUsRole3: "Responsable Formation, Groupe DEF",
       contactUsTitle: "Contactez-nous",
-      sendMessageTitle: "Envoyez-nous un message",
-      fieldLastName: "Nom",
-      fieldFirstName: "Prénom",
-      fieldCompany: "Entreprise",
-      fieldPosition: "Poste Occupé",
-      fieldEmail: "Email",
-      fieldPhone: "Tél.",
-      fieldSubject: "Sujet",
-      fieldMessage: "Message",
-      sendButton: "Envoyer le message",
-      testimonialsText1: "La formation en management a transformé notre façon de travailler. Nos équipes sont plus motivées et productives.",
-      testimonialsText2: "Approche très professionnelle et adaptée à nos besoins spécifiques. Les résultats ont été immédiats.",
-      testimonialsText3: "Formateurs compétents et pédagogues. Le suivi post-formation a été particulièrement apprécié.",
+      contactUsSubtitle: "Prêt à développer les compétences de votre équipe ? Parlons-en.",
+      contactDetailsTitle: "Nos coordonnées",
+      contactDetailsSubtitle1: "Adresse",
+      contactDetailsText1: "12 Rue des Entrepreneurs<br>75000 Paris, France",
+      contactDetailsSubtitle2: "Téléphone",
+      contactDetailsText2: "07 XX XX XX XX",
+      contactDetailsSubtitle3: "Email",
+      contactDetailsText3: "contact@bigimpro.com",
+      openingHoursTitle: "Horaires d'ouverture",
+      days1: "Lundi - Vendredi",
+      hours1: "9h00 - 18h00",
+      days2: "Samedi",
+      hours2: "Fermé",
+      mapTitle: "Nous rencontrer",
+      formTitle: "Envoyez-nous un message",
+      formLastName: 'Nom<span class="text-red-500"> *</span>',
+      formFirstName: 'Prénom<span class="text-red-500"> *</span>',
+      formCompany: 'Entreprise<span class="text-red-500"> *</span>',
+      formPosition: 'Poste Occupé<span class="text-red-500"> *</span>',
+      formEmail: 'Email<span class="text-red-500"> *</span>',
+      formPhone: 'Tél.<span class="text-red-500"> *</span>',
+      formSubject: 'Sujet<span class="text-red-500"> *</span>',
+      formMessage: 'Message<span class="text-red-500"> *</span>',
+      formRGPD: "J’accepte que mes informations de contact soient temporairement stockées pour répondre à ma demande. Elles ne seront en aucun cas revendues ou utilisées à des fins marketing ou commerciale.",
+      formPrivacy: 'Consultez notre <a href="#" class="text-blue-500" target="_blank">Politique de confidentialité</a>',
+      formButton: "Envoyer le message",
       backToTop: "Retour en haut",
+      footerTitle: "Big'Impro",
+      footerSubtitle: "Experts en formation professionnelle et développement des compétences depuis 2021.",
+      footerT1: "Liens rapides",
+      footerT1Link1: "Accueil",
+      footerT1Link2: "Services",
+      footerT1Link3: "Formations",
+      footerT1Link4: "Méthodologie",
+      footerT1Link5: "Contact",
+      footerT2: "Formations",
+      footerT2Link1: "Management",
+      footerT2Link2: "Digital",
+      footerT2Link3: "Communication",
+      footerT2Link4: "Finance",
+      footerT2Link5: "Toutes les formations",
+      footerT3: "Réseaux sociaux",
+      footerCopyright: "© 2025 Big'Impro. Tous droits réservés.",
+      footerLegal: "Mentions légales",
+      footerPrivacy: "Politique de confidentialité",
+      footerGTC: "CGV",
       // Ajoute ici d'autres textes si besoin
     },
     en: {
@@ -198,21 +257,53 @@ document.addEventListener("DOMContentLoaded", function () {
       trustedUsRole2: "CEO - ABC Company",
       trustedUsText3: '"Experienced trainers. The after-training service has been very appreciated."',
       trustedUsRole3: "Head of Training - DEF Group",
-      contactUsTitle: "Contact us",
-      sendMessageTitle: "Send us a message",
-      fieldLastName: "Last Name",
-      fieldFirstName: "First Name",
-      fieldCompany: "Company",
-      fieldPosition: "Position",
-      fieldEmail: "Email",
-      fieldPhone: "Phone",
-      fieldSubject: "Subject",
-      fieldMessage: "Message",
-      sendButton: "Send Message",
-      testimonialsText1: "The management training transformed how we work. Our teams are more motivated and productive.",
-      testimonialsText2: "Very professional approach tailored to our specific needs. The results were immediate.",
-      testimonialsText3: "Competent and pedagogical trainers. The post-training follow-up was particularly appreciated.",
-      backToTop: "Back to top",
+      contactUsTitle: "Contactez-nous",
+      contactUsSubtitle: "Prêt à développer les compétences de votre équipe ? Parlons-en.",
+      contactDetailsTitle: "Nos coordonnées",
+      contactDetailsSubtitle1: "Adresse",
+      contactDetailsText1: "12 Rue des Entrepreneurs<br>75000 Paris, France",
+      contactDetailsSubtitle2: "Téléphone",
+      contactDetailsText2: "07 XX XX XX XX",
+      contactDetailsSubtitle3: "Email",
+      contactDetailsText3: "contact@bigimpro.com",
+      openingHoursTitle: "Horaires d'ouverture",
+      days1: "Lundi - Vendredi",
+      hours1: "9h00 - 18h00",
+      days2: "Samedi",
+      hours2: "Fermé",
+      mapTitle: "Nous rencontrer",
+      formTitle: "Envoyez-nous un message",
+      formLastName: 'Nom<span class="text-red-500"> *</span>',
+      formFirstName: 'Prénom<span class="text-red-500"> *</span>',
+      formCompany: 'Entreprise<span class="text-red-500"> *</span>',
+      formPosition: 'Poste Occupé<span class="text-red-500"> *</span>',
+      formEmail: 'Email<span class="text-red-500"> *</span>',
+      formPhone: 'Tél.<span class="text-red-500"> *</span>',
+      formSubject: 'Sujet<span class="text-red-500"> *</span>',
+      formMessage: 'Message<span class="text-red-500"> *</span>',
+      formRGPD: "J’accepte que mes informations de contact soient temporairement stockées pour répondre à ma demande. Elles ne seront en aucun cas revendues ou utilisées à des fins marketing ou commerciale.",
+      formPrivacy: 'Consultez notre <a href="#" class="text-blue-500" target="_blank">Politique de confidentialité</a>',
+      formButton: "Envoyer le message",
+      backToTop: "Back To Top",
+      footerTitle: "Big'Impro",
+      footerSubtitle: "Experts en formation professionnelle et développement des compétences depuis 2021.",
+      footerT1: "Liens rapides",
+      footerT1Link1: "Accueil",
+      footerT1Link2: "Services",
+      footerT1Link3: "Formations",
+      footerT1Link4: "Méthodologie",
+      footerT1Link5: "Contact",
+      footerT2: "Formations",
+      footerT2Link1: "Management",
+      footerT2Link2: "Digital",
+      footerT2Link3: "Communication",
+      footerT2Link4: "Finance",
+      footerT2Link5: "Toutes les formations",
+      footerT3: "Réseaux sociaux",
+      footerCopyright: "© 2025 Big'Impro. Tous droits réservés.",
+      footerLegal: "Mentions légales",
+      footerPrivacy: "Politique de confidentialité",
+      footerGTC: "CGV",
       // Same here, add more as needed
     }
   };

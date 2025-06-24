@@ -1,6 +1,6 @@
 /* VARIABLES */
 /* Bleu */
-/* :root {
+:root {
   --primary-100: #dbeafe;
   --primary-200: #bfdbfe;
   --primary-300: #93c5fd;
@@ -43,7 +43,7 @@
   --secondary-700: #374151;
   --secondary-800: #1f2937;
   --secondary-900: #111827;
-} */
+}
 
 /* Vert */
 /* :root {
@@ -138,7 +138,7 @@
 } */
 
 /* Violet */
-:root {
+/* :root {
   --primary-100: #ede9fe;
   --primary-200: #ddd6fe;
   --primary-300: #c4b5fd;
@@ -181,7 +181,7 @@
   --secondary-700: #374151;
   --secondary-800: #1f2937;
   --secondary-900: #111827;    
-}
+} */
 
 /* Bleu Gris */
 /* :root {

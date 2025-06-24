@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   setLogoBasedOnTheme();
 
-  // Switch logo dark / light mode
+  // Switch Logo Dark / Light Modes
   function setLogoBasedOnTheme() {
     if (document.documentElement.classList.contains('dark')) {
       logoImg.src = './img/bigimpro (500 x 200 px)-nobg-darkmode.png'; // Logo pour mode sombre
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Switch Clic Dark / Light Modes
+  // Switch onClick Dark / Light Modes
   const themeToggle = document.querySelectorAll('.theme-toggle');
   themeToggle.forEach(el => {
     el.addEventListener('click', () => {
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Switch Moon / Sun Emojis
+  // Switch Emojis Moon / Sun
   let currentThemeIcon = "🌚";
   const icons = document.querySelectorAll('.theme-icon');
 
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Bascule l'icône globalement
       currentThemeIcon = currentThemeIcon === "🌚" ? "🔆" : "🌚";
 
-      // Mets à jour chaque bouton
+      // Met à jour chaque bouton
       icons.forEach(icon => {
         icon.textContent = currentThemeIcon;
       });

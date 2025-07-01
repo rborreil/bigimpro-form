@@ -2,65 +2,332 @@
 <html lang="fr">
 
 <head>
+    <!-- Encodage et compatibilité navigateur -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
     <title>Big'Impro - CGV</title>
+    <meta name="description"
+        content="Résumé clair de votre activité ou des services proposés (150-160 caractères max).">
+    <meta name="keywords" content="mot-clé1, mot-clé2, localisation, secteur, produit, service">
+    <meta name="author" content="Nom ou raison sociale">
+
+    <!-- Référencement robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Données Open Graph pour réseaux sociaux (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Nom de votre entreprise - Titre court">
+    <meta property="og:description" content="Description concise pour les partages sociaux.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.votresite.com">
+    <meta property="og:image" content="https://www.votresite.com/images/partage.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nom de votre entreprise">
+    <meta name="twitter:description" content="Description optimisée pour Twitter.">
+    <meta name="twitter:image" content="https://www.votresite.com/images/partage.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Canonical (évite le contenu dupliqué) -->
+    <link rel="canonical" href="https://www.votresite.com/">
+
+    <!-- Framework -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Forcer dark mode par 'class' au lieu de 'media' (très important) -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        };
+    </script>
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body
+    class="font-sans text-[color:var(--secondary-900)] dark:text-[color:var(--secondary-100)] dark:bg-[color:var(--secondary-900)] min-h-screen">
+    <!-- CGV -->
+    <section class="py-20 bg-[color:var(--secondary-50)] dark:bg-[color:var(--secondary-800)]">
+        <div id="methode"></div>
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="mb-12 lg:mb-0 lg:pr-12">
+                    <h2 data-i18n="approachTitle" class="text-3xl font-bold">📄 Conditions Générales de Vente (CGV)</h2>
+                    <div class="w-24 h-1 bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] my-8"></div>
+                    <!-- <p data-i18n="approachSubtitle"
+                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-6">Notre
+                        méthodologie
+                        repose sur une approche pratique
+                        et interactive,
+                        centrée sur les besoins réels des participants et de l'entreprise.</p> -->
 
-    📄 Conditions Générales de Vente (CGV)
-    1. Objet
-    Les présentes Conditions Générales de Vente (CGV) régissent les ventes de produits et/ou services conclues sur le
-    site [Nom du site] par [Nom de l’entreprise], ci-après dénommé « le Vendeur », auprès de tout client, particulier ou
-    professionnel, ci-après dénommé « le Client ».
+                    <div class="space-y-6">
+                        <!-- Objet -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle1" class="font-semibold mb-2">1. Objet</h4>
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Les présentes Conditions Générales de Vente (CGV) régissent les ventes de produits
+                                    et/ou services conclues sur le
+                                    site [Nom du site] par [Nom de l’entreprise], ci-après dénommé « le Vendeur »,
+                                    auprès de tout client, particulier ou
+                                    professionnel, ci-après dénommé « le Client ».
+                                </p>
+                            </div>
+                        </div>
 
-    2. Produits / Services
-    Les caractéristiques essentielles des produits et/ou services sont présentées sur le site. Le Vendeur se réserve le
-    droit de modifier à tout moment l’offre proposée.
+                        <!-- Produits / Services -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle1" class="font-semibold mb-2">2. Produits / Services</h4>
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Les caractéristiques essentielles des produits et/ou services sont présentées sur le
+                                    site. Le Vendeur se réserve le
+                                    droit de modifier à tout moment l’offre proposée.
+                                </p>
+                            </div>
+                        </div>
 
-    3. Prix
-    Les prix sont indiqués en euros (€), toutes taxes comprises (TTC), hors frais de livraison. Le Vendeur se réserve le
-    droit de modifier ses prix à tout moment, mais le produit sera facturé au tarif en vigueur au moment de la commande.
+                        <!-- Prix -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">3. Prix</h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Les prix sont indiqués en euros (€), toutes taxes comprises (TTC), hors frais de
+                                    livraison. Le Vendeur se réserve le
+                                    droit de modifier ses prix à tout moment, mais le produit sera facturé au tarif en
+                                    vigueur au moment de la commande.
 
-    4. Commande
-    Toute commande implique l'acceptation pleine et entière des présentes CGV. La validation de la commande vaut
-    signature et acceptation des opérations effectuées.
+                                </p>
+                            </div>
+                        </div>
 
-    5. Paiement
-    Le paiement s’effectue en ligne via les moyens de paiement proposés sur le site (carte bancaire, virement, etc.). La
-    commande est considérée comme définitive après réception du paiement.
+                        <!-- Commande -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">4. Commande</h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Toute commande implique l'acceptation pleine et entière des présentes CGV. La
+                                    validation de la commande vaut
+                                    signature et acceptation des opérations effectuées.
 
-    6. Livraison / Exécution
-    Les produits sont livrés à l’adresse indiquée par le Client ou les services réalisés selon les modalités précisées
-    lors de la commande. Les délais sont donnés à titre indicatif. Le Vendeur ne pourra être tenu responsable d’un
-    retard dû à un cas de force majeure.
+                                </p>
+                            </div>
+                        </div>
 
-    7. Droit de rétractation (si applicable)
-    Conformément à la législation en vigueur, le Client dispose d’un délai de 14 jours à compter de la réception du
-    produit pour exercer son droit de rétractation, sauf exceptions prévues par la loi (produits personnalisés,
-    prestations exécutées avant la fin du délai de rétractation, etc.).
+                        <!-- Paiement -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">5. Paiement
+                                </h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Le paiement s’effectue en ligne via les moyens de paiement proposés sur le site
+                                    (carte bancaire, virement, etc.). La
+                                    commande est considérée comme définitive après réception du paiement.
+                                </p>
+                            </div>
+                        </div>
 
-    8. Garanties légales
-    Le Vendeur est tenu des défauts de conformité du bien au contrat et des vices cachés. Le Client bénéficie des
-    garanties légales prévues par le Code de la consommation et le Code civil.
+                        <!-- Livraison / Exécution -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">6. Livraison / Exécution
+                                </h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Les produits sont livrés à l’adresse indiquée par le Client ou les services réalisés
+                                    selon les modalités précisées
+                                    lors de la commande. Les délais sont donnés à titre indicatif. Le Vendeur ne pourra
+                                    être tenu responsable d’un
+                                    retard dû à un cas de force majeure.
 
-    9. Responsabilité
-    Le Vendeur ne pourra être tenu pour responsable de tout dommage indirect qui pourrait survenir du fait de l’achat
-    des produits ou de l’utilisation du service.
+                                </p>
+                            </div>
+                        </div>
 
-    10. Données personnelles
-    Les données personnelles collectées sont nécessaires à la gestion des commandes. Elles sont traitées conformément à
-    notre Politique de Confidentialité.
+                        <!-- Droit de rétractation -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">7. Droit de rétractation (si
+                                    applicable) </h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Conformément à la législation en vigueur, le Client dispose d’un délai de 14 jours à
+                                    compter de la réception du
+                                    produit pour exercer son droit de rétractation, sauf exceptions prévues par la loi
+                                    (produits personnalisés,
+                                    prestations exécutées avant la fin du délai de rétractation, etc.).
 
-    11. Propriété intellectuelle
-    Tous les éléments du site sont protégés par le droit d’auteur, le droit des marques et/ou le droit des bases de
-    données. Toute reproduction totale ou partielle est interdite sans autorisation préalable.
+                                </p>
+                            </div>
+                        </div>
 
-    12. Litiges
-    En cas de litige, une solution amiable sera recherchée prioritairement. À défaut, les tribunaux compétents seront
-    ceux du ressort du siège social du Vendeur, sauf disposition légale contraire.
+                        <!-- Garanties légales -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">8. Garanties légales
+                                </h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Le Vendeur est tenu des défauts de conformité du bien au contrat et des vices
+                                    cachés. Le Client bénéficie des
+                                    garanties légales prévues par le Code de la consommation et le Code civil.
 
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Responsabilité -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">9. Responsabilité
+                                </h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Le Vendeur ne pourra être tenu pour responsable de tout dommage indirect qui
+                                    pourrait survenir du fait de l’achat
+                                    des produits ou de l’utilisation du service.
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Données personnelles -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">10. Données personnelles
+                                </h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Les données personnelles collectées sont nécessaires à la gestion des commandes.
+                                    Elles sont traitées conformément à
+                                    notre Politique de Confidentialité.
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Propriété intellectuelle -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">11. Propriété intellectuelle
+                                </h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Tous les éléments du site sont protégés par le droit d’auteur, le droit des marques
+                                    et/ou le droit des bases de
+                                    données. Toute reproduction totale ou partielle est interdite sans autorisation
+                                    préalable.
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Litiges -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">12. Litiges
+                                </h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    En cas de litige, une solution amiable sera recherchée prioritairement. À défaut,
+                                    les tribunaux compétents seront
+                                    ceux du ressort du siège social du Vendeur, sauf disposition légale contraire.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Formation en entreprise" class="rounded-lg shadow-xl w-full">
+                </div> -->
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

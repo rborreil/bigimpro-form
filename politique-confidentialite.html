@@ -2,45 +2,231 @@
 <html lang="fr">
 
 <head>
+    <!-- Encodage et compatibilité navigateur -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big'Impro - Politique de Confidentialité</title>
+    <!-- SEO -->
+    <title>Big'Impro - Politique de confidentialité</title>
+    <meta name="description"
+        content="Résumé clair de votre activité ou des services proposés (150-160 caractères max).">
+    <meta name="keywords" content="mot-clé1, mot-clé2, localisation, secteur, produit, service">
+    <meta name="author" content="Nom ou raison sociale">
+
+    <!-- Référencement robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Données Open Graph pour réseaux sociaux (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Nom de votre entreprise - Titre court">
+    <meta property="og:description" content="Description concise pour les partages sociaux.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.votresite.com">
+    <meta property="og:image" content="https://www.votresite.com/images/partage.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nom de votre entreprise">
+    <meta name="twitter:description" content="Description optimisée pour Twitter.">
+    <meta name="twitter:image" content="https://www.votresite.com/images/partage.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Canonical (évite le contenu dupliqué) -->
+    <link rel="canonical" href="https://www.votresite.com/">
+
+    <!-- Framework -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Forcer dark mode par 'class' au lieu de 'media' (très important) -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        };
+    </script>
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body
+    class="font-sans text-[color:var(--secondary-900)] dark:text-[color:var(--secondary-100)] dark:bg-[color:var(--secondary-900)] min-h-screen">
+    <!-- Politique de Confidentialité -->
+    <section class="py-20 bg-[color:var(--secondary-50)] dark:bg-[color:var(--secondary-800)]">
+        <div id="methode"></div>
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="mb-12 lg:mb-0 lg:pr-12">
+                    <h2 data-i18n="approachTitle" class="text-3xl font-bold">🔐 Politique de confidentialité</h2>
+                    <div class="w-24 h-1 bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] my-8"></div>
+                    <!-- <p data-i18n="approachSubtitle"
+                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-6">Notre
+                        méthodologie
+                        repose sur une approche pratique
+                        et interactive,
+                        centrée sur les besoins réels des participants et de l'entreprise.</p> -->
 
-    🔐 Politique de confidentialité
-    Collecte des données personnelles :
-    Lors de l’utilisation du site, certaines données peuvent être collectées (via formulaire de contact, inscription à
-    une newsletter, etc.) telles que : nom, prénom, adresse e-mail, numéro de téléphone, adresse IP.
+                    <div class="space-y-6">
+                        <!-- Collecte de données -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle1" class="font-semibold mb-2">Collecte des données
+                                    personnelles :</h4>
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Lors de l’utilisation du site, certaines données peuvent être collectées (via
+                                    formulaire de contact, inscription à
+                                    une newsletter, etc.) telles que : nom, prénom, adresse e-mail, numéro de téléphone,
+                                    adresse IP.
+                                </p>
+                            </div>
+                        </div>
 
-    Finalité du traitement :
-    Les données collectées sont utilisées uniquement pour :
+                        <!-- Finalité -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle1" class="font-semibold mb-2">Finalité du traitement :</h4>
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Les données collectées sont utilisées uniquement pour :
 
-    répondre aux demandes via le formulaire de contact,
+                                    répondre aux demandes via le formulaire de contact,
 
-    envoyer des informations ou actualités (avec consentement),
+                                    envoyer des informations ou actualités (avec consentement),
 
-    améliorer la navigation et l’expérience utilisateur.
+                                    améliorer la navigation et l’expérience utilisateur.
+                                </p>
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Adresse : [Adresse de l'hébergeur]</p>
 
-    Durée de conservation :
-    Les données personnelles sont conservées pour la durée strictement nécessaire aux finalités précitées et
-    conformément à la législation en vigueur.
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Téléphone : [Numéro de l’hébergeur]</p>
 
-    Cookies :
-    Le site peut utiliser des cookies pour améliorer la navigation. Vous pouvez les accepter ou les refuser via les
-    paramètres de votre navigateur.
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Site internet : [URL de l’hébergeur]</p>
+                            </div>
+                        </div>
 
-    Droits de l’utilisateur :
-    Conformément au RGPD, vous disposez d’un droit d’accès, de rectification, d’effacement et d’opposition sur les
-    données vous concernant. Pour exercer ces droits, contactez : [email de contact].
+                        <!-- Durée de conservation -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">Durée de conservation :
+                                </h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Les données personnelles sont conservées pour la durée strictement nécessaire aux
+                                    finalités précitées et
+                                    conformément à la législation en vigueur.
+                                </p>
+                            </div>
+                        </div>
 
-    Responsable du traitement :
-    [Nom de la personne ou de l’entité responsable du traitement des données]
+                        <!-- Cookies -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">Cookies :
+                                </h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Le site peut utiliser des cookies pour améliorer la navigation. Vous pouvez les
+                                    accepter ou les refuser via les
+                                    paramètres de votre navigateur.
+                                </p>
+                            </div>
+                        </div>
 
-    Sécurité :
-    Des mesures techniques et organisationnelles sont mises en œuvre pour garantir la sécurité des données personnelles.
+                        <!-- Droits de l'utilisateur -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">Droits de l'utilisateur :
+                                </h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Conformément au RGPD, vous disposez d’un droit d’accès, de rectification,
+                                    d’effacement et d’opposition sur les
+                                    données vous concernant. Pour exercer ces droits, contactez : [email de contact].
+                                </p>
+                            </div>
+                        </div>
 
+                        <!-- Responsable du traitement -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">Responsable du traitement :
+                                </h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    [Nom de la personne ou de l’entité responsable du traitement des données].
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Sécurité -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">Sécurité :
+                                </h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Des mesures techniques et organisationnelles sont mises en œuvre pour garantir la sécurité des données personnelles.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Formation en entreprise" class="rounded-lg shadow-xl w-full">
+                </div> -->
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

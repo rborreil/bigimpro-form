@@ -2,35 +2,176 @@
 <html lang="fr">
 
 <head>
+    <!-- Encodage et compatibilité navigateur -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
     <title>Big'Impro - Mentions Légales</title>
+    <meta name="description"
+        content="Résumé clair de votre activité ou des services proposés (150-160 caractères max).">
+    <meta name="keywords" content="mot-clé1, mot-clé2, localisation, secteur, produit, service">
+    <meta name="author" content="Nom ou raison sociale">
+
+    <!-- Référencement robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Données Open Graph pour réseaux sociaux (Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Nom de votre entreprise - Titre court">
+    <meta property="og:description" content="Description concise pour les partages sociaux.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.votresite.com">
+    <meta property="og:image" content="https://www.votresite.com/images/partage.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nom de votre entreprise">
+    <meta name="twitter:description" content="Description optimisée pour Twitter.">
+    <meta name="twitter:image" content="https://www.votresite.com/images/partage.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Canonical (évite le contenu dupliqué) -->
+    <link rel="canonical" href="https://www.votresite.com/">
+
+    <!-- Framework -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Forcer dark mode par 'class' au lieu de 'media' (très important) -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        };
+    </script>
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body
+    class="font-sans text-[color:var(--secondary-900)] dark:text-[color:var(--secondary-100)] dark:bg-[color:var(--secondary-900)] min-h-screen">
 
-    🧾 Mentions légales
-    Éditeur du site :
-    Nom de l'entreprise / Nom du responsable : [Nom / Raison sociale]
-    Adresse : [Adresse postale]
-    Téléphone : [Numéro de téléphone]
-    Email : [Adresse e-mail de contact]
-    SIRET : [Numéro SIRET]
-    RCS / RM : [Ville d’immatriculation]
-    Forme juridique : [SAS, SARL, Auto-entreprise, etc.]
-    Directeur de la publication : [Nom]
+    <!-- Mentions Légales -->
+    <section class="py-20 bg-[color:var(--secondary-50)] dark:bg-[color:var(--secondary-800)]">
+        <div id="methode"></div>
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="mb-12 lg:mb-0 lg:pr-12">
+                    <h2 data-i18n="approachTitle" class="text-3xl font-bold">🧾 Mentions Légales</h2>
+                    <div class="w-24 h-1 bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] my-8"></div>
+                    <!-- <p data-i18n="approachSubtitle"
+                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-6">Notre
+                        méthodologie
+                        repose sur une approche pratique
+                        et interactive,
+                        centrée sur les besoins réels des participants et de l'entreprise.</p> -->
 
-    Hébergeur du site :
-    Nom de l’hébergeur : [Nom de l'hébergeur]
-    Adresse : [Adresse de l'hébergeur]
-    Téléphone : [Numéro de l’hébergeur]
-    Site internet : [URL de l’hébergeur]
+                    <div class="space-y-6">
+                        <!-- Editeur -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle1" class="font-semibold mb-2">Éditeur du site :</h4>
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Nom de l'entreprise / Nom du responsable : [Nom / Raison sociale]
+                                </p>
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Adresse : [Adresse postale]</p>
 
-    Propriété intellectuelle :
-    Le contenu du site (textes, images, logos, graphismes, etc.) est la propriété exclusive de [Nom de l'entreprise],
-    sauf mentions contraires. Toute reproduction, distribution ou exploitation sans autorisation est strictement
-    interdite.
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Téléphone : [Numéro de téléphone]</p>
 
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Email : [Adresse e-mail de contact]</p>
+
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    SIRET : [Numéro SIRET]</p>
+
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    RCS / RM : [Ville d’immatriculation]</p>
+
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Forme juridique : [SAS, SARL, Auto-entreprise, etc.]</p>
+
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Directeur de la publication : [Nom]</p>
+
+                            </div>
+                        </div>
+
+                        <!-- Hébergeur -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle1" class="font-semibold mb-2">Hébergeur du site :</h4>
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Nom de l’hébergeur : [Nom de l'hébergeur]
+                                </p>
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Adresse : [Adresse de l'hébergeur]</p>
+
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Téléphone : [Numéro de l’hébergeur]</p>
+
+                                <p data-i18n="approachText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Site internet : [URL de l’hébergeur]</p>
+                            </div>
+                        </div>
+
+                        <!-- Propriété intellectuelle -->
+                        <div class="flex">
+                            <!-- <div class="flex items-center">
+                                <div
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                            </div> -->
+                            <div>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">Propriété intellectuelle :
+                                </h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Le contenu du site (textes, images, logos, graphismes, etc.) est la propriété
+                                    exclusive de [Nom de l'entreprise],
+                                    sauf mentions contraires. Toute reproduction, distribution ou exploitation sans
+                                    autorisation est strictement
+                                    interdite.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="Formation en entreprise" class="rounded-lg shadow-xl w-full">
+                </div> -->
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

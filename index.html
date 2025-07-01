@@ -49,9 +49,11 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="font-sans text-[color:var(--secondary-900)] dark:text-[color:var(--secondary-100)] dark:bg-[color:var(--secondary-900)] min-h-screen">
+<body
+    class="font-sans text-[color:var(--secondary-900)] dark:text-[color:var(--secondary-100)] dark:bg-[color:var(--secondary-900)] min-h-screen">
     <!-- Header -->
-    <header id="bg-nav" class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] shadow-md sticky top-0 z-50">
+    <header id="bg-nav"
+        class="bg-[color:var(--secondary-00-transp)] lg:bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-6 py-0">
             <div class="flex items-center justify-around lg:justify-between">
                 <!-- Logo -->
@@ -68,8 +70,8 @@
                     <div class="menu-items space-x-8">
                         <a data-i18n="menuTitle1" href="#accueil"
                             class="font-medium hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-400)] dark:hover:text-[color:var(--primary-900)] transition-smooth">Accueil</a>
-                        <a data-i18n="menuTitle2" href="#services"
-                            class="font-medium hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-400)] transition-smooth">Services</a>
+                        <a data-i18n="menuTitle2" href="#offre"
+                            class="font-medium hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-400)] transition-smooth">Offre</a>
                         <a data-i18n="menuTitle3" href="#formations"
                             class="font-medium hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-400)] transition-smooth">Formations</a>
                         <a data-i18n="menuTitle4" href="#methode"
@@ -116,11 +118,10 @@
 
                         <!-- Theme Toggle -->
                         <button class="theme-toggle hover:scale-110 transform transition-all duration-300 ease-in-out">
-                            <span class="theme-icon text-lg">🌚</span>
+                            <span class="theme-icon text-lg">🌗</span>
                         </button>
                     </div>
                 </nav>
-
 
                 <!-- Mobile menu button -->
                 <button id="mobile-menu-button" class="lg:hidden focus:outline1">
@@ -132,14 +133,15 @@
             <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4">
                 <a data-i18n="menuTitle1" href="#accueil"
                     class="block py-2 hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-400)]">Accueil</a>
-                <a data-i18n="menuTitle2" href="#services"
-                    class="flex justify-end mr-0 py-2 hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-400)]">Services</a>
+                <a data-i18n="menuTitle2" href="#offre"
+                    class="flex justify-end mr-0 py-2 hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-400)]">Offre</a>
                 <a data-i18n="menuTitle3" href="#formations"
                     class="block py-2 hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-400)]">Formations</a>
                 <a data-i18n="menuTitle4" href="#methode"
                     class="flex justify-end block py-2 hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-400)]">Approche</a>
                 <a data-i18n="menuTitle5" href="#contact"
                     class="block py-2 hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-400)]">Contact</a>
+                
                 <!-- Switches : Langue et Mode -->
                 <div class="flex gap-8 py-2 justify-end">
                     <!-- Lang Switch -->
@@ -176,9 +178,9 @@
                         </svg>
                     </button>
 
-                    <!-- Theme Toggle -->
+                    <!-- Mode Switch -->
                     <button class="theme-toggle hover:scale-105 transform transition-all duration-300 ease-in-out">
-                        <span class="theme-icon text-base">🌚</span>
+                        <span class="theme-icon text-base">🌗</span>
                     </button>
                 </div>
             </div>
@@ -189,81 +191,94 @@
     <section id="accueil" class="hero-gradient dark:hero-gradient text-[color:var(--secondary-00)] py-10 md:py-20 flex">
         <div class="container mx-auto my-auto px-6 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
-                <h2 data-i18n="heroTitle" class="text-4xl md:text-5xl font-bold mb-6">L'improvisation théâtrale, un
-                    levier pour booster
-                    vos
-                    softskills</h2>
-                <p data-i18n="heroSubtitle" class="text-xl mb-8 opacity-90 dark:text-[color:var(--secondary-300)]">Ateliers interactifs sur
-                    mesure pour améliorer la
-                    performance
-                    et l'efficacité de vos équipes.</p>
+                <h2 data-i18n="heroTitle" class="text-4xl md:text-5xl font-bold mb-6">Les techniques de l’improvisation
+                    appliquées au monde professionnel : un puissant levier pour former vos collaborateurs en les
+                    engageant activement par le jeu</h2>
+                <p data-i18n="heroSubtitle" class="text-xl mb-8 opacity-90 dark:text-[color:var(--secondary-300)]">
+                    Des ateliers sur-mesure, interactifs et engageants, pour booster les soft skills de vos
+                    collaborateurs et souder vos équipes grâce au team building.</p>
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                     <a data-i18n="heroContactBtn" href="#contact"
                         class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--secondary-00)] px-8 py-3 rounded-lg font-semibold text-center transition-smooth">Nous
                         contacter</a>
-                    <a data-i18n="heroServicesBtn" href="#services"
-                        class="border-2 border-[color:var(--secondary-00)] dark:border-[color:var(--secondary-900)] text-[color:var(--secondary-00)] px-8 py-3 rounded-lg font-semibold text-center hover:bg-[color:var(--secondary-00)] dark:hover:bg-[color:var(--secondary-900)] hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-00)] transition-smooth">Nos
-                        services</a>
+                    <a data-i18n="heroOfferBtn" href="#offre"
+                        class="border-2 border-[color:var(--secondary-00)] dark:border-[color:var(--secondary-900)] text-[color:var(--secondary-00)] px-8 py-3 rounded-lg font-semibold text-center hover:bg-[color:var(--secondary-00)] dark:hover:bg-[color:var(--secondary-900)] hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-00)] transition-smooth">Notre
+                        offre</a>
                 </div>
             </div>
             <div class="md:w-1/2 flex justify-center">
                 <!-- <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
                     alt="Équipe professionnelle" class="rounded-lg shadow-2xl max-w-md w-full"> -->
-                <img src="./img/profile-pic-sam-3.png" alt="Photo de Sam Shafiee" class="w-full max-w-[260px] sm:max-w-xs md:max-w-[260px] lg:max-w-sm mx-auto">
+                <img src="./img/profile-pic-sam-3.png" alt="Photo de Sam Shafiee"
+                    class="w-full max-w-[260px] sm:max-w-xs md:max-w-[260px] lg:max-w-sm mx-auto">
             </div>
         </div>
     </section>
 
-    <!-- Services -->
+    <!-- Offre -->
     <section class="py-20 bg-[color:var(--secondary-50)] dark:bg-[color:var(--secondary-800)]">
-        <div id="services"></div>
+        <div id="offre"></div>
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 data-i18n="servicesTitle" class="text-3xl font-bold">Nos Services Professionnels</h2>
-                <div class="w-24 h-1 bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] mx-auto my-6"></div>
-                <p data-i18n="servicesText" class="max-w-2xl mx-auto text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">Nous
-                    proposons des solutions adaptées à
-                    vos besoins
-                    spécifiques pour améliorer la performance de votre organisation.</p>
+                <h2 data-i18n="offerTitle" class="text-3xl font-bold">Notre Offre</h2>
+                <div class="w-24 h-1 bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] mx-auto my-6">
+                </div>
+                <p data-i18n="offerSubtitle"
+                    class="max-w-2xl mx-auto text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                    Nous formons vos collaborateurs de façon dynamique, en mettant l’accent sur le jeu, l’engagement et
+                    la pleine présence, avec des solutions sur-mesure parfaitement alignées à vos enjeux de formation et
+                    de cohésion d’équipe. </p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] p-8 rounded-lg shadow-md card-hover transition-smooth">
+                <!-- Offre 1 -->
+                <div
+                    class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] p-8 rounded-lg shadow-md card-hover transition-smooth">
                     <div
                         class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-bullseye text-2xl"></i>
+                        <!-- <i class="fa-solid fa-arrows-to-eye text-2xl"></i> -->
+                        <i class="fa-solid fa-leaf text-2xl"></i>
                     </div>
-                    <h3 data-i18n="serviceTitleOne" class="text-xl font-semibold mb-3">Formations & Événements</h3>
-                    <p data-i18n="serviceTextOne" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">Programmes adaptés à
-                        vos objectifs spécifiques et à
-                        votre secteur
-                        d'activité.</p>
+                    <h3 data-i18n="offerTitle1" class="text-xl font-semibold mb-3">Vivre l’instant présent</h3>
+                    <p data-i18n="offerText1"
+                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">Des ateliers
+                        immersifs, sans écran, pour réveiller l’écoute, la spontanéité et l’intelligence relationnelle.
+                        On apprend par la présence, l’action et l’engagement collectif.</p>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] p-8 rounded-lg shadow-md card-hover transition-smooth">
+                <!-- Offre 2 -->
+                <div
+                    class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] p-8 rounded-lg shadow-md card-hover transition-smooth">
                     <div
                         class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-chart-line text-2xl"></i>
+                        <!-- <i class="fa-solid fa-people-group text-2xl"></i> -->
+                         <i class="fa-solid fa-masks-theater text-2xl"></i>
                     </div>
-                    <h3 data-i18n="serviceTitle2" class="text-xl font-semibold mb-3">Montée en Compétences</h3>
-                    <p data-i18n="serviceText2" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">Optimisation des
-                        compétences et développement du
-                        potentiel de vos équipes.
+                    <h3 data-i18n="offerTitle2" class="text-xl font-semibold mb-3">Soft skills & team building</h3>
+                    <p data-i18n="offerText2"
+                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">L’improvisation
+                        appliquée est un outil puissant pour développer les soft skills et renforcer la cohésion
+                        d’équipe. En vivant des situations concrètes et engageantes, les participants stimulent leur
+                        écoute, leur adaptabilité et leur communication. Ludique et incarnée, cette approche favorise
+                        l’audace, l’entraide et l’apprentissage collectif.
                     </p>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] p-8 rounded-lg shadow-md card-hover transition-smooth">
+                <!-- Offre 3 -->
+                <div
+                    class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] p-8 rounded-lg shadow-md card-hover transition-smooth">
                     <div
                         class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-users text-2xl"></i>
+                        <!-- <i class="fa-solid fa-people-arrows text-2xl"></i> -->
+                         <i class="fa-solid fa-ruler-combined text-2xl"></i>
                     </div>
-                    <h3 data-i18n="serviceTitle3" class="text-xl font-semibold mb-3">Méthode Certifiée</h3>
-                    <p data-i18n="serviceText3" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">Renforcez la
-                        cohésion et la collaboration au sein de vos
-                        équipes.</p>
+                    <h3 data-i18n="offerTitle3" class="text-xl font-semibold mb-3">Un accompagnement sur-mesure</h3>
+                    <p data-i18n="offerText3"
+                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">Chaque
+                        accompagnement est conçu sur-mesure, en lien direct avec vos enjeux, votre culture et vos
+                        équipes. Rien n’est standardisé : nous adaptons les contenus, les mises en situation et les
+                        dynamiques pour que l’expérience soit pleinement pertinente, utile et impactante. Parce que
+                        chaque organisation est unique, la formation doit l’être aussi.</p>
                 </div>
             </div>
         </div>
@@ -274,26 +289,32 @@
         <div id="formations"></div>
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 data-i18n="trainingsTitle" class="text-3xl font-bold">Nos Domaines de Formation</h2>
-                <div class="w-24 h-1 bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] mx-auto my-6"></div>
-                <p data-i18n="trainingsSubtitle" class="max-w-2xl mx-auto text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">Découvrez
+                <h2 data-i18n="trainingsTitle" class="text-3xl font-bold">Exemples de formations possibles</h2>
+                <div class="w-24 h-1 bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] mx-auto my-6">
+                </div>
+                <!-- <p data-i18n="trainingsSubtitle"
+                    class="max-w-2xl mx-auto text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                    Découvrez
                     nos
                     principaux domaines
                     d'expertise en formation
-                    professionnelle.</p>
+                    professionnelle.</p> -->
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Formation 1 -->
                 <div
                     class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-800)] rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
-                    <img src="https://images.unsplash.com/photo-1659639237704-3b47330fe09e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29tbXVuaXF1ZXJ8ZW58MHx8MHx8fDA%3D"
-                        alt="Communication" class="w-full h-48 object-cover">
+                    <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Communication" class="w-full h-48 object-cover object-[0_35%]">
                     <div class="p-6">
-                        <h3 data-i18n="trainingTitleOne" data-i18n="trainingTitleOne"
-                            class="text-xl font-semibold mb-2">Communication</h3>
-                        <p data-i18n="trainingTextOne" data-i18n="trainingTextOne"
-                            class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">Verbale, non verbale, écrite.</p>
+                        <h3 data-i18n="trainingTitle1"
+                            class="text-xl font-semibold mb-2">Prise de parole en public</h3>
+                        <p data-i18n="trainingText1"
+                            class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">
+                            Nos ateliers boostent la prise de parole en public en développant confiance, spontanéité et
+                            gestion du stress. Elle aide à structurer ses idées, capter l’attention, et s’adapter
+                            facilement à l’imprévu pour des interventions plus naturelles et impactantes.</p>
                         <!-- <a data-i18n="learnMore" href="#"
                             class="text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] font-medium hover:underline">En savoir plus
                             →</a> -->
@@ -303,13 +324,16 @@
                 <!-- Formation 2 -->
                 <div
                     class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-800)] rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
-                    <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29sbGFib3JhdGlvbnxlbnwwfHwwfHx8MA%3D%3D"
+                    <img src="https://images.pexels.com/photos/6147381/pexels-photo-6147381.jpeg?_gl=1*19b7cl6*_ga*MTEyNTkzODI0OC4xNzUxMzU5OTk3*_ga_8JE65Q40S6*czE3NTEzNTk5OTckbzEkZzAkdDE3NTEzNTk5OTckajYwJGwwJGgw"
                         alt="Collaboration et ouverture" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 data-i18n="trainingTitle2" class="text-xl font-semibold mb-2">Collaboration & Ouverture
+                        <h3 data-i18n="trainingTitle2" class="text-xl font-semibold mb-2">Encourager la collaboration
                         </h3>
-                        <p data-i18n="trainingText2" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">En favorisant les
-                            échanges et le partage.</p>
+                        <p data-i18n="trainingText2"
+                            class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">Notre
+                            méthode favorise une collaboration fluide en développant l’écoute active, la confiance
+                            mutuelle et la créativité collective. Elle apprend à rebondir ensemble face à l’imprévu,
+                            encourageant ainsi l’ouverture d’esprit, la flexibilité et un esprit d’équipe renforcé. </p>
                         <!-- <a data-i18n="learnMore" href="#"
                             class="text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] font-medium hover:underline">En savoir plus
                             →</a> -->
@@ -319,14 +343,17 @@
                 <!-- Formation 3 -->
                 <div
                     class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-800)] dark:bg-[color:var(--secondary-800)] rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
-                    <img src="https://plus.unsplash.com/premium_photo-1672759360872-791a5ba6e2cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3IlQzMlQTlhdGl2aXQlQzMlQTl8ZW58MHx8MHx8fDA%3D"
+                    <img src="https://images.pexels.com/photos/8378726/pexels-photo-8378726.jpeg?_gl=1*i7w3tw*_ga*MTEyNTkzODI0OC4xNzUxMzU5OTk3*_ga_8JE65Q40S6*czE3NTEzNTk5OTckbzEkZzEkdDE3NTEzNjAxNzYkajYwJGwwJGgw"
                         alt="Innovation et créativité" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 data-i18n="trainingTitle3" class="text-xl font-semibold mb-2">Innovation & Créativité
+                        <h3 data-i18n="trainingTitle3" class="text-xl font-semibold mb-2">Sensibilisation aux enjeux
+                            (RSE, handicap, inclusion…)
                         </h3>
-                        <p data-i18n="trainingText3" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)] mb-4">En
-                            activant la capacité à
-                            créer.</p>
+                        <p data-i18n="trainingText3"
+                            class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)] mb-4">
+                            Nos ateliers peuvent aussi être conçus comme des espaces de sensibilisation à des enjeux
+                            tels que la RSE, le handicap ou l’inclusion. En favorisant l’expérimentation et l’empathie,
+                            ils permettent d’aborder ces thématiques de manière concrète, humaine et engageante.</p>
                         <!-- <a data-i18n="learnMore" href="#"
                             class="text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] dark:text-[color:var(--primary-800)] font-medium hover:underline">En
                             savoir plus →</a> -->
@@ -336,14 +363,17 @@
                 <!-- Formation 4 -->
                 <div
                     class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-800)] rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
-                    <img src="https://plus.unsplash.com/premium_photo-1682309792063-4ef5850d22b4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGVhZGVyc2hpcHxlbnwwfHwwfHx8MA%3D%3D"
+                    <img src="https://images.unsplash.com/photo-1630068846062-3ffe78aa5049?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Confiance en soi et leadership" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 data-i18n="trainingTitle4" class="text-xl font-semibold mb-2">Confiance en Soi &
-                            Leadership</h3>
-                        <p data-i18n="trainingText4" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">En s'affirmant et
-                            en prenant confiance par le
-                            jeu.
+                        <h3 data-i18n="trainingTitle4" class="text-xl font-semibold mb-2">Renforcer la cohésion d’équipe
+                        </h3>
+                        <p data-i18n="trainingText4"
+                            class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">À
+                            travers des mises en situation ludiques et collectives, nous créons les conditions d’un
+                            véritable travail sur les liens au sein de l’équipe. Ces expériences renforcent la cohésion,
+                            la confiance mutuelle et la qualité des relations, en plaçant l’écoute et la coopération au
+                            cœur de l’action.
                         </p>
                         <!-- <a data-i18n="learnMore" href="#"
                             class="text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] font-medium hover:underline">En savoir plus
@@ -354,12 +384,17 @@
                 <!-- Formation 5 -->
                 <div
                     class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-800)] rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
-                    <img src="https://images.unsplash.com/photo-1732810876499-08e96a969266?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGFkYXB0YXRpb258ZW58MHx8MHx8fDA%3D"
-                        alt="Adaptabilité" class="w-full h-48 object-cover">
+                    <img src="https://images.pexels.com/photos/2422280/pexels-photo-2422280.jpeg?_gl=1*189ltmv*_ga*MTEyNTkzODI0OC4xNzUxMzU5OTk3*_ga_8JE65Q40S6*czE3NTEzNTk5OTckbzEkZzEkdDE3NTEzNjA0ODIkajYwJGwwJGgw"
+                        alt="Adaptabilité" class="w-full h-48 object-cover object-[0_10%]">
                     <div class="p-6">
-                        <h3 data-i18n="trainingTitle5" class="text-xl font-semibold mb-2">Adaptabilité</h3>
-                        <p data-i18n="trainingText5" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">En transformant
-                            les imprévus en opportunités.
+                        <h3 data-i18n="trainingTitle5" class="text-xl font-semibold mb-2">Développer l’écoute active
+                        </h3>
+                        <p data-i18n="trainingText5"
+                            class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">Cet
+                            atelier propose des exercices concrets et interactifs pour renforcer l’écoute active dans
+                            les échanges professionnels. À travers le jeu et des mises en situation, les participants
+                            apprennent à être pleinement présents, à mieux comprendre leurs interlocuteurs et à répondre
+                            de manière plus juste et efficace.
                         </p>
                         <!-- <a data-i18n="learnMore" href="#"
                             class="text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] font-medium hover:underline">En savoir plus
@@ -370,12 +405,15 @@
                 <!-- Formation 6 -->
                 <div
                     class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-800)] rounded-lg overflow-hidden shadow-md card-hover transition-smooth">
-                    <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVhbXxlbnwwfHwwfHx8MA%3D%3D"
-                        alt="Cohésion d'équipe" class="w-full h-48 object-cover">
+                    <img src="https://images.pexels.com/photos/4621904/pexels-photo-4621904.jpeg"
+                        alt="Cohésion d'équipe" class="w-full h-48 object-cover object-[0_75%]">
                     <div class="p-6">
-                        <h3 data-i18n="trainingTitleSix" class="text-xl font-semibold mb-2">Cohésion d'équipe</h3>
-                        <p data-i18n="trainingTextSix" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">En partageant des
-                            moments fédérateurs.
+                        <h3 data-i18n="trainingTitle6" class="text-xl font-semibold mb-2">Atelier sur-mesure</h3>
+                        <p data-i18n="trainingText6"
+                            class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">Cette
+                            liste offre un aperçu de nos ateliers possibles de façon non exhaustive. Nous sommes
+                            également à votre disposition pour concevoir un programme sur-mesure, parfaitement adapté à
+                            vos objectifs et à votre contexte spécifique.
                         </p>
                         <!-- <a data-i18n="learnMore" href="#"
                             class="text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] font-medium hover:underline">En savoir plus
@@ -384,10 +422,15 @@
                 </div>
             </div>
 
-            <div class="text-center mt-12">
+            <!-- <div class="text-center mt-12">
                 <a data-i18n="checkAllTrainings" href="#"
                     class="inline-block bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] text-[color:var(--secondary-00)] px-8 py-3 rounded-lg font-semibold hover:bg-[color:var(--primary-700)] dark:hover:bg-[color:var(--primary-900)] transition-smooth">Voir
                     toutes nos formations</a>
+            </div> -->
+            <div class="text-center mt-12">
+                <a data-i18n="estimateRequest" href="#contact"
+                    class="inline-block bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] text-[color:var(--secondary-00)] px-8 py-3 rounded-lg font-semibold hover:bg-[color:var(--primary-700)] dark:hover:bg-[color:var(--primary-900)] transition-smooth">Demander
+                    un devis</a>
             </div>
         </div>
     </section>
@@ -400,25 +443,28 @@
                 <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
                     <h2 data-i18n="approachTitle" class="text-3xl font-bold">Notre Approche</h2>
                     <div class="w-24 h-1 bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] my-8"></div>
-                    <p data-i18n="approachSubtitle" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-6">Notre méthodologie
-                        repose sur une approche pratique
-                        et interactive,
-                        centrée sur les besoins réels des participants et de l'entreprise.</p>
+                    <p data-i18n="approachSubtitle"
+                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-6">Notre
+                        approche unique en improvisation appliquée combine créativité, engagement et adaptation pour
+                        transformer l’apprentissage des soft skills en une expérience vivante et impactante.</p>
 
                     <div class="space-y-6">
                         <div class="flex">
                             <div class="flex items-center">
                                 <div
                                     class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                    <i class="fas fa-search"></i>
+                                    <i class="fa-solid fa-masks-theater"></i>
                                 </div>
                             </div>
                             <div>
-                                <h4 data-i18n="approachTitle1" class="font-semibold mb-2">Objectif</h4>
+                                <h4 data-i18n="approachTitle1" class="font-semibold mb-2">Transposition des techniques
+                                    théâtrales au monde professionnel</h4>
                                 <p data-i18n="approachText1"
-                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">Travailler sur des
-                                    compétences précises en impliquant les
-                                    participants par le jeu.</p>
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    Nous adaptons les méthodes de l’improvisation théâtrale pour répondre aux besoins
+                                    spécifiques des contextes professionnels, éducatifs et de développement personnel.
+                                    Cette transposition permet de faire vivre des expériences riches et concrètes,
+                                    facilitant l’acquisition de compétences utiles au quotidien.</p>
                             </div>
                         </div>
 
@@ -426,16 +472,18 @@
                             <div class="flex items-center">
                                 <div
                                     class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                    <i class="fas fa-tools"></i>
+                                    <i class="fa-solid fa-leaf"></i>
                                 </div>
                             </div>
                             <div>
-                                <h4 data-i18n="approachTitle2" class="font-semibold mb-2">Approche</h4>
-                                <p data-i18n="approachText2" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">Renforcer les soft
-                                    skills clés tels que la
-                                    communication,
-                                    l'adaptabilité et la créativité, en utilisant le jeu et l'interaction comme outils
-                                    d'apprentissage.</p>
+                                <h4 data-i18n="approachTitle2" class="font-semibold mb-2">Formation centrée sur
+                                    l’instant présent</h4>
+                                <p data-i18n="approachText2"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Nos formations privilégient l’instant présent comme levier d’apprentissage. En se
+                                    concentrant sur “ici et maintenant”, les participants développent leur capacité à
+                                    s’adapter, à écouter activement et à réagir de façon authentique et spontanée face
+                                    aux situations rencontrées.</p>
                             </div>
                         </div>
 
@@ -443,15 +491,18 @@
                             <div class="flex items-center">
                                 <div
                                     class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                    <i class="fas fa-chart-bar"></i>
+                                    <i class="fa-solid fa-gamepad"></i>
                                 </div>
                             </div>
                             <div>
-                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">Thématiques</h4>
-                                <p data-i18n="approachText3" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">Négociation &
-                                    gestion des conflits,
-                                    prévention des risques
-                                    psychosociaux, diversité & inclusion…</p>
+                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">Implication globale par le jeu
+                                </h4>
+                                <p data-i18n="approachText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    L’engagement se fait à tous les niveaux — physique, corporel, émotionnel et
+                                    psychologique — grâce à des exercices ludiques et immersifs. Cette implication
+                                    totale favorise une meilleure appropriation des soft skills, tout en renforçant la
+                                    confiance et la cohésion au sein des équipes.</p>
                             </div>
                         </div>
                     </div>
@@ -467,19 +518,23 @@
     </section>
 
     <!-- Témoignages -->
-    <section class="py-20 bg-[color:var(--primary-600)] dark:bg-[color:var(--secondary-900)] text-[color:var(--secondary-00)]">
+    <section
+        class="py-20 bg-[color:var(--primary-600)] dark:bg-[color:var(--secondary-900)] text-[color:var(--secondary-00)]">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 data-i18n="trustedUsTitle" class="text-3xl font-bold">Ils nous font confiance</h2>
-                <div class="w-24 h-1 bg-[color:var(--secondary-00)] dark:bg-[color:var(--primary-800)] mx-auto my-6"></div>
-                <p data-i18n="trustedUsSubtitle" class="max-w-2xl mx-auto opacity-90 dark:text-[color:var(--secondary-400)]">Découvrez ce
+                <div class="w-24 h-1 bg-[color:var(--secondary-00)] dark:bg-[color:var(--primary-800)] mx-auto my-6">
+                </div>
+                <p data-i18n="trustedUsSubtitle"
+                    class="max-w-2xl mx-auto opacity-90 dark:text-[color:var(--secondary-400)]">Découvrez ce
                     que nos clients disent de nos
                     formations.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Témoignage 1 -->
-                <div class="bg-[color:var(--primary-500)] bg-opacity-10 p-8 rounded-lg backdrop-filter backdrop-blur-sm">
+                <div
+                    class="bg-[color:var(--primary-500)] bg-opacity-10 dark:bg-[color:var(--secondary-800)] p-8 rounded-lg backdrop-filter backdrop-blur-sm">
                     <div class="flex items-center mb-4">
                         <div class="text-yellow-400 mr-2">
                             <i class="fas fa-star"></i>
@@ -489,7 +544,7 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p data-i18n="trustedUsText1" data-i18n="trustedUsText1" class="mb-6 italic">"La formation en
+                    <p data-i18n="trustedUsText1" class="mb-6 italic">"La formation en
                         management a transformé notre façon de travailler. Nos
                         équipes sont plus motivées et productives."</p>
                     <div class="flex items-center">
@@ -499,14 +554,16 @@
                         </div>
                         <div>
                             <h4 class="font-semibold">Pierre Martin</h4>
-                            <p data-i18n="trustedUsRole1" class="text-sm opacity-80 dark:text-[color:var(--secondary-400)]">Directeur RH,
+                            <p data-i18n="trustedUsRole1"
+                                class="text-sm opacity-80 dark:text-[color:var(--secondary-400)]">Directeur RH,
                                 Entreprise XYZ</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Témoignage 2 -->
-                <div class="bg-[color:var(--primary-500)] bg-opacity-10 p-8 rounded-lg backdrop-filter backdrop-blur-sm">
+                <div
+                    class="bg-[color:var(--primary-500)] bg-opacity-10 dark:bg-[color:var(--secondary-800)] p-8 rounded-lg backdrop-filter backdrop-blur-sm">
                     <div class="flex items-center mb-4">
                         <div class="text-yellow-400 mr-2">
                             <i class="fas fa-star"></i>
@@ -526,14 +583,16 @@
                         </div>
                         <div>
                             <h4 class="font-semibold">Sophie Leroy</h4>
-                            <p data-i18n="trustedUsRole2" class="text-sm opacity-80 dark:text-[color:var(--secondary-400)]">Directrice
+                            <p data-i18n="trustedUsRole2"
+                                class="text-sm opacity-80 dark:text-[color:var(--secondary-400)]">Directrice
                                 Générale, Société ABC</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Témoignage 3 -->
-                <div class="bg-[color:var(--primary-500)] bg-opacity-10 p-8 rounded-lg backdrop-filter backdrop-blur-sm">
+                <div
+                    class="bg-[color:var(--primary-500)] bg-opacity-10 dark:bg-[color:var(--secondary-800)] p-8 rounded-lg backdrop-filter backdrop-blur-sm">
                     <div class="flex items-center mb-4">
                         <div class="text-yellow-400 mr-2">
                             <i class="fas fa-star"></i>
@@ -553,7 +612,8 @@
                         </div>
                         <div>
                             <h4 class="font-semibold">Thomas Dubois</h4>
-                            <p data-i18n="trustedUsRole3" class="text-sm opacity-80 dark:text-[color:var(--secondary-400)]">Responsable
+                            <p data-i18n="trustedUsRole3"
+                                class="text-sm opacity-80 dark:text-[color:var(--secondary-400)]">Responsable
                                 Formation, Groupe DEF</p>
                         </div>
                     </div>
@@ -568,9 +628,11 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center">
                 <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
-                    <h2 data-i18n="approachTitle" class="text-3xl font-bold">Qui est Sam Shafiee ?</h2>
+                    <h2 data-i18n="whoTitle" class="text-3xl font-bold">Qui est Sam Shafiee ?</h2>
                     <div class="w-24 h-1 bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] my-8"></div>
-                    <p data-i18n="approachSubtitle" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-6">“J’ai décidé de me
+                    <p data-i18n="whoSubtitle"
+                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-6">“J’ai
+                        décidé de me
                         consacrer à l’improvisation dans le cadre de mon activité professionnelle car c’est un outil
                         puissant de dépassement de soi, de créativité et d’écoute que j’ai à coeur de partager.”</p>
 
@@ -583,9 +645,10 @@
                                 </div>
                             </div>
                             <div>
-                                <h4 data-i18n="approachTitle1" class="font-semibold mb-2">Improvisation Théâtrale</h4>
-                                <p data-i18n="approachText1"
-                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">J'ai commencé
+                                <h4 data-i18n="whoTitle1" class="font-semibold mb-2">Improvisation Théâtrale</h4>
+                                <p data-i18n="whoText1"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                    J'ai commencé
                                     l'improvisation à La Fabrique de Kairos il y a six ans, en tant qu'amateur. Et
                                     lorsque je me suis essayé au coaching en impro, j'ai tout de suite compris vouloir
                                     professionnaliser ma passion.</p>
@@ -600,9 +663,11 @@
                                 </div>
                             </div>
                             <div>
-                                <h4 data-i18n="approachTitle2" class="font-semibold mb-2">Expérience Professionnelle
+                                <h4 data-i18n="whoTitle2" class="font-semibold mb-2">Expérience Professionnelle
                                 </h4>
-                                <p data-i18n="approachText2" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">Expérimenté de
+                                <p data-i18n="whoText2"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Expérimenté de
                                     plus de 10 ans en finance dont 7 dans le conseil en services financiers, je connais
                                     les attentes métiers, sais travailler en projet et maitrise le relationnel ainsi que
                                     certains codes propres aux grandes entreprises.</p>
@@ -617,8 +682,10 @@
                                 </div>
                             </div>
                             <div>
-                                <h4 data-i18n="approachTitle3" class="font-semibold mb-2">Formations</h4>
-                                <p data-i18n="approachText3" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">Diplômé du
+                                <h4 data-i18n="whoTitle3" class="font-semibold mb-2">Formations</h4>
+                                <p data-i18n="whoText3"
+                                    class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    Diplômé du
                                     Bachelor of Business Administration à l'Essec en 2014 puis du Master II en
                                     Techniques Financières et Bancaires à Assas en 2017, j'ai obtenu mon diplôme de
                                     Formateur en improvisation appliquée à ImproActif en 2024.</p>
@@ -630,7 +697,8 @@
                 <div class="lg:w-1/2">
                     <!-- <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                         alt="Formation en entreprise" class="rounded-lg shadow-xl w-full"> -->
-                    <img src="./img/profile-pic-sam-3.png" alt="Photo de Sam Shafiee" class="w-full max-w-[260px] sm:max-w-xs lg:max-w-sm mx-auto">
+                    <img src="./img/profile-pic-sam-3.png" alt="Photo de Sam Shafiee"
+                        class="w-full max-w-[260px] sm:max-w-xs lg:max-w-sm mx-auto">
                 </div>
             </div>
         </div>
@@ -642,8 +710,11 @@
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 data-i18n="contactUsTitle" class="text-3xl font-bold">Contactez-nous</h2>
-                <div class="w-24 h-1 bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] mx-auto my-6"></div>
-                <p data-i18n="contactUsSubtitle" class="max-w-2xl mx-auto text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">Prêt à
+                <div class="w-24 h-1 bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] mx-auto my-6">
+                </div>
+                <p data-i18n="contactUsSubtitle"
+                    class="max-w-2xl mx-auto text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                    Prêt à
                     développer les compétences de votre
                     équipe ?
                     Parlons-en.</p>
@@ -652,7 +723,8 @@
             <div class="flex flex-col gap-6">
                 <!-- Coordonnées + Horaires + Map -->
                 <div class="mb-12 lg:mb-0">
-                    <div class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-800)] p-2 md:p-6 rounded-lg shadow-md">
+                    <div
+                        class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-800)] p-2 md:p-6 rounded-lg shadow-md">
                         <h3 data-i18n="contactDetailsTitle" class="text-xl font-semibold mb-6">Nos coordonnées</h3>
 
                         <div class="md:flex md:justify-around">
@@ -664,7 +736,8 @@
                                 <div>
                                     <h4 data-i18n="contactDetailsSubtitle1" class="font-medium mb-1">Adresse</h4>
                                     <p data-i18n="contactDetailsText1"
-                                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">12 Rue des
+                                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
+                                        12 Rue des
                                         Entrepreneurs<br>75000 Paris, France</p>
                                 </div>
                             </div>
@@ -676,7 +749,9 @@
                                 </div>
                                 <div>
                                     <h4 data-i18n="contactDetailsSubtitle2" class="font-medium mb-1">Téléphone</h4>
-                                    <p data-i18n="contactDetailsText2" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">07 XX XX
+                                    <p data-i18n="contactDetailsText2"
+                                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                        07 XX XX
                                         XX XX</p>
                                 </div>
                             </div>
@@ -688,7 +763,8 @@
                                 </div>
                                 <div>
                                     <h4 data-i18n="contactDetailsSubtitle3" class="font-medium mb-1">Email</h4>
-                                    <p data-i18n="contactDetailsText3" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    <p data-i18n="contactDetailsText3"
+                                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
                                         contact@bigimpro.com</p>
                                 </div>
                             </div>
@@ -725,13 +801,14 @@
 
                 <!-- Form -->
                 <div class="my-auto">
-                    <form id="contact-form" method="POST" class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] dark:border dark:border-[color:var(--secondary-800)] p-8 rounded-lg shadow-md">
+                    <form id="contact-form" method="POST"
+                        class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] dark:border dark:border-[color:var(--secondary-800)] p-8 rounded-lg shadow-md">
                         <h3 data-i18n="formTitle" class="text-xl font-semibold mb-10">Envoyez-nous un message</h3>
 
                         <div class="grid md:grid-cols-2 gap-6 mb-10">
                             <div>
-                                <label data-i18n="formLastName" for="nom"
-                                    class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)] mb-2">Nom<span
+                                <label for="nom"
+                                    class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)] mb-2"><span data-i18n="formLastName">Nom</span><span
                                         class="text-red-500">
                                         *</span></label>
                                 <input type="text" id="nom" name="nom"
@@ -739,8 +816,8 @@
                                     required>
                             </div>
                             <div>
-                                <label data-i18n="formFirstName" for="prenom"
-                                    class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2">Prénom</label>
+                                <label for="prenom"
+                                    class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2"><span data-i18n="formFirstName">Prénom</span></label>
                                 <input type="text" id="prenom" name="prenom"
                                     class="w-full px-4 py-2 border border-[color:var(--secondary-300)] dark:border-[color:var(--secondary-400)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-500)] dark:focus:ring-[color:var(--primary-800)] dark:bg-[color:var(--secondary-800)]">
                             </div>
@@ -748,17 +825,17 @@
 
                         <div class="grid md:grid-cols-2 gap-6 mb-10">
                             <div>
-                                <label data-i18n="formCompany" for="entreprise"
-                                    class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2">Entreprise<span
+                                <label for="entreprise"
+                                    class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2"><span data-i18n="formCompany">Entreprise</span><span
                                         class="text-red-500"> *</span></label>
                                 <input type="text" id="entreprise" name="entreprise"
                                     class="w-full px-4 py-2 border border-[color:var(--secondary-300)] dark:border-[color:var(--secondary-400)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-500)] dark:focus:ring-[color:var(--primary-800)] dark:bg-[color:var(--secondary-800)]"
                                     required>
                             </div>
                             <div>
-                                <label data-i18n="formPosition" for="poste"
-                                    class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2">Poste
-                                    Occupé</label>
+                                <label for="poste"
+                                    class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2"><span data-i18n="formPosition">Poste
+                                    Occupé</span></label>
                                 <input type="text" id="poste" name="poste"
                                     class="w-full px-4 py-2 border border-[color:var(--secondary-300)] dark:border-[color:var(--secondary-400)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-500)] dark:focus:ring-[color:var(--primary-800)] dark:bg-[color:var(--secondary-800)]">
                             </div>
@@ -766,24 +843,26 @@
 
                         <div class="grid md:grid-cols-2 gap-6 mb-10">
                             <div>
-                                <label data-i18n="formEmail" for="email"
-                                    class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2">Email<span class="text-red-500">
+                                <label for="email"
+                                    class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2"><span data-i18n="formEmail">Email</span><span
+                                        class="text-red-500">
                                         *</span></label>
                                 <input type="email" id="email" name="email"
                                     class="w-full px-4 py-2 border border-[color:var(--secondary-300)] dark:border-[color:var(--secondary-400)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-500)] dark:focus:ring-[color:var(--primary-800)] dark:bg-[color:var(--secondary-800)]"
                                     required>
                             </div>
                             <div>
-                                <label data-i18n="formPhone" for="tel"
-                                    class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2">Tél.</label>
+                                <label for="tel"
+                                    class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2"><span data-i18n="formPhone">Tél.</span></label>
                                 <input type="tel" id="tel" name="tel"
                                     class="w-full px-4 py-2 border border-[color:var(--secondary-300)] dark:border-[color:var(--secondary-400)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-500)] dark:focus:ring-[color:var(--primary-800)] dark:bg-[color:var(--secondary-800)]">
                             </div>
                         </div>
 
                         <div class="mb-10">
-                            <label data-i18n="formSubject" for="sujet"
-                                class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2">Sujet<span class="text-red-500">
+                            <label for="sujet"
+                                class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2"><span data-i18n="formSubject">Sujet</span><span
+                                    class="text-red-500">
                                     *</span></label>
                             <input type="text" id="sujet" name="sujet"
                                 class="w-full px-4 py-2 border border-[color:var(--secondary-300)] dark:border-[color:var(--secondary-400)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-500)] dark:focus:ring-[color:var(--primary-800)] dark:bg-[color:var(--secondary-800)]"
@@ -791,8 +870,9 @@
                         </div>
 
                         <div class="mb-10">
-                            <label data-i18n="formMessage" for="message"
-                                class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2">Message<span class="text-red-500">
+                            <label for="message"
+                                class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2"><span data-i18n="formMessage">Message</span><span
+                                    class="text-red-500">
                                     *</span></label>
                             <textarea id="message" rows="5" name="message"
                                 class="w-full px-4 py-2 border border-[color:var(--secondary-300)] dark:border-[color:var(--secondary-400)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-500)] dark:focus:ring-[color:var(--primary-800)] dark:bg-[color:var(--secondary-800)]"
@@ -800,17 +880,17 @@
                         </div>
 
                         <div class="mb-6">
-                            <label data-i18n="formRGPD" class="dark:text-[color:var(--secondary-400)]">
+                            <label class="dark:text-[color:var(--secondary-400)]">
                                 <input type="checkbox" name="consentement" required>
-                                &nbsp;J’accepte que mes informations de contact soient temporairement stockées pour
+                                &nbsp;<span data-i18n="formRGPD">J’accepte que mes informations de contact soient temporairement stockées pour
                                 répondre à ma demande. Elles ne seront en aucun cas revendues ou utilisées à des fins
-                                marketing ou commerciale.<span class="text-red-500"> *</span>
+                                marketing ou commerciale.</span><span class="text-red-500"> *</span>
                             </label>
 
-                            <p data-i18n="formPrivacy" class="pt-4 dark:text-[color:var(--secondary-400)]">
-                                Consultez notre <a href="./politique-confidentialite.html" class="text-[color:var(--primary-500)]"
-                                    target="_blank">Politique de
-                                    confidentialité</a>.
+                            <p class="pt-4 dark:text-[color:var(--secondary-400)]">
+                                <span data-i18n="formPrivacy1">Consultez notre </span><a href="./politique-confidentialite.html"
+                                    class="text-[color:var(--primary-500)]" target="_blank"><span data-i18n="formPrivacy2">Politique de
+                                    confidentialité</span></a>.
                             </p>
                         </div>
 
@@ -830,7 +910,8 @@
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
                     <h3 data-i18n="footerTitle" class="text-xl font-bold mb-4">Big'Impro</h3>
-                    <p data-i18n="footerSubtitle" class="text-[color:var(--secondary-400)]">Experts en formation professionnelle et
+                    <p data-i18n="footerSubtitle" class="text-[color:var(--secondary-400)]">Experts en formation
+                        professionnelle et
                         développement des compétences
                         depuis 2021.</p>
                 </div>
@@ -839,17 +920,20 @@
                     <h4 data-i18n="footerT1" class="font-semibold mb-4">Liens rapides</h4>
                     <ul class="space-y-2">
                         <li><a data-i18n="footerT1Link1" href="#accueil"
-                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Accueil</a></li>
-                        <li><a data-i18n="footerT1Link2" href="#services"
-                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Services</a>
+                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Accueil</a>
+                        </li>
+                        <li><a data-i18n="footerT1Link2" href="#offre"
+                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Offre</a>
                         </li>
                         <li><a data-i18n="footerT1Link3" href="#formations"
-                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Formations</a></li>
+                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Formations</a>
+                        </li>
                         <li><a data-i18n="footerT1Link4" href="#methode"
                                 class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Méthodologie</a>
                         </li>
                         <li><a data-i18n="footerT1Link5" href="#contact"
-                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Contact</a></li>
+                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Contact</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -857,15 +941,20 @@
                     <h4 data-i18n="footerT2" class="font-semibold mb-4">Formations</h4>
                     <ul class="space-y-2">
                         <li><a data-i18n="footerT2Link1" href="#"
-                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Management</a></li>
+                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Management</a>
+                        </li>
                         <li><a data-i18n="footerT2Link2" href="#"
-                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Digital</a></li>
+                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Digital</a>
+                        </li>
                         <li><a data-i18n="footerT2Link3" href="#"
-                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Communication</a></li>
+                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Communication</a>
+                        </li>
                         <li><a data-i18n="footerT2Link4" href="#"
-                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Finance</a></li>
+                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Finance</a>
+                        </li>
                         <li><a data-i18n="footerT2Link5" href="#"
-                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Toutes les
+                                class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Toutes
+                                les
                                 formations</a></li>
                     </ul>
                 </div>
@@ -898,14 +987,18 @@
                 </div>
             </div>
 
-            <div class="border-t border-[color:var(--secondary-900)] mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p data-i18n="footerCopyright" class="text-[color:var(--secondary-400)] mb-4 md:mb-0">© 2025 Big'Impro. Tous droits
+            <div
+                class="border-t border-[color:var(--secondary-900)] mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p data-i18n="footerCopyright" class="text-[color:var(--secondary-400)] mb-4 md:mb-0">© 2025 Big'Impro.
+                    Tous droits
                     réservés.</p>
                 <div class="flex space-x-6">
                     <a data-i18n="footerLegal" href="./mentions-legales.html" target="_blank"
-                        class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Mentions légales</a>
+                        class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Mentions
+                        légales</a>
                     <a data-i18n="footerPrivacy" href="./politique-confidentialite.html" target="_blank"
-                        class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Politique de
+                        class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Politique
+                        de
                         confidentialité</a>
                     <a data-i18n="footerGTC" href="./cgv.html" target="_blank"
                         class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">CGV</a>

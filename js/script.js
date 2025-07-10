@@ -19,29 +19,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Transition Navbar
   const logo = document.getElementById("logo");
+  const bgNav = document.getElementById("bg-nav");
+  const surNav = document.getElementById("sur-nav");
+
+  let isBelowThreshold = false;
 
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 650) {
-      console.log(window.scrollY);
-      if (!logo.classList.contains("w-40")) {
-        logo.classList.remove("w-60");
-        logo.classList.add("w-40");
-      }
-      if (!bgNav.classList.contains("bg-white-tr")) {
-        bgNav.classList.remove("bg-white");
-        bgNav.classList.add("bg-white-tr");
-      }
-    } else {
-      if (!logo.classList.contains("w-60")) {
-        logo.classList.remove("w-40");
-        logo.classList.add("w-60");
-      }
-      if (!bgNav.classList.contains("bg-white")) {
-        bgNav.classList.remove("bg-white-tr");
-        bgNav.classList.add("bg-white");
-      }
+    const scrollY = window.scrollY || window.pageYOffset;
+
+    if (scrollY > 650 && !isBelowThreshold) {
+      isBelowThreshold = true;
+
+      logo.classList.add("shrink");
+
+      bgNav.classList.remove("bg-white");
+      bgNav.classList.add("bg-white-tr");
+
+      surNav.classList.add("hidden"); // fade out
+
+    } else if (scrollY <= 650 && isBelowThreshold) {
+      isBelowThreshold = false;
+
+      logo.classList.remove("shrink");
+
+      bgNav.classList.remove("bg-white-tr");
+      bgNav.classList.add("bg-white");
+
+      surNav.classList.remove("hidden"); // fade in
     }
   });
+
+
 
 
 
@@ -118,7 +126,8 @@ document.addEventListener("DOMContentLoaded", function () {
       menuTitle2: "Offre",
       menuTitle3: "Formations",
       menuTitle4: "Approche",
-      menuTitle5: "Contact",
+      menuTitle5: "Qui",
+      menuTitle6: "Contact",
       heroTitle: "Les techniques de l’improvisation appliquées au monde professionnel : un puissant levier pour former vos collaborateurs en les engageant activement par le jeu",
       heroSubtitle: "Des ateliers sur-mesure, interactifs et engageants, pour booster les soft skills de vos collaborateurs et souder vos équipes grâce au team building.",
       heroContactBtn: "Nous contacter",
@@ -227,7 +236,8 @@ document.addEventListener("DOMContentLoaded", function () {
       menuTitle2: "Offer",
       menuTitle3: "Training",
       menuTitle4: "Approach",
-      menuTitle5: "Contact",
+      menuTitle5: "Who",
+      menuTitle6: "Contact",
       heroTitle: "Applied improvisation techniques in the professional world: a powerful lever to train your teams by actively engaging them through play",
       heroSubtitle: "Tailor-made, interactive, and engaging workshops to boost your team's soft skills and strengthen bonds through team building.",
       heroContactBtn: "Contact us",

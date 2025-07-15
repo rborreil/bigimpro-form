@@ -55,7 +55,7 @@
         href="https://calendly.com/sam-jeuformation/premiere-prise-de-contact-formation-par-le-jeu?utm_source=schedule_from_linkedin&month=2025-07"
         class="fixed bottom-5 left-10 z-10 hover:text-[color:var(--secondary-00)] dark:hover:text-[color:var(--secondary-00)] bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] hover:bg-[color:var(--primary-600)] dark:hover:bg-[color:var(--primary-900)] border border-[color:var(--secondary-900)] hover:border-[color:var(--primary-800)] dark:border-[color:var(--secondary-00)] px-4 py-1 rounded-lg font-medium text-center text-l transition-smooth"
         target="_blank">Prendre RDV</a>
-        
+
 
     <!-- Header / Nav -->
     <header id="bg-nav"
@@ -163,21 +163,23 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4">
                 <a data-i18n="menuTitle1" href="#accueil"
-                    class="block py-2 hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-400)]">Accueil</a>
+                    class="flex justify-end font-medium hover:text-[color:var(--primary-600)] py-2 transition-smooth">Accueil</a>
                 <a data-i18n="menuTitle2" href="#offre"
-                    class="flex justify-end mr-0 py-2 hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-400)]">Offre</a>
+                    class="flex justify-end font-medium hover:text-[color:var(--primary-600)] py-2 transition-smooth">Offre</a>
                 <a data-i18n="menuTitle3" href="#formations"
-                    class="block py-2 hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-400)]">Formations</a>
+                    class="flex justify-end font-medium hover:text-[color:var(--primary-600)] py-2 transition-smooth">Formations</a>
                 <a data-i18n="menuTitle4" href="#approche"
-                    class="flex justify-end block py-2 hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-400)]">Approche</a>
+                    class="flex justify-end font-medium hover:text-[color:var(--primary-600)] py-2 transition-smooth">Approche</a>
                 <a data-i18n="menuTitle5" href="#qui"
-                    class="font-medium hover:text-[color:var(--primary-600)] transition-smooth">Qui</a>
+                    class="flex justify-end font-medium hover:text-[color:var(--primary-600)] py-2 transition-smooth">Qui</a>
                 <a data-i18n="menuTitle6" href="#contact"
-                    class="block py-2 hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-400)]">Contact</a>
-                <a data-i18n="meetingBtn"
-                    href="https://calendly.com/sam-jeuformation/premiere-prise-de-contact-formation-par-le-jeu?utm_source=schedule_from_linkedin&month=2025-07"
-                    class="hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] dark:hover:bg-[color:var(--primary-900)] border border-[color:var(--secondary-900)] dark:border-[color:var(--secondary-00)] px-4 py-1 rounded-lg font-medium text-center text-sm transition-smooth"
-                    target="_blank">Prendre RDV</a>
+                    class="flex justify-end font-medium hover:text-[color:var(--primary-600)] py-2 transition-smooth">Contact</a>
+                <div class="flex justify-end py-2">
+                    <a data-i18n="meetingBtn"
+                        href="https://calendly.com/sam-jeuformation/premiere-prise-de-contact-formation-par-le-jeu?utm_source=schedule_from_linkedin&month=2025-07"
+                        class="hover:text-[color:var(--primary-600)] dark:hover:text-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] dark:hover:bg-[color:var(--primary-900)] border border-[color:var(--secondary-900)] dark:border-[color:var(--secondary-00)] px-4 py-1 ml-auto my-2 rounded-lg font-medium text-center text-sm transition-smooth"
+                        target="_blank">Prendre RDV</a>
+                </div>
                 <!-- Switches : Langue et Mode -->
                 <div class="flex gap-8 py-2 justify-end">
                     <!-- Lang Switch -->
@@ -840,8 +842,7 @@
                                 <div>
                                     <h4 data-i18n="contactDetailsSubtitle2" class="font-medium mb-1 lg:text-center">
                                         Téléphone</h4>
-                                    <p
-                                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
+                                    <p class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
                                         07 61 11 35 57</p>
                                 </div>
                             </a>
@@ -868,7 +869,8 @@
                         <div class="max-w-4xl mx-auto px-6">
                             <h3 data-i18n="contactMeetingTitle" class="text-xl font-semibold mb-6">Prendre rendez-vous
                             </h3>
-                            <p data-i18n="contactMeetingText" class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-10">
+                            <p data-i18n="contactMeetingText"
+                                class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-10">
                                 Choisissez un créneau qui vous convient via notre agenda en ligne.
                             </p>
 
@@ -1056,7 +1058,8 @@
                     <ul class="space-y-2">
                         <li><a href="#contact"
                                 class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">
-                                <i class="fab fa-wpforms" aria-hidden="true"></i>&nbsp;&nbsp; <span data-i18n="footerT2Link1">Formulaire</span>
+                                <i class="fab fa-wpforms" aria-hidden="true"></i>&nbsp;&nbsp; <span
+                                    data-i18n="footerT2Link1">Formulaire</span>
                             </a>
                         </li>
                         <li><a href="mailto:sam@jeuformation.fr"

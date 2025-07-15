@@ -304,15 +304,15 @@
 .bg-white-tr {
     background-color: rgba(255, 255, 255, 0.9);
 }
-.hero-gradient {
+.landing-gradient {
     background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
 }
 /* @media (min-width: 768px) {
-    .hero-gradient {
+    .landing-gradient {
         min-height: 100vh;
     }
 } */
-.dark .hero-gradient {
+.dark .landing-gradient {
     background: linear-gradient(135deg, #2c3e50 0%, #111827 100%); /* Dark version */
 }
 .card-hover:hover {

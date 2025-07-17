@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Transition Navbar
   const logo = document.getElementById("logo");
   const bgNav = document.getElementById("bg-nav");
-  const surNav = document.getElementById("sur-nav");
+  // const surNav = document.getElementById("sur-nav");
 
   let isBelowThreshold = false;
 
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       bgNav.classList.remove("bg-white");
       bgNav.classList.add("bg-white-tr");
 
-      surNav.classList.add("hidden"); // fade out
+      // surNav.classList.add("hidden");
 
     } else if (scrollY <= 650 && isBelowThreshold) {
       isBelowThreshold = false;
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
       bgNav.classList.remove("bg-white-tr");
       bgNav.classList.add("bg-white");
 
-      surNav.classList.remove("hidden"); // fade in
+      // surNav.classList.remove("hidden"); 
     }
   });
 
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
       trustedUsRole3: "Responsable Formation, Groupe DEF",
       keyNumTitle: "Nos chiffres clés",
       keyText1: "Années d'expérience",
-      keyText2: "Projets réalisés",
+      keyText2: "Ateliers réalisés",
       keyText3: "Satisfaction client",
       whoTitle: "Qui est Sam Shafiee ?",
       whoSubtitle: `“J’ai décidé de me consacrer à l’improvisation dans le cadre de mon activité professionnelle car c’est un outil puissant de dépassement de soi, de créativité et d’écoute que j’ai à coeur de partager.”`,
@@ -283,7 +283,7 @@ document.addEventListener("DOMContentLoaded", function () {
       trustedUsRole3: "Head of Training - DEF Group",
       keyNumTitle: "Our key figures",
       keyText1: "Years of experience",
-      keyText2: "Achieved projects",
+      keyText2: "Achieved workshops",
       keyText3: "Customer satisfaction",
       whoTitle: "Who is Sam Shafiee ?",
       whoSubtitle: `“I've decided to professionalize my passion for improvisation because it's a powerful lever for surpassing oneself, creativity and active listening that I love to share.”`,

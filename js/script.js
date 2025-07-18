@@ -122,6 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const translations = {
     fr: {
+      // index.html
       menuTitle1: "Accueil",
       menuTitle2: "Offre",
       menuTitle3: "Formations",
@@ -192,8 +193,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // OpeningDays2: "Samedi",
       // OpeningHours2: "Fermé",
       // mapTitle: "Nous rencontrer",
-      contactMeetingTitle: "Prendre rendez-vous", 
-      contactMeetingText: "Choisissez un créneau qui vous convient via notre agenda en ligne.", 
+      contactMeetingTitle: "Prendre rendez-vous",
+      contactMeetingText: "Choisissez un créneau qui vous convient via notre agenda en ligne.",
       formTitle: "Envoyez-nous un message",
       formLastName: 'Nom',
       formFirstName: 'Prénom',
@@ -203,8 +204,8 @@ document.addEventListener("DOMContentLoaded", function () {
       formPhone: 'Tél.',
       formSubject: 'Sujet',
       formMessage: 'Message',
-      formRGPD: "J’accepte que mes informations de contact soient temporairement stockées pour répondre à ma demande. Elles ne seront en aucun cas revendues ou utilisées à des fins marketing ou commerciale.",
-      formPrivacy1: "Consultez notre ",
+      formRGPD: "J’accepte que mes données personnelles soient traitées par JeuFormation uniquement afin de répondre à ma demande.",
+      formPrivacy1: "Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, consultez notre ",
       formPrivacy2: "Politique de confidentialité",
       formButton: "Envoyer le message",
       backToTop: "Retour en haut",
@@ -227,9 +228,35 @@ document.addEventListener("DOMContentLoaded", function () {
       footerCopyright: "© 2025 Big'Impro. Tous droits réservés.",
       footerLegal: "Mentions légales",
       footerPrivacy: "Politique de confidentialité",
-      footerGTC: "CGV",
+      generalGTC: "CGV",
+      // Polyvalent
+      legalSub1: "Consultez également notre",
+      legalSub2: "et nos",
+      // mentions-legales.html
+      legalTitle: "Mentions Légales",
+      legalT1: "Éditeur du site",
+      legalT1I1: "Nom de l'entreprise / Nom du responsable",
+      legalT1I2: "Adresse",
+      legalT1I3: "Téléphone",
+      legalT1I4: "Forme juridique",
+      legalT1I5: "Directeur de la publication",
+      legalT2: "Hébergeur du site",
+      legalT2I1: "Nom de l'hébergeur",
+      legalT2I2: "Adresse",
+      legalT2I3: "Téléphone",
+      legalT2I4: "Site internet",
+      legalT3: "Propriété intellectuelle",
+      legalT3I1: "Le contenu du site (textes, images, logos, graphismes, etc.) est la propriété exclusive de",
+      legalT3I2: "sauf mentions contraires. Toute reproduction, distribution ou exploitation sans autorisation est strictement interdite.",
+      // politique-confidentialite.html
+      privacyTitle: "Politique de Confidentialité",
+
+      // cgv.html
+      gtcTitle: "Conditions Générales de Vente (CGV)",
+
     },
     en: {
+      // index.html
       menuTitle1: "Home",
       menuTitle2: "Offer",
       menuTitle3: "Training",
@@ -300,8 +327,8 @@ document.addEventListener("DOMContentLoaded", function () {
       // openingDays2: "Saturday",
       // openingHours2: "Closed",
       // mapTitle: "Meet us",
-      contactMeetingTitle: "Schedule a meeting", 
-      contactMeetingText: "Choose a convenient slot through our online calendar.", 
+      contactMeetingTitle: "Schedule a meeting",
+      contactMeetingText: "Choose a convenient slot through our online calendar.",
       formTitle: "Send us a message",
       formLastName: 'Last Name',
       formFirstName: 'First Name',
@@ -311,8 +338,8 @@ document.addEventListener("DOMContentLoaded", function () {
       formPhone: 'Phone',
       formSubject: 'Subject',
       formMessage: 'Message',
-      formRGPD: "I agree my contact details to be temporarily stocked to deal with my demand. They won't be resold or used for marketing or sales.",
-      formPrivacy1: "Check our ",
+      formRGPD: "I agree my personal data be used by JeuFormation only to treat my request.",
+      formPrivacy1: "To get further information about the treatment of your personal data and to exercise your rights, check our ",
       formPrivacy2: "Privacy Policy",
       formButton: "Send your message",
       backToTop: "Back To Top",
@@ -335,7 +362,32 @@ document.addEventListener("DOMContentLoaded", function () {
       footerCopyright: "© 2025 JEU Formation. All rights reserved.",
       footerLegal: "Legal notices",
       footerPrivacy: "Privacy policy",
-      footerGTC: "GTC",
+      generalGTC: "GTC",
+      // Polyvalent
+      legalSub1: "Do not forget to check our",
+      legalSub2: "and our",
+      // mentions-legales.html
+      legalTitle: "Legal Notices",
+      legalT1: "Website editor",
+      legalT1I1: "Company name / Manager name",
+      legalT1I2: "Address",
+      legalT1I3: "Phone",
+      legalT1I4: "Legal status",
+      legalT1I5: "Publishing director",
+      legalT2: "Website host",
+      legalT2I1: "Host name",
+      legalT2I2: "Address",
+      legalT2I3: "Phone",
+      legalT2I4: "Website",
+      legalT3: "Intellectual property",
+      legalT3I1: "This website content (texts, images, logos, graphisms, etc.) is the exclusive property of",
+      legalT3I2: "except contrary notices. Any reproduction, distribution or exploitation without authorization is strictly forbidden.",
+      // politique-confidentialite.html
+      privacyTitle: "Privacy Policy",
+
+      // cgv.html
+      gtcTitle: "General Terms & Conditions (GTC)",
+
     }
   };
 

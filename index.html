@@ -1009,15 +1009,13 @@
                         <div class="mb-6">
                             <label class="dark:text-[color:var(--secondary-400)]">
                                 <input type="checkbox" name="consentement" required>
-                                &nbsp;<span data-i18n="formRGPD">J’accepte que mes informations de contact soient
-                                    temporairement stockées pour
-                                    répondre à ma demande. Elles ne seront en aucun cas revendues ou utilisées à des
-                                    fins
-                                    marketing ou commerciale.</span><span class="text-red-500"> *</span>
+                                &nbsp;<span data-i18n="formRGPD">J’accepte que mes données personnelles soient
+                                    traitées par JeuFormation uniquement afin de
+                                    répondre à ma demande.</span><span class="text-red-500"> *</span>
                             </label>
 
                             <p class="pt-4 dark:text-[color:var(--secondary-400)]">
-                                <span data-i18n="formPrivacy1">Consultez notre </span><a
+                                <span data-i18n="formPrivacy1">Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, consultez notre </span><a
                                     href="./politique-confidentialite.html" class="text-[color:var(--primary-500)]"
                                     target="_blank"><span data-i18n="formPrivacy2">Politique de
                                         confidentialité</span></a>.
@@ -1123,6 +1121,7 @@
                 </div>
             </div>
 
+            <!-- Copyright + Mentions + Politique de conf + CGV -->
             <div
                 class="border-t border-[color:var(--secondary-00)] mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p data-i18n="footerCopyright" class="text-[color:var(--secondary-400)] mb-4 md:mb-0">© 2025 JEU
@@ -1130,14 +1129,16 @@
                     Tous droits
                     réservés.</p>
                 <div class="flex space-x-6">
-                    <a data-i18n="footerLegal" href="./mentions-legales.html"
+                    <a id="legal-notices" data-i18n="footerLegal" href="./mentions-legales.html"
                         class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Mentions
                         légales</a>
-                    <a data-i18n="footerPrivacy" href="./politique-confidentialite.html"
+                        <span>●</span>
+                    <a id="privacy-policy" data-i18n="footerPrivacy" href="./politique-confidentialite.html"
                         class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Politique
                         de
                         confidentialité</a>
-                    <a data-i18n="footerGTC" href="./cgv.html"
+                        <span>●</span>
+                    <a id="gtc" data-i18n="generalGTC" href="./cgv.html"
                         class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">CGV</a>
                 </div>
             </div>

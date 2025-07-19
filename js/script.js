@@ -122,51 +122,60 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const translations = {
     fr: {
-      // index.html
+      // FICHIER index.html
+      // POLYVALENTS REUTILISABLES
+      meetingBtn: "Prendre RDV",
+      quoteRequest: "Demander un devis",
+      backToTop: "Retour en haut",
+      generalGTC: "CGV",
+      // MENU
       menuTitle1: "Accueil",
       menuTitle2: "Offre",
       menuTitle3: "Formations",
       menuTitle4: "Approche",
       menuTitle5: "Qui",
       menuTitle6: "Contact",
-      meetingBtn: "Prendre RDV",
+      // LANDING
       landingTitle: "Utilisez l’improvisation appliquée et la puissance du jeu pour former vos équipes !",
       landingSubtitle: "Des ateliers sur-mesure, interactifs et engageants, pour booster les soft skills de vos collaborateurs et souder vos équipes grâce au team building.",
       landingContactBtn: "Nous contacter",
       landingOfferBtn: "Notre offre",
+      // OFFRES
       offerTitle: "Notre offre",
       offerSubtitle: "Nous formons vos collaborateurs de façon dynamique, en mettant l’accent sur le jeu, l’engagement et la pleine présence, avec des solutions sur-mesure parfaitement alignées à vos enjeux de formation et de cohésion d’équipe. ",
       offerTitle1: "Vivre l’instant présent",
       offerText1: "Des ateliers immersifs, sans écran, pour réveiller l’écoute, la spontanéité et l’intelligence relationnelle. On apprend par la présence, l’action et l’engagement collectif.",
       offerTitle2: "Soft skills & team building",
-      offerText2: "L’improvisation appliquée est un outil puissant pour développer les soft skills et renforcer la cohésion d’équipe. En vivant des situations concrètes et engageantes, les participants stimulent leur écoute, leur adaptabilité et leur communication. Ludique et incarnée, cette approche favorise l’audace, l’entraide et l’apprentissage collectif.",
+      offerText2: "L’improvisation appliquée développe les soft skills, stimule l’écoute et l’adaptabilité, et renforce la cohésion grâce à une approche ludique, concrète et tournée vers le collectif.",
       offerTitle3: "Un accompagnement sur-mesure",
-      offerText3: "Chaque accompagnement est conçu sur-mesure, en lien direct avec vos enjeux, votre culture et vos équipes. Rien n’est standardisé : nous adaptons les contenus, les mises en situation et les dynamiques pour que l’expérience soit pleinement pertinente, utile et impactante. Parce que chaque organisation est unique, la formation doit l’être aussi.",
+      offerText3: "Chaque accompagnement est sur-mesure : enjeux, culture, équipes… tout est adapté pour une expérience utile, engageante et alignée avec la réalité de votre organisation.",
+      // FORMATIONS
       trainingsTitle: "Exemples de formations possibles",
-      // trainingsSubtitle: "Découvrez nos principaux domaines d'expertise en formation professionnelle.",
+      trainingsSubtitle: "Ci-dessous une liste non exhaustive des ateliers possibles.",
       trainingTitle1: "Prise de parole en public ",
-      trainingText1: "Nos ateliers boostent la prise de parole en public en développant confiance, spontanéité et gestion du stress. Elle aide à structurer ses idées, capter l’attention, et s’adapter facilement à l’imprévu pour des interventions plus naturelles et impactantes.",
+      trainingText1: "Nos ateliers améliorent la prise de parole en public en développant confiance, spontanéité et gestion du stress, pour structurer ses idées, capter l’attention et s’adapter à l’imprévu.",
       trainingTitle2: "Encourager la collaboration",
-      trainingText2: "Notre méthode favorise une collaboration fluide en développant l’écoute active, la confiance mutuelle et la créativité collective. Elle apprend à rebondir ensemble face à l’imprévu, encourageant ainsi l’ouverture d’esprit, la flexibilité et un esprit d’équipe renforcé. ",
+      trainingText2: "Notre approche par le jeu encourage la collaboration en renforçant la confiance, l’adaptabilité et la créativité, pour des équipes plus unies et performantes face aux défis.",
       trainingTitle3: "Sensibilisation aux enjeux (RSE, handicap, inclusion…)",
-      trainingText3: "Nos ateliers peuvent aussi être conçus comme des espaces de sensibilisation à des enjeux tels que la RSE, le handicap ou l’inclusion. En favorisant l’expérimentation et l’empathie, ils permettent d’aborder ces thématiques de manière concrète, humaine et engageante.",
+      trainingText3: "Nos interventions sensibilisent à des enjeux comme la RSE, le handicap ou l’inclusion (exemples), favorisant expérimentation et empathie pour aborder ces sujets concrètement et humainement.",
       trainingTitle4: "Renforcer la cohésion d'équipe",
-      trainingText4: "À travers des mises en situation ludiques et collectives, nous créons les conditions d’un véritable travail sur les liens au sein de l’équipe. Ces expériences renforcent la cohésion, la confiance mutuelle et la qualité des relations, en plaçant l’écoute et la coopération au cœur de l’action.",
+      trainingText4: "Par des mises en situation ludiques, nous favorisons un vrai travail sur les liens d’équipe, renforçant cohésion, confiance et qualité des relations autour de l’écoute et la coopération.",
       trainingTitle5: "Développer l’écoute active",
-      trainingText5: "Cet atelier propose des exercices concrets et interactifs pour renforcer l’écoute active dans les échanges professionnels. À travers le jeu et des mises en situation, les participants apprennent à être pleinement présents, à mieux comprendre leurs interlocuteurs et à répondre de manière plus juste et efficace.",
+      trainingText5: "Nous proposons des exercices ludiques pour renforcer l’écoute active. Par le jeu, les participants apprennent à être présents, mieux comprendre et répondre efficacement en contexte pro.",
       trainingTitle6: "Atelier sur-mesure",
-      trainingText6: "Cette liste offre un aperçu de nos ateliers possibles de façon non exhaustive. Nous sommes également à votre disposition pour concevoir un programme sur-mesure, parfaitement adapté à vos objectifs et à votre contexte spécifique.",
+      trainingText6: "Cette liste donne un aperçu non exhaustif des ateliers. Nous concevons des programmes sur-mesure, adaptés à vos objectifs et à votre contexte spécifique.",
       // learnMore: "En savoir plus →",
       // checkAllTrainings: "Voir toutes nos formations",
-      quoteRequest: "Demander un devis",
+      // APPROCHE
       approachTitle: "Notre approche",
-      approachSubtitle: "Notre approche unique en improvisation appliquée combine créativité, engagement et adaptation pour transformer l’apprentissage des soft skills en une expérience vivante et impactante.",
+      // approachSubtitle: "Notre approche unique en improvisation appliquée combine créativité, engagement et adaptation pour transformer l’apprentissage des soft skills en une expérience vivante et impactante.",
       approachTitle1: "Transposition des techniques théâtrales au monde professionnel",
-      approachText1: "Nous adaptons les méthodes de l’improvisation théâtrale pour répondre aux besoins spécifiques des contextes professionnels, éducatifs et de développement personnel. Cette transposition permet de faire vivre des expériences riches et concrètes, facilitant l’acquisition de compétences utiles au quotidien.",
+      approachText1: "Nous adaptons les outils de l’improvisation théâtrale aux contextes professionnels, éducatifs et personnels pour proposer des expériences concrètes et développer des compétences utiles au quotidien.",
       approachTitle2: "Formation centrée sur l’instant présent",
-      approachText2: "Nos formations privilégient l’instant présent comme levier d’apprentissage. En se concentrant sur “ici et maintenant”, les participants développent leur capacité à s’adapter, à écouter activement et à réagir de façon authentique et spontanée face aux situations rencontrées.",
+      approachText2: "Nos formations utilisent l’instant présent comme levier d’apprentissage, en se concentrant sur “ici et maintenant”. Une pratique ancrée dans le réel.",
       approachTitle3: "Implication globale par le jeu",
-      approachText3: "L’engagement se fait à tous les niveaux — physique, corporel, émotionnel et psychologique — grâce à des exercices ludiques et immersifs. Cette implication totale favorise une meilleure appropriation des soft skills, tout en renforçant la confiance et la cohésion au sein des équipes.",
+      approachText3: "L’engagement se fait à tous niveaux — physique, émotionnel et psychologique — grâce à des exercices ludiques. Cette implication favorise l’appropriation des soft skills, la confiance et la cohésion d’équipe.",
+      // TEMOIGNAGES
       trustedUsTitle: "Ils nous font confiance",
       trustedUsSubtitle: "Découvrez ce que nos clients disent de nous.",
       trustedUsText1: '“Une formation aussi ludique qu’efficace. Nos bénévoles repartent avec des outils concrets pour parler de notre mission avec assurance et enthousiasme.”',
@@ -175,12 +184,21 @@ document.addEventListener("DOMContentLoaded", function () {
       trustedUsRole2: "Directeur Général",
       trustedUsText3: '"Formateurs compétents et pédagogues. Le suivi post-formation a été particulièrement apprécié."',
       trustedUsRole3: "Responsable Formation, Groupe DEF",
+      // CHIFFRES
       keyNumTitle: "Nos chiffres clés",
-      keyText1: "Années d'expérience",
-      keyText2: "Ateliers réalisés",
-      keyText3: "Satisfaction client",
+      keyNumText1: "Années d'expérience",
+      keyNumText2: "Ateliers réalisés",
+      keyNumText3: "Satisfaction client",
+      // QUI
       whoTitle: "Qui est Sam Shafiee ?",
-      whoSubtitle: `“J’ai décidé de me consacrer à l’improvisation dans le cadre de mon activité professionnelle car c’est un outil puissant de dépassement de soi, de créativité et d’écoute que j’ai à coeur de partager.”`,
+      whoSubtitle: `“J’ai choisi de consacrer mon activité professionnelle à la formation par le jeu, un puissant levier de dépassement de soi, de créativité et d’écoute que je transmets avec passion.”`,
+      whoTitle1: "Improvisation Théâtrale",
+      whoText1: "Improvisateur depuis 2018, j’ai rapidement développé une véritable passion pour cet art. Au fil des années, il m’est apparu évident de rapprocher ses techniques du monde professionnel.",
+      whoTitle2: "Expérience Professionnelle",
+      whoText2: "Fort de 10 ans d’expérience en finance et conseil, je mesure pleinement les enjeux internes liés à la formation des collaborateurs et au développement de leurs compétences.",
+      whoTitle3: "Formations Diplômantes",
+      whoText3: "Diplômé d'un Master 1 à l'ESSEC puis d'un Master 2 en finance à Assas, j'ai obtenu ma certification de formateur en improvisation appliquée en 2024.",
+      // CONTACT
       contactUsTitle: "Contactez-nous",
       contactUsSubtitle: "Prêt à développer les compétences de votre équipe ? Parlons-en.",
       contactDetailsTitle: "Nos coordonnées",
@@ -195,20 +213,20 @@ document.addEventListener("DOMContentLoaded", function () {
       // mapTitle: "Nous rencontrer",
       contactMeetingTitle: "Prendre rendez-vous",
       contactMeetingText: "Choisissez un créneau qui vous convient via notre agenda en ligne.",
-      formTitle: "Envoyez-nous un message",
-      formLastName: 'Nom',
-      formFirstName: 'Prénom',
-      formCompany: 'Entreprise',
-      formPosition: 'Poste Occupé',
-      formEmail: 'Email',
-      formPhone: 'Tél.',
-      formSubject: 'Sujet',
-      formMessage: 'Message',
-      formRGPD: "J’accepte que mes données personnelles soient traitées par JeuFormation uniquement afin de répondre à ma demande.",
-      formPrivacy1: "Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, consultez notre ",
-      formPrivacy2: "Politique de confidentialité",
-      formButton: "Envoyer le message",
-      backToTop: "Retour en haut",
+      contactFormTitle: "Envoyez-nous un message",
+      contactFormLastName: 'Nom',
+      contactFormFirstName: 'Prénom',
+      contactFormCompany: 'Entreprise',
+      contactFormPosition: 'Poste Occupé',
+      contactFormEmail: 'Email',
+      contactFormPhone: 'Tél.',
+      contactFormSubject: 'Sujet',
+      contactFormMessage: 'Message',
+      contactFormRGPD: "J’accepte que mes données personnelles soient traitées par JeuFormation uniquement afin de répondre à ma demande.",
+      contactFormPrivacy1: "Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, consultez notre ",
+      contactFormPrivacy2: "Politique de confidentialité",
+      contactFormButton: "Envoyer",
+      // FOOTER
       footerTitle: "Big'Impro",
       footerSubtitle: "Des ateliers sur-mesure, interactifs et engageants, pour booster les soft skills de vos collaborateurs et souder vos équipes grâce au team building.",
       footerT1: "Liens rapides",
@@ -228,11 +246,12 @@ document.addEventListener("DOMContentLoaded", function () {
       footerCopyright: "© 2025 Big'Impro. Tous droits réservés.",
       footerLegal: "Mentions légales",
       footerPrivacy: "Politique de confidentialité",
-      generalGTC: "CGV",
-      // Polyvalent
-      legalSub1: "Consultez également notre",
+
+      // PAGES LEGALES
+      // POLYVALENTS REUTILISABLES 
+      legalSub1: "N'oubliez pas de consulter notre",
       legalSub2: "et nos",
-      // mentions-legales.html
+      // FICHIER mentions-legales.html
       legalTitle: "Mentions Légales",
       legalT1: "Éditeur du site",
       legalT1I1: "Nom de l'entreprise / Nom du responsable",
@@ -248,59 +267,67 @@ document.addEventListener("DOMContentLoaded", function () {
       legalT3: "Propriété intellectuelle",
       legalT3I1: "Le contenu du site (textes, images, logos, graphismes, etc.) est la propriété exclusive de",
       legalT3I2: "sauf mentions contraires. Toute reproduction, distribution ou exploitation sans autorisation est strictement interdite.",
-      // politique-confidentialite.html
+      // FICHIER politique-confidentialite.html
       privacyTitle: "Politique de Confidentialité",
-
-      // cgv.html
+      // FICHIER cgv.html
       gtcTitle: "Conditions Générales de Vente (CGV)",
 
     },
     en: {
-      // index.html
+      // FICHIER index.html
+      // POLYVALENTS REUTILISABLES
+      meetingBtn: "Schedule MTG",
+      quoteRequest: "Request a quote",
+      backToTop: "Back To Top",
+      generalGTC: "GTC",
+      // MENU
       menuTitle1: "Home",
       menuTitle2: "Offer",
       menuTitle3: "Training",
       menuTitle4: "Approach",
       menuTitle5: "Who",
       menuTitle6: "Contact",
-      meetingBtn: "Schedule MTG",
+      // LANDING
       landingTitle: "Use applied improvisation and the power of play to train your teams !",
       landingSubtitle: "Tailor-made, interactive, and engaging workshops to boost your team's soft skills and strengthen bonds through team building.",
       landingContactBtn: "Contact us",
       landingOfferBtn: "Our offer",
+      // OFFRE
       offerTitle: "Our offer",
       offerSubtitle: "We train your employees dynamically, emphasizing play, engagement, and full presence, with tailor-made solutions perfectly aligned with your training and team cohesion needs.",
       offerTitle1: "Living the Present Moment",
       offerText1: "Immersive, screen-free workshops to awaken listening, spontaneity, and relational intelligence. Learning happens through presence, action, and collective engagement.",
       offerTitle2: "Soft skills & team building",
-      offerText2: "Applied improvisation is a powerful tool for developing soft skills and strengthening team cohesion. By engaging in concrete, hands-on situations, participants enhance their listening, adaptability, and communication. Playful and embodied, this approach encourages boldness, collaboration, and collective learning.",
+      offerText2: "Applied improvisation builds soft skills, boosts listening and adaptability, and strengthens team cohesion through a playful, hands-on, and collaborative approach.",
       offerTitle3: "A tailored support",
-      offerText3: "Each program is tailor-made to align closely with your challenges, culture, and teams. Nothing is standardized: we adapt content, scenarios, and dynamics to ensure the experience is relevant, useful, and impactful. Because every organization is unique, so should be the training.",
+      offerText3: "Each program is tailor-made: goals, culture, teams… everything is adapted for a relevant, engaging, and useful experience aligned with your organization’s reality.",
+      // FORMATIONS
       trainingsTitle: "Possible training examples",
-      // trainingsSubtitle: "Find out our main expertise areas for professional training.",
+      trainingsSubtitle: "Below is a non-exhaustive list of possible workshops.",
       trainingTitle1: "Public speaking",
-      trainingText1: "Our approach boosts public speaking by building confidence, spontaneity, and stress management. It helps structure ideas, capture attention, and adapt smoothly to the unexpected for more natural and impactful presentations.",
+      trainingText1: "Our workshops improve public speaking by building confidence, spontaneity, and stress management, helping structure ideas, capture attention, and adapt to the unexpected.",
       trainingTitle2: "Foster collaboration",
-      trainingText2: "Our method fosters smooth collaboration by developing active listening, mutual trust, and collective creativity. It teaches how to respond together to the unexpected, thereby encouraging open-mindedness, flexibility, and a strengthened team spirit.",
+      trainingText2: "Our playful approach fosters collaboration by boosting trust, adaptability, and creativity, creating stronger, high-performing teams ready to face any challenge.",
       trainingTitle3: "Raising awareness of key topics (CSR, disability, inclusion...)",
-      trainingText3: "Our workshops can also be designed as spaces for raising awareness around key issues such as CSR, disability, or inclusion. By fostering experimentation and empathy, they offer a concrete, human, and engaging way to explore these topics.",
+      trainingText3: "Our sessions raise awareness on issues like CSR, disability, or inclusion (examples), fostering experimentation and empathy to address these topics in a concrete and human way.",
       trainingTitle4: "Strengthen team cohesion",
-      trainingText4: "Through playful, collective scenarios, we create the conditions for meaningful connection within teams. These experiences strengthen cohesion, mutual trust, and the quality of relationships by placing listening and collaboration at the heart of the action.",
+      trainingText4: "Through playful scenarios, we foster real team bonding, strengthening cohesion, trust, and relationship quality by focusing on listening and collaboration.",
       trainingTitle5: "Enhance active listening skills",
-      trainingText5: "This workshop offers practical and interactive exercises to strengthen active listening in professional interactions. Through play and role-playing scenarios, participants learn to be fully present, better understand their counterparts, and respond more thoughtfully and effectively.",
+      trainingText5: "We offer interactive exercises to strengthen active listening. Through play, participants learn to be present, better understand others, and respond more effectively in professional settings.",
       trainingTitle6: "Tailor-made session",
-      trainingText6: "This list provides a non-exhaustive overview of our possible workshops. We are also available to design a tailor-made program, fully adapted to your goals and specific context.",
+      trainingText6: "This list offers a non-exhaustive overview of workshops. We design custom programs tailored to your goals and specific context, fully adapted to your needs.",
       // learnMore: "Learn more →",
       // checkAllTrainings: "Check all our trainings",
-      quoteRequest: "Request a quote",
+      // APPROCHE
       approachTitle: "Our approach",
-      approachSubtitle: "Our unique applied improvisation approach combines creativity, engagement, and adaptability to transform soft skills learning into a vivid and impactful experience.",
+      // approachSubtitle: "Our unique applied improvisation approach combines creativity, engagement, and adaptability to transform soft skills learning into a vivid and impactful experience.",
       approachTitle1: "Transposing Theatrical Techniques to the Professional World",
-      approachText1: "We adapt theatrical improvisation methods to meet the specific needs of professional, educational, and personal development contexts. This transposition allows participants to live rich, concrete experiences that facilitate the acquisition of skills useful in everyday life.",
+      approachText1: "We adapt theatrical improvisation tools to professional, educational, and personal contexts to offer concrete experiences and develop skills useful in daily life.",
       approachTitle2: "Training Focused on the Present Moment",
-      approachText2: "Our training prioritizes the present moment as a key learning driver. By focusing on the “here and now,” participants develop their ability to adapt, actively listen, and respond authentically and spontaneously to situations encountered.",
+      approachText2: "Our trainings use the present moment as a learning lever, focusing on the 'here and now.' A practice rooted in reality.",
       approachTitle3: "Holistic Engagement Through Play",
-      approachText3: "Engagement happens on all levels — physical, bodily, emotional, and psychological — through playful and immersive exercises. This total involvement promotes a deeper internalization of soft skills while strengthening trust and cohesion within teams.",
+      approachText3: "Engagement happens on all levels — physical, emotional, and psychological — through playful exercises. This involvement promotes the development of soft skills, trust, and team cohesion.",
+      // TEMOIGNAGES
       trustedUsTitle: "They trust us",
       trustedUsSubtitle: "Check how customers feel about us.",
       trustedUsText1: '“A training as fun as effective. Our volunteers got some concrete tools to talk about our mission with confidence and enthousiasm.”',
@@ -309,12 +336,21 @@ document.addEventListener("DOMContentLoaded", function () {
       trustedUsRole2: "CEO",
       trustedUsText3: '"Experienced trainers. The after-training service has been very appreciated."',
       trustedUsRole3: "Head of Training - DEF Group",
+      // CHIFFRES
       keyNumTitle: "Our key figures",
-      keyText1: "Years of experience",
-      keyText2: "Achieved workshops",
-      keyText3: "Customer satisfaction",
+      keyNumText1: "Years of experience",
+      keyNumText2: "Achieved workshops",
+      keyNumText3: "Customer satisfaction",
+      // QUI
       whoTitle: "Who is Sam Shafiee ?",
-      whoSubtitle: `“I've decided to professionalize my passion for improvisation because it's a powerful lever for surpassing oneself, creativity and active listening that I love to share.”`,
+      whoSubtitle: `“I have chosen to dedicate my professional activity to training through play, a powerful catalyst for self-improvement, creativity, and listening skills that I passionately share.”`,
+      whoTitle1: "Theatrical Improvisation",
+      whoText1: "An improviser since 2018, I quickly developed a true passion for this art. Over the years, it became clear to me to connect its techniques with the professional world.",
+      whoTitle2: "Professional Experience",
+      whoText2: "With 10 years of experience in finance and consulting, I fully understand the internal challenges related to employee training and skills development.",
+      whoTitle3: "Certified Training",
+      whoText3: "Graduated with a Master 1 from ESSEC and a Master 2 in Finance from Assas, I obtained my certification as a trainer in applied improvisation in 2024.",
+      // CONTACT
       contactUsTitle: "Contact us",
       contactUsSubtitle: "Ready to boost your teams sofskills ? Let's talk.",
       contactDetailsTitle: "Our contact details",
@@ -329,20 +365,20 @@ document.addEventListener("DOMContentLoaded", function () {
       // mapTitle: "Meet us",
       contactMeetingTitle: "Schedule a meeting",
       contactMeetingText: "Choose a convenient slot through our online calendar.",
-      formTitle: "Send us a message",
-      formLastName: 'Last Name',
-      formFirstName: 'First Name',
-      formCompany: 'Company',
-      formPosition: 'Position',
-      formEmail: 'Email',
-      formPhone: 'Phone',
-      formSubject: 'Subject',
-      formMessage: 'Message',
-      formRGPD: "I agree my personal data be used by JeuFormation only to treat my request.",
-      formPrivacy1: "To get further information about the treatment of your personal data and to exercise your rights, check our ",
-      formPrivacy2: "Privacy Policy",
-      formButton: "Send your message",
-      backToTop: "Back To Top",
+      contactFormTitle: "Send us a message",
+      contactFormLastName: 'Last Name',
+      contactFormFirstName: 'First Name',
+      contactFormCompany: 'Company',
+      contactFormPosition: 'Position',
+      contactFormEmail: 'Email',
+      contactFormPhone: 'Phone',
+      contactFormSubject: 'Subject',
+      contactFormMessage: 'Message',
+      contactFormRGPD: "I agree my personal data be used by JeuFormation only to treat my request.",
+      contactFormPrivacy1: "To get further information about the treatment of your personal data and to exercise your rights, check our ",
+      contactFormPrivacy2: "Privacy Policy",
+      contactFormButton: "Send",
+      // FOOTER
       footerTitle: "JEU Formation",
       footerSubtitle: "Tailor-made, interactive, and engaging workshops to boost your team's soft skills and strengthen bonds through team building.",
       footerT1: "Short links",
@@ -362,11 +398,12 @@ document.addEventListener("DOMContentLoaded", function () {
       footerCopyright: "© 2025 JEU Formation. All rights reserved.",
       footerLegal: "Legal notices",
       footerPrivacy: "Privacy policy",
-      generalGTC: "GTC",
-      // Polyvalent
+
+      // PAGES LEGALES
+      // POLYVALENTS REUTILISABLES
       legalSub1: "Do not forget to check our",
       legalSub2: "and our",
-      // mentions-legales.html
+      // FICHIER mentions-legales.html
       legalTitle: "Legal Notices",
       legalT1: "Website editor",
       legalT1I1: "Company name / Manager name",
@@ -382,12 +419,10 @@ document.addEventListener("DOMContentLoaded", function () {
       legalT3: "Intellectual property",
       legalT3I1: "This website content (texts, images, logos, graphisms, etc.) is the exclusive property of",
       legalT3I2: "except contrary notices. Any reproduction, distribution or exploitation without authorization is strictly forbidden.",
-      // politique-confidentialite.html
+      // FICHIER politique-confidentialite.html
       privacyTitle: "Privacy Policy",
-
-      // cgv.html
+      // FICHIER cgv.html
       gtcTitle: "General Terms & Conditions (GTC)",
-
     }
   };
 

@@ -85,7 +85,7 @@
                 <!-- Logo -->
                 <a href="#accueil">
                     <div class="flex items-center">
-                        <div id="logo" class="w-60 transition-all duration-300 ease-in-out">
+                        <div id="logo" class="w-40 lg:w-60 transition-all duration-300 ease-in-out">
                             <img src="./img/bigimpro (500 x 200 px)-nobg.png" alt="Logo Big'Impro.">
                         </div>
                     </div>
@@ -163,7 +163,7 @@
             </div>
 
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4">
+            <div id="mobile-menu" class="hidden lg:hidden pb-4 overflow-y-auto">
                 <a data-i18n="menuTitle1" href="#accueil"
                     class="flex justify-end font-medium hover:text-[color:var(--primary-600)] py-2 transition-smooth">Accueil</a>
                 <a data-i18n="menuTitle2" href="#offre"
@@ -229,7 +229,7 @@
 
     <!-- Landing -->
     <section id="accueil"
-        class="landing-height landing-gradient dark:landing-gradient text-[color:var(--secondary-00)] py-10 md:py-20 flex">
+        class="landing-height lg:landing-height-lg landing-gradient dark:landing-gradient text-[color:var(--secondary-00)] py-10 md:py-20 flex">
         <div class="container mx-auto my-auto px-6 flex flex-col md:flex-row items-center">
             <div class="mb-10 md:mb-0">
                 <h2 data-i18n="landingTitle" class="text-3xl lg:text-5xl font-bold mb-6">Utilisez
@@ -276,9 +276,8 @@
                 <div
                     class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] p-8 rounded-lg shadow-md card-hover transition-smooth">
                     <div
-                        class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <!-- <i class="fa-solid fa-leaf text-2xl" aria-hidden="true"></i> -->
-                        <i class="fa-solid fa-clock text-2xl" aria-hidden="true"></i>
+                        class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 sm:w-14 lg:w-16 h-12 sm:h-14 lg:h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fa-solid fa-clock text-l sm:text-xl lg:text-2xl" aria-hidden="true"></i>
                     </div>
                     <h3 data-i18n="offerTitle1" class="text-xl font-semibold mb-3">Vivre l’instant présent</h3>
                     <p data-i18n="offerText1"
@@ -291,17 +290,12 @@
                 <div
                     class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] p-8 rounded-lg shadow-md card-hover transition-smooth">
                     <div
-                        class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <!-- <i class="fa-solid fa-people-group text-2xl" aria-hidden="true"></i> -->
-                        <i class="fa-solid fa-masks-theater text-2xl" aria-hidden="true"></i>
+                        class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 sm:w-14 lg:w-16 h-12 sm:h-14 lg:h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fa-solid fa-masks-theater text-l sm:text-xl lg:text-2xl" aria-hidden="true"></i>
                     </div>
                     <h3 data-i18n="offerTitle2" class="text-xl font-semibold mb-3">Soft skills & team building</h3>
                     <p data-i18n="offerText2"
-                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">L’improvisation
-                        appliquée est un outil puissant pour développer les soft skills et renforcer la cohésion
-                        d’équipe. En vivant des situations concrètes et engageantes, les participants stimulent leur
-                        écoute, leur adaptabilité et leur communication. Ludique et incarnée, cette approche favorise
-                        l’audace, l’entraide et l’apprentissage collectif.
+                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">L’improvisation appliquée développe les soft skills, stimule l’écoute et l’adaptabilité, et renforce la cohésion grâce à une approche ludique, concrète et tournée vers le collectif.
                     </p>
                 </div>
 
@@ -309,17 +303,12 @@
                 <div
                     class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] p-8 rounded-lg shadow-md card-hover transition-smooth">
                     <div
-                        class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <!-- <i class="fa-solid fa-people-arrows text-2xl" aria-hidden="true"></i> -->
-                        <i class="fa-solid fa-ruler-combined text-2xl" aria-hidden="true"></i>
+                        class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 sm:w-14 lg:w-16 h-12 sm:h-14 lg:h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fa-solid fa-ruler-combined text-l sm:text-xl lg:text-2xl" aria-hidden="true"></i>
                     </div>
                     <h3 data-i18n="offerTitle3" class="text-xl font-semibold mb-3">Un accompagnement sur-mesure</h3>
                     <p data-i18n="offerText3"
-                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">Chaque
-                        accompagnement est conçu sur-mesure, en lien direct avec vos enjeux, votre culture et vos
-                        équipes. Rien n’est standardisé : nous adaptons les contenus, les mises en situation et les
-                        dynamiques pour que l’expérience soit pleinement pertinente, utile et impactante. Parce que
-                        chaque organisation est unique, la formation doit l’être aussi.</p>
+                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">Chaque accompagnement est sur-mesure : enjeux, culture, équipes… tout est adapté pour une expérience utile, engageante et alignée avec la réalité de votre organisation.</p>
                 </div>
             </div>
         </div>
@@ -333,13 +322,9 @@
                 <div
                     class="w-24 h-1 rounded-lg bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] mx-auto my-6">
                 </div>
-                <!-- <p data-i18n="trainingsSubtitle"
+                <p data-i18n="trainingsSubtitle"
                     class="max-w-2xl mx-auto text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
-                    Découvrez
-                    nos
-                    principaux domaines
-                    d'expertise en formation
-                    professionnelle.</p> -->
+                    Ci-dessous une liste non exhaustive des ateliers possibles.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -352,9 +337,7 @@
                         <h3 data-i18n="trainingTitle1" class="text-xl font-semibold mb-2">Prise de parole en public</h3>
                         <p data-i18n="trainingText1"
                             class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">
-                            Nos ateliers améliorent la prise de parole en public en développant confiance, spontanéité
-                            et gestion du stress, pour structurer ses idées, capter l’attention et s’adapter à
-                            l’imprévu.</p>
+                            Nos ateliers améliorent la prise de parole en public en développant confiance, spontanéité et gestion du stress, pour structurer ses idées, capter l’attention et s’adapter à l’imprévu.</p>
                         <!-- <a data-i18n="learnMore" href="#"
                             class="text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] font-medium hover:underline">En savoir plus
                             →</a> -->
@@ -370,10 +353,7 @@
                         <h3 data-i18n="trainingTitle2" class="text-xl font-semibold mb-2">Encourager la collaboration
                         </h3>
                         <p data-i18n="trainingText2"
-                            class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">Notre
-                            méthode favorise une collaboration fluide en développant l’écoute active, la confiance
-                            mutuelle et la créativité collective. Elle apprend à rebondir ensemble face à l’imprévu,
-                            encourageant ainsi l’ouverture d’esprit, la flexibilité et un esprit d’équipe renforcé. </p>
+                            class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">Notre approche par le jeu encourage la collaboration en renforçant la confiance, l’adaptabilité et la créativité, pour des équipes plus unies et performantes face aux défis.</p>
                         <!-- <a data-i18n="learnMore" href="#"
                             class="text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] font-medium hover:underline">En savoir plus
                             →</a> -->
@@ -392,9 +372,7 @@
                         </h3>
                         <p data-i18n="trainingText3"
                             class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)] mb-4">
-                            Nos ateliers peuvent aussi être conçus comme des espaces de sensibilisation à des enjeux
-                            tels que la RSE, le handicap ou l’inclusion. En favorisant l’expérimentation et l’empathie,
-                            ils permettent d’aborder ces thématiques de manière concrète, humaine et engageante.</p>
+                            Nos interventions sensibilisent à des enjeux comme la RSE, le handicap ou l’inclusion (exemples), favorisant expérimentation et empathie pour aborder ces sujets concrètement et humainement.</p>
                         <!-- <a data-i18n="learnMore" href="#"
                             class="text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] dark:text-[color:var(--primary-800)] font-medium hover:underline">En
                             savoir plus →</a> -->
@@ -411,11 +389,7 @@
                         <h3 data-i18n="trainingTitle4" class="text-xl font-semibold mb-2">Renforcer la cohésion d’équipe
                         </h3>
                         <p data-i18n="trainingText4"
-                            class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">À
-                            travers des mises en situation ludiques et collectives, nous créons les conditions d’un
-                            véritable travail sur les liens au sein de l’équipe. Ces expériences renforcent la cohésion,
-                            la confiance mutuelle et la qualité des relations, en plaçant l’écoute et la coopération au
-                            cœur de l’action.
+                            class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">Par des mises en situation ludiques, nous favorisons un vrai travail sur les liens d’équipe, renforçant cohésion, confiance et qualité des relations autour de l’écoute et la coopération.
                         </p>
                         <!-- <a data-i18n="learnMore" href="#"
                             class="text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] font-medium hover:underline">En savoir plus
@@ -433,11 +407,7 @@
                         <h3 data-i18n="trainingTitle5" class="text-xl font-semibold mb-2">Développer l’écoute active
                         </h3>
                         <p data-i18n="trainingText5"
-                            class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">Cet
-                            atelier propose des exercices concrets et interactifs pour renforcer l’écoute active dans
-                            les échanges professionnels. À travers le jeu et des mises en situation, les participants
-                            apprennent à être pleinement présents, à mieux comprendre leurs interlocuteurs et à répondre
-                            de manière plus juste et efficace.
+                            class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">Nous proposons des exercices ludiques pour renforcer l’écoute active. Par le jeu, les participants apprennent à être présents, mieux comprendre et répondre efficacement en contexte pro.
                         </p>
                         <!-- <a data-i18n="learnMore" href="#"
                             class="text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] font-medium hover:underline">En savoir plus
@@ -454,10 +424,7 @@
                     <div class="p-6">
                         <h3 data-i18n="trainingTitle6" class="text-xl font-semibold mb-2">Atelier sur-mesure</h3>
                         <p data-i18n="trainingText6"
-                            class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">Cette
-                            liste offre un aperçu de nos ateliers possibles de façon non exhaustive. Nous sommes
-                            également à votre disposition pour concevoir un programme sur-mesure, parfaitement adapté à
-                            vos objectifs et à votre contexte spécifique.
+                            class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-4">Cette liste donne un aperçu non exhaustif des ateliers. Nous concevons des programmes sur-mesure, adaptés à vos objectifs et à votre contexte spécifique.
                         </p>
                         <!-- <a data-i18n="learnMore" href="#"
                             class="text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] font-medium hover:underline">En savoir plus
@@ -494,11 +461,15 @@
                         transformer l’apprentissage des soft skills en une expérience vivante et impactante.</p> -->
 
                     <div class="space-y-6">
-                        <div class="flex">
+                        <!-- Approche 1 -->
+                        <div class="flex gap-8 md:gap-10 lg:gap-12">
                             <div class="flex items-center">
                                 <div
-                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                    <i class="fa-solid fa-masks-theater" aria-hidden="true"></i>
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 sm:w-14 lg:w-16 h-12 sm:h-14 lg:h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                    <!-- <i class="fa-solid fa-masks-theater text-l sm:text-xl lg:text-2xl"
+                                        aria-hidden="true"></i> -->
+                                    <i class="fa-solid fa-camera-rotate text-l sm:text-xl lg:text-2xl"
+                                        aria-hidden="true"></i>
                                 </div>
                             </div>
                             <div>
@@ -506,18 +477,16 @@
                                     théâtrales au monde professionnel</h4>
                                 <p data-i18n="approachText1"
                                     class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
-                                    Nous adaptons les méthodes de l’improvisation théâtrale pour répondre aux besoins
-                                    spécifiques des contextes professionnels, éducatifs et de développement personnel.
-                                    Cette transposition permet de faire vivre des expériences riches et concrètes,
-                                    facilitant l’acquisition de compétences utiles au quotidien.</p>
+                                    Nous adaptons les outils de l’improvisation théâtrale aux contextes professionnels, éducatifs et personnels pour proposer des expériences concrètes et développer des compétences utiles au quotidien.</p>
                             </div>
                         </div>
 
-                        <div class="flex">
+                        <!-- Approche 2 -->
+                        <div class="flex gap-8 md:gap-10 lg:gap-12">
                             <div class="flex items-center">
                                 <div
-                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                    <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 sm:w-14 lg:w-16 h-12 sm:h-14 lg:h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                    <i class="fa-solid fa-clock text-l sm:text-xl lg:text-2xl" aria-hidden="true"></i>
                                 </div>
                             </div>
                             <div>
@@ -525,18 +494,16 @@
                                     l’instant présent</h4>
                                 <p data-i18n="approachText2"
                                     class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
-                                    Nos formations privilégient l’instant présent comme levier d’apprentissage. En se
-                                    concentrant sur “ici et maintenant”, les participants développent leur capacité à
-                                    s’adapter, à écouter activement et à réagir de façon authentique et spontanée face
-                                    aux situations rencontrées.</p>
+                                    Nos formations utilisent l’instant présent comme levier d’apprentissage, en se concentrant sur “ici et maintenant”. Une pratique ancrée dans le réel.</p>
                             </div>
                         </div>
 
-                        <div class="flex">
+                        <!-- Approche 3 -->
+                        <div class="flex gap-8 md:gap-10 lg:gap-12">
                             <div class="flex items-center">
                                 <div
-                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                    <i class="fa-solid fa-gamepad" aria-hidden="true"></i>
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 sm:w-14 lg:w-16 h-12 sm:h-14 lg:h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                    <i class="fa-solid fa-gamepad text-l sm:text-xl lg:text-2xl" aria-hidden="true"></i>
                                 </div>
                             </div>
                             <div>
@@ -544,10 +511,7 @@
                                 </h4>
                                 <p data-i18n="approachText3"
                                     class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
-                                    L’engagement se fait à tous les niveaux — physique, corporel, émotionnel et
-                                    psychologique — grâce à des exercices ludiques et immersifs. Cette implication
-                                    totale favorise une meilleure appropriation des soft skills, tout en renforçant la
-                                    confiance et la cohésion au sein des équipes.</p>
+                                    L’engagement se fait à tous niveaux — physique, émotionnel et psychologique — grâce à des exercices ludiques. Cette implication favorise l’appropriation des soft skills, la confiance et la cohésion d’équipe.</p>
                             </div>
                         </div>
                     </div>
@@ -696,7 +660,7 @@
                         class="text-5xl font-extrabold text-[color:var(--primary-600)] dark:text-[var(--primary-900)]">
                         7+
                     </p>
-                    <p data-i18n="keyText1"
+                    <p data-i18n="keyNumText1"
                         class="mt-2 text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-100)]">Années
                         d’expérience</p>
                 </div>
@@ -705,7 +669,7 @@
                     <p data-i18n="keyNum2"
                         class="text-5xl font-extrabold text-[color:var(--primary-600)] dark:text-[color:var(--primary-900)]">
                         30+</p>
-                    <p data-i18n="keyText2"
+                    <p data-i18n="keyNumText2"
                         class="mt-2 text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-100)]">Ateliers
                         réalisés</p>
                 </div>
@@ -714,7 +678,7 @@
                     <p data-i18n="keyNum3"
                         class="text-5xl font-extrabold text-[color:var(--primary-600)] dark:text-[color:var(--primary-900)]">
                         98%</p>
-                    <p data-i18n="keyText3"
+                    <p data-i18n="keyNumText3"
                         class="mt-2 text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-100)]">
                         Satisfaction client</p>
                 </div>
@@ -727,45 +691,45 @@
     <section id="qui" class="py-20 bg-[color:var(--secondary-50)] dark:bg-[color:var(--secondary-800)]">
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center">
+                <!-- IMG en lg -->
                 <div class="hidden lg:flex w-1/3">
                     <img src="./img/profile-pic-sam-blue-2.png" alt="Photo de Sam Shafiee."
                         class="w-full max-w-[260px] sm:max-w-xs lg:max-w-sm mx-auto rounded-tl-full rounded-bl-full">
                 </div>
+                <!-- Textes -->
                 <div class="lg:w-2/3 mb-12 lg:mb-0 lg:pl-20">
                     <h2 data-i18n="whoTitle" class="text-3xl font-bold">Qui est Sam Shafiee ?</h2>
                     <div
                         class="w-24 h-1 rounded-lg bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] my-8">
                     </div>
                     <p data-i18n="whoSubtitle"
-                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-6">“J’ai
-                        décidé de me
-                        consacrer à l’improvisation dans le cadre de mon activité professionnelle car c’est un outil
-                        puissant de dépassement de soi, de créativité et d’écoute que j’ai à coeur de partager.”</p>
+                        class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] mb-6">“J’ai choisi de consacrer mon activité professionnelle à la formation par le jeu, un puissant levier de dépassement de soi, de créativité et d’écoute que je transmets avec passion.”</p>
 
                     <div class="space-y-6">
-                        <div class="flex">
+                        <!-- Qui 1 -->
+                        <div class="flex gap-8 md:gap-10 lg:gap-12">
                             <div class="flex items-center">
                                 <div
-                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                    <i class="fas fa-search" aria-hidden="true"></i>
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 md:w-14 lg:w-16 h-12 md:h-14 lg:h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                    <i class="fa-solid fa-masks-theater text-l md:text-xl lg:text-2xl"
+                                        aria-hidden="true"></i>
                                 </div>
                             </div>
                             <div>
                                 <h4 data-i18n="whoTitle1" class="font-semibold mb-2">Improvisation Théâtrale</h4>
                                 <p data-i18n="whoText1"
                                     class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)]">
-                                    J'ai commencé
-                                    l'improvisation à La Fabrique de Kairos il y a six ans, en tant qu'amateur. Et
-                                    lorsque je me suis essayé au coaching en impro, j'ai tout de suite compris vouloir
-                                    professionnaliser ma passion.</p>
+                                    Improvisateur depuis 2018, j’ai rapidement développé une véritable passion pour cet art. Au fil des années, il m’est apparu évident de rapprocher ses techniques du monde professionnel.</p>
                             </div>
                         </div>
 
-                        <div class="flex">
+                        <!-- Qui 2 -->
+                        <div class="flex gap-8 md:gap-10 lg:gap-12">
                             <div class="flex items-center">
                                 <div
-                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                    <i class="fas fa-tools" aria-hidden="true"></i>
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 md:w-14 lg:w-16 h-12 md:h-14 lg:h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                    <i class="fa-solid fa-flask text-l md:text-xl lg:text-2xl"
+                                        aria-hidden="true"></i>
                                 </div>
                             </div>
                             <div>
@@ -773,30 +737,29 @@
                                 </h4>
                                 <p data-i18n="whoText2"
                                     class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
-                                    Fort d'une dizaine d'années d'expérience en finance dont 7 dans le conseil en
-                                    services financiers, je connais
-                                    les attentes métiers, sais travailler en projet et maitrise le langage et les codes
-                                    propres aux PME et TGE.</p>
+                                    Fort de 10 ans d’expérience en finance et conseil, je mesure pleinement les enjeux internes liés à la formation des collaborateurs et au développement de leurs compétences.</p>
                             </div>
                         </div>
 
-                        <div class="flex">
+                        <!-- Qui 3 -->
+                        <div class="flex gap-8 md:gap-10 lg:gap-12">
                             <div class="flex items-center">
                                 <div
-                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-900)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                    <i class="fas fa-chart-bar" aria-hidden="true"></i>
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 md:w-14 lg:w-16 h-12 md:h-14 lg:h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                                    <i class="fa-solid fa-book-bookmark text-l md:text-xl lg:text-2xl"
+                                        aria-hidden="true"></i>
                                 </div>
                             </div>
                             <div>
-                                <h4 data-i18n="whoTitle3" class="font-semibold mb-2">Formations</h4>
+                                <h4 data-i18n="whoTitle3" class="font-semibold mb-2">Formations Diplômantes</h4>
                                 <p data-i18n="whoText3"
                                     class="text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
-                                    Diplômé d'un Master 1 à l'ESSEC puis d'un Master 2 en finance à Assas, j'ai obtenu
-                                    ma certification de formateur en improvisation appliquée en 2024.</p>
+                                    Diplômé d'un Master 1 à l'ESSEC puis d'un Master 2 en finance à Assas, j'ai obtenu ma certification de formateur en improvisation appliquée en 2024.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- IMG en sm -->
                 <div class="w-1/2 lg:hidden">
                     <img src="./img/profile-pic-sam-blue-2.png" alt="Photo de Sam Shafiee."
                         class="w-full max-w-[260px] sm:max-w-xs lg:max-w-sm mx-auto rounded-full rounded-tl-none">
@@ -819,9 +782,10 @@
                     Prêt à
                     développer les compétences de votre
                     équipe ?
-                    Parlons-en.</p>
+                    Parlons-en <br><br>🐗🐷🐮🐴🦄🦛🐘😀</p>
             </div>
 
+            <!-- Bloc principal -->
             <div class="flex flex-col lg:flex-row gap-6 min-h-[500px]">
                 <!-- Coordonnées + Calendly + Horaires + Map -->
                 <div class="flex-1 flex flex-col h-full lg:w-1/2">
@@ -845,10 +809,12 @@
                                 </div>
                             </a> -->
 
+                            <!-- Téléphone -->
                             <a href="tel:+33761113557" class="flex lg:flex-col gap-5 items-start lg:items-center py-4">
                                 <div
-                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-900)] w-12 lg:w-16 h-12 lg:h-16 rounded-full flex items-center justify-center mr-4 lg:mr-0 flex-shrink-0">
-                                    <i class="fas fa-phone-alt lg:text-2xl" aria-hidden="true"></i>
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 sm:w-14 lg:w-16 h-12 sm:h-14 lg:h-16 rounded-full flex items-center justify-center mr-4 lg:mr-0 flex-shrink-0">
+                                    <i class="fas fa-phone-alt text-l sm:text-xl lg:text-2xl"
+                                        aria-hidden="true"></i>
                                 </div>
                                 <div>
                                     <h4 data-i18n="contactDetailsSubtitle2" class="font-medium mb-1 lg:text-center">
@@ -858,11 +824,13 @@
                                 </div>
                             </a>
 
+                            <!-- Mail -->
                             <a href="mailto:sam@jeuformation.fr"
                                 class="flex lg:flex-col gap-5 items-start lg:items-center py-4">
                                 <div
-                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-900)] w-12 lg:w-16 h-12 lg:h-16 rounded-full flex items-center justify-center mr-4 lg:mr-0 flex-shrink-0">
-                                    <i class="fas fa-envelope lg:text-2xl" aria-hidden="true"></i>
+                                    class="bg-[color:var(--primary-100)] dark:bg-[color:var(--secondary-800)] text-[color:var(--primary-600)] dark:text-[color:var(--primary-800)] w-12 sm:w-14 lg:w-16 h-12 sm:h-14 lg:h-16 rounded-full flex items-center justify-center mr-4 lg:mr-0 flex-shrink-0">
+                                    <i class="fas fa-envelope text-l sm:text-xl lg:text-2xl"
+                                        aria-hidden="true"></i>
                                 </div>
                                 <div>
                                     <h4 data-i18n="contactDetailsSubtitle3" class="font-medium mb-1 lg:text-center">
@@ -875,8 +843,7 @@
                     </div>
 
                     <!-- Calendly -->
-                    <div
-                        class="bg-[color:var(--secondary-50)] dark:bg-[color:var(--secondary-800)] rounded-lg py-8">
+                    <div class="bg-[color:var(--secondary-50)] dark:bg-[color:var(--secondary-800)] rounded-lg py-8">
                         <div class="max-w-4xl mx-auto px-6">
                             <h3 data-i18n="contactMeetingTitle" class="text-xl font-semibold mb-6">Prendre rendez-vous
                             </h3>
@@ -926,13 +893,13 @@
                 <div class="flex-1 flex flex-col h-full lg:w-1/2">
                     <form id="contact-form" method="POST"
                         class="bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] dark:border dark:border-[color:var(--secondary-800)] p-8 rounded-lg shadow-md">
-                        <h3 data-i18n="formTitle" class="text-xl font-semibold mb-10">Envoyez-nous un message</h3>
+                        <h3 data-i18n="contactFormTitle" class="text-xl font-semibold mb-10">Envoyez-nous un message</h3>
 
                         <div class="grid md:grid-cols-2 gap-6 mb-10 md:mb-6 md:mb-6">
                             <div>
                                 <label for="nom"
                                     class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] dark:text-[color:var(--secondary-400)] mb-2"><span
-                                        data-i18n="formLastName">Nom</span><span class="text-red-500">
+                                        data-i18n="contactFormLastName">Nom</span><span class="text-red-500">
                                         *</span></label>
                                 <input type="text" id="nom" name="nom"
                                     class="w-full px-4 py-2 border border-[color:var(--secondary-300)] dark:border-[color:var(--secondary-400)] dark:border-[color:var(--secondary-400)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-500)] dark:focus:ring-[color:var(--primary-800)] dark:bg-[color:var(--secondary-800)]"
@@ -941,7 +908,7 @@
                             <div>
                                 <label for="prenom"
                                     class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2"><span
-                                        data-i18n="formFirstName">Prénom</span></label>
+                                        data-i18n="contactFormFirstName">Prénom</span></label>
                                 <input type="text" id="prenom" name="prenom"
                                     class="w-full px-4 py-2 border border-[color:var(--secondary-300)] dark:border-[color:var(--secondary-400)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-500)] dark:focus:ring-[color:var(--primary-800)] dark:bg-[color:var(--secondary-800)]">
                             </div>
@@ -951,7 +918,7 @@
                             <div>
                                 <label for="entreprise"
                                     class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2"><span
-                                        data-i18n="formCompany">Entreprise</span><span class="text-red-500">
+                                        data-i18n="contactFormCompany">Entreprise</span><span class="text-red-500">
                                         *</span></label>
                                 <input type="text" id="entreprise" name="entreprise"
                                     class="w-full px-4 py-2 border border-[color:var(--secondary-300)] dark:border-[color:var(--secondary-400)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-500)] dark:focus:ring-[color:var(--primary-800)] dark:bg-[color:var(--secondary-800)]"
@@ -960,7 +927,7 @@
                             <div>
                                 <label for="poste"
                                     class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2"><span
-                                        data-i18n="formPosition">Poste
+                                        data-i18n="contactFormPosition">Poste
                                         Occupé</span></label>
                                 <input type="text" id="poste" name="poste"
                                     class="w-full px-4 py-2 border border-[color:var(--secondary-300)] dark:border-[color:var(--secondary-400)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-500)] dark:focus:ring-[color:var(--primary-800)] dark:bg-[color:var(--secondary-800)]">
@@ -971,7 +938,7 @@
                             <div>
                                 <label for="email"
                                     class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2"><span
-                                        data-i18n="formEmail">Email</span><span class="text-red-500">
+                                        data-i18n="contactFormEmail">Email</span><span class="text-red-500">
                                         *</span></label>
                                 <input type="email" id="email" name="email"
                                     class="w-full px-4 py-2 border border-[color:var(--secondary-300)] dark:border-[color:var(--secondary-400)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-500)] dark:focus:ring-[color:var(--primary-800)] dark:bg-[color:var(--secondary-800)]"
@@ -980,7 +947,7 @@
                             <div>
                                 <label for="tel"
                                     class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2"><span
-                                        data-i18n="formPhone">Tél.</span></label>
+                                        data-i18n="contactFormPhone">Tél.</span></label>
                                 <input type="tel" id="tel" name="tel"
                                     class="w-full px-4 py-2 border border-[color:var(--secondary-300)] dark:border-[color:var(--secondary-400)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-500)] dark:focus:ring-[color:var(--primary-800)] dark:bg-[color:var(--secondary-800)]">
                             </div>
@@ -989,7 +956,7 @@
                         <!-- <div class="mb-10">
                             <label for="sujet"
                                 class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2"><span
-                                    data-i18n="formSubject">Sujet</span><span class="text-red-500">
+                                    data-i18n="contactFormSubject">Sujet</span><span class="text-red-500">
                                     *</span></label>
                             <input type="text" id="sujet" name="sujet"
                                 class="w-full px-4 py-2 border border-[color:var(--secondary-300)] dark:border-[color:var(--secondary-400)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-500)] dark:focus:ring-[color:var(--primary-800)] dark:bg-[color:var(--secondary-800)]"
@@ -999,7 +966,7 @@
                         <div class="mb-10">
                             <label for="message"
                                 class="block text-[color:var(--secondary-700)] dark:text-[color:var(--secondary-400)] mb-2"><span
-                                    data-i18n="formMessage">Message</span><span class="text-red-500">
+                                    data-i18n="contactFormMessage">Message</span><span class="text-red-500">
                                     *</span></label>
                             <textarea id="message" rows="5" name="message"
                                 class="w-full px-4 py-2 border border-[color:var(--secondary-300)] dark:border-[color:var(--secondary-400)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-500)] dark:focus:ring-[color:var(--primary-800)] dark:bg-[color:var(--secondary-800)]"
@@ -1009,22 +976,22 @@
                         <div class="mb-6">
                             <label class="dark:text-[color:var(--secondary-400)]">
                                 <input type="checkbox" name="consentement" required>
-                                &nbsp;<span data-i18n="formRGPD">J’accepte que mes données personnelles soient
+                                &nbsp;<span data-i18n="contactFormRGPD">J’accepte que mes données personnelles soient
                                     traitées par JeuFormation uniquement afin de
                                     répondre à ma demande.</span><span class="text-red-500"> *</span>
                             </label>
 
                             <p class="pt-4 dark:text-[color:var(--secondary-400)]">
-                                <span data-i18n="formPrivacy1">Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, consultez notre </span><a
+                                <span data-i18n="contactFormPrivacy1">Pour en savoir plus sur la gestion de vos données
+                                    personnelles et pour exercer vos droits, consultez notre </span><a
                                     href="./politique-confidentialite.html" class="text-[color:var(--primary-500)]"
-                                    target="_blank"><span data-i18n="formPrivacy2">Politique de
+                                    target="_blank"><span data-i18n="contactFormPrivacy2">Politique de
                                         confidentialité</span></a>.
                             </p>
                         </div>
 
-                        <button data-i18n="formButton" type="submit"
-                            class="w-full bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] text-[color:var(--secondary-00)] py-3 rounded-lg font-semibold hover:bg-[color:var(--primary-700)] dark:hover:bg-[color:var(--primary-900)] transition-smooth">Envoyer
-                            le message</button>
+                        <button data-i18n="contactFormButton" type="submit"
+                            class="w-full bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] text-[color:var(--secondary-00)] py-3 rounded-lg font-semibold hover:bg-[color:var(--primary-700)] dark:hover:bg-[color:var(--primary-900)] transition-smooth">Envoyer</button>
                         <!-- <p id="form-status" style="display:none;color:green;">Message envoyé !</p> -->
                     </form>
                 </div>
@@ -1132,12 +1099,12 @@
                     <a id="legal-notices" data-i18n="footerLegal" href="./mentions-legales.html"
                         class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Mentions
                         légales</a>
-                        <span>●</span>
+                    <span>●</span>
                     <a id="privacy-policy" data-i18n="footerPrivacy" href="./politique-confidentialite.html"
                         class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">Politique
                         de
                         confidentialité</a>
-                        <span>●</span>
+                    <span>●</span>
                     <a id="gtc" data-i18n="generalGTC" href="./cgv.html"
                         class="text-[color:var(--secondary-400)] hover:text-[color:var(--secondary-00)] transition-smooth">CGV</a>
                 </div>

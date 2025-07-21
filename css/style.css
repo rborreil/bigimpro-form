@@ -319,7 +319,7 @@
     }
 } */
 .dark .landing-gradient {
-    background: linear-gradient(135deg, #2c3e50 0%, #111827 100%); /* Dark version */
+    background: linear-gradient(135deg, #111827 0%, #2c3e50 100%); /* Dark version */
 }
 .card-hover:hover {
     transform: translateY(-5px);

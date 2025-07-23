@@ -281,10 +281,10 @@
 /* STYLES */
 #logo {
   transition: width 0.4s ease;
-  transform: scale(1);
+  transform: scale(0.75);
 }
 #logo.shrink {
-  transform: scale(0.67);
+  transform: scale(0.5);
 }
 
 /* #sur-nav {
@@ -326,9 +326,9 @@ background-size: cover;
 /* .landing-gradient {
     background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
 } */
-.dark .landing-gradient {
-    background: linear-gradient(135deg, #111827 0%, #2c3e50 100%); /* Dark version */
-}
+/* .dark .landing-gradient {
+    background: linear-gradient(135deg, #111827 0%, #2c3e50 100%);
+} */
 .card-hover:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);

@@ -50,9 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
-
-
-
   // DARK MODE TOGGLE
   const logoImg = document.querySelector('#logo img'); // On cible l'image à l'intérieur du div #logo
   // Au début de ton DOMContentLoaded principal :
@@ -67,16 +64,16 @@ document.addEventListener("DOMContentLoaded", function () {
     // Si pas de choix et que le système est dark, on active dark
     document.documentElement.classList.add('dark');
   }
-  setLogoBasedOnTheme();
 
   // Switch Logo Dark / Light Modes
-  function setLogoBasedOnTheme() {
-    if (document.documentElement.classList.contains('dark')) {
-      logoImg.src = './img/bigimpro (500 x 200 px)-nobg-darkmode.png'; // Logo pour mode sombre
-    } else {
-      logoImg.src = './img/bigimpro (500 x 200 px)-nobg.png'; // Logo pour mode clair
-    }
-  }
+  // function setLogoBasedOnTheme() {
+  //   if (document.documentElement.classList.contains('dark')) {
+  //     logoImg.src = './img/bigimpro (500 x 200 px)-nobg-darkmode.png'; 
+  //   } else {
+  //     logoImg.src = './img/bigimpro (500 x 200 px)-nobg.png'; 
+  //   }
+  // }
+  // setLogoBasedOnTheme();
 
   // Switch onClick Dark / Light Modes
   const themeToggle = document.querySelectorAll('.theme-toggle');

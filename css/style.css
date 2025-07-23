@@ -310,13 +310,21 @@
 .landing-height-lg {
   height: calc(100vh - 96px);
 }
-.landing-gradient {
-    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+
+.landing-bg-img {
+background-image: url('https://images.unsplash.com/photo-1503095396549-807759245b35?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+background-repeat: no-repeat;
+background-size: cover;
 }
-/* @media (min-width: 768px) {
-    .landing-gradient {
-        min-height: 100vh;
-    }
+.dark .landing-bg-img {
+  background-image: url('https://images.unsplash.com/photo-1675295275133-dcc3b94a5d30?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -100px;
+}
+ 
+/* .landing-gradient {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
 } */
 .dark .landing-gradient {
     background: linear-gradient(135deg, #111827 0%, #2c3e50 100%); /* Dark version */

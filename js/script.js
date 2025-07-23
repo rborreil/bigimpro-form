@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
       menuTitle2: "Offre",
       menuTitle3: "Formations",
       menuTitle4: "Approche",
-      menuTitle5: "Qui",
+      menuTitle5: "Qui est Sam ?",
       menuTitle6: "Contact",
       // LANDING
       landingTitle: "Utilisez l’improvisation appliquée et la puissance du jeu pour former vos équipes !",
@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
       contactFormButton: "Envoyer",
       // FOOTER
       footerTitle: "Big'Impro",
-      footerSubtitle: "Des ateliers sur-mesure, interactifs et engageants, pour booster les soft skills de vos collaborateurs et souder vos équipes grâce au team building.",
+      // footerSubtitle: "Des ateliers sur-mesure, interactifs et engageants, pour booster les soft skills de vos collaborateurs et souder vos équipes grâce au team building.",
       footerT1: "Liens rapides",
       footerT1Link1: "Accueil",
       footerT1Link2: "Offre",
@@ -321,7 +321,7 @@ document.addEventListener("DOMContentLoaded", function () {
       menuTitle2: "Offer",
       menuTitle3: "Training",
       menuTitle4: "Approach",
-      menuTitle5: "Who",
+      menuTitle5: "Who si Sam ?",
       menuTitle6: "Contact",
       // LANDING
       landingTitle: "Use applied improvisation and the power of play to train your teams !",
@@ -416,7 +416,7 @@ document.addEventListener("DOMContentLoaded", function () {
       contactFormButton: "Send",
       // FOOTER
       footerTitle: "JEU Formation",
-      footerSubtitle: "Tailor-made, interactive, and engaging workshops to boost your team's soft skills and strengthen bonds through team building.",
+      // footerSubtitle: "Tailor-made, interactive, and engaging workshops to boost your team's soft skills and strengthen bonds through team building.",
       footerT1: "Short links",
       footerT1Link1: "Home",
       footerT1Link2: "Offer",

@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // DARK MODE TOGGLE
-  const logoImg = document.querySelector('#logo img'); // On cible l'image à l'intérieur du div #logo
+  // const logoImg = document.querySelector('#logo img');
   // Au début de ton DOMContentLoaded principal :
   const savedTheme = localStorage.getItem('theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
   themeToggle.forEach(el => {
     el.addEventListener('click', () => {
       document.documentElement.classList.toggle('dark');
-      setLogoBasedOnTheme();
+      // setLogoBasedOnTheme();
       // Optionnel : mémoriser le choix de thème
       if (document.documentElement.classList.contains('dark')) {
         localStorage.setItem('theme', 'dark');
@@ -248,12 +248,12 @@ document.addEventListener("DOMContentLoaded", function () {
       // POLYVALENTS REUTILISABLES 
       legalSub1: "N'oubliez pas de consulter notre",
       legalSub2: "et nos",
-      generalLegal: "Mentions Légales",
       generalName: "Nom de l'entreprise / Nom du responsable",
       generalAddress: "Adresse",
       generalPhone: "Téléphone",
       generalWebsite: "Site internet",
       // FICHIER mentions-legales.html
+      legalTitle: "Mentions Légales",
       legalT1: "Éditeur du site",
       legalT1I4: "Forme juridique",
       legalT1I5: "Directeur de la publication",
@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", function () {
       legalT3I1: "Le contenu du site (textes, images, logos, graphismes, etc.) est la propriété exclusive de",
       legalT3I1bis: "sauf mentions contraires. Toute reproduction, distribution ou exploitation sans autorisation est strictement interdite.",
       // FICHIER politique-confidentialite.html
-      generalPrivacy: "Politique de Confidentialité",
+      privacyTitle: "Politique de Confidentialité",
       privacyDataTitle: "Collecte des données personnelles",
       privacyDataText: "Lors de l’utilisation du site, certaines données peuvent être collectées (via formulaire de contact, inscription à une newsletter, etc.) telles que : nom, prénom, adresse e-mail, numéro de téléphone, adresse IP.",
       privacyPurposeTitle: "Finalité du traitement",
@@ -436,12 +436,12 @@ document.addEventListener("DOMContentLoaded", function () {
       // POLYVALENTS REUTILISABLES
       legalSub1: "Do not forget to check our",
       legalSub2: "and our",
-      generalLegal: "Legal Notices",
       generalName: "Company name / Manager name",
       generalAddress: "Address",
       generalPhone: "Phone",
       generalWebsite: "Website",
       // FICHIER mentions-legales.html
+      legalTitle: "Legal Notices",
       legalT1: "Website editor",
       legalT1I4: "Legal status",
       legalT1I5: "Publishing director",
@@ -451,7 +451,7 @@ document.addEventListener("DOMContentLoaded", function () {
       legalT3I1: "This website content (texts, images, logos, graphisms, etc.) is the exclusive property of",
       legalT3I1bis: "except contrary notices. Any reproduction, distribution or exploitation without authorization is strictly forbidden.",
       // FICHIER politique-confidentialite.html
-      generalPrivacy: "Privacy Policy",
+      privacyTitle: "Privacy Policy",
       privacyDataTitle: "Collection of personal data",
       privacyDataText: "When using the site, certain data may be collected (via contact form, newsletter subscription, etc.) such as: last name, first name, email address, phone number, IP address.",
       privacyPurposeTitle: "Purpose of processing",
@@ -496,7 +496,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  let currentLang = 'fr';
+  let currentLang = localStorage.getItem('lang') || 'fr';
+
   const frenchFlagSVG = `<svg class="lang-flag w-6 h-6" alt="Switch Language" xmlns="http://www.w3.org/2000/svg"
                                 width="32" height="32" viewBox="0 0 32 32">
                                 <!-- Fond blanc avec coins arrondis -->
@@ -544,19 +545,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                     fill="#fff" opacity=".2"></path>
                             </svg>`;
 
-  langSwitch.forEach(el => {
-    el.addEventListener('click', () => {
-      if (currentLang === 'fr') {
-        currentLang = 'en';
-        el.innerHTML = frenchFlagSVG;
-      } else {
-        currentLang = 'fr';
-        el.innerHTML = ukFlagSVG;
-      }
-      translatePage();
-    });
-  });
-
+  // Traduction page selon langue courante
   function translatePage() {
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
@@ -564,7 +553,26 @@ document.addEventListener("DOMContentLoaded", function () {
         el.innerText = translations[currentLang][key];
       }
     });
+
+    // Changement drapeau affiché
+    langSwitch.forEach(el => {
+      el.innerHTML = currentLang === 'fr' ? ukFlagSVG : frenchFlagSVG;
+    });
   }
+
+  // Changement langue au clic
+  langSwitch.forEach(el => {
+    el.addEventListener('click', () => {
+      currentLang = currentLang === 'fr' ? 'en' : 'fr';
+      localStorage.setItem('lang', currentLang);
+      translatePage();
+    });
+  });
+
+  // Applique langue sauvegardée au chargement de la page
+  window.addEventListener('DOMContentLoaded', () => {
+    translatePage();
+  });
 
 
 

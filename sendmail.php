@@ -30,6 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // 3. Configuration PHPMailer
     $mail = new PHPMailer(true);
     try {
+        // Paramètres serveur
         $mail->isSMTP();
         $mail->Host = 'smtp.mailtrap.io';
         $mail->SMTPAuth = true;
@@ -37,9 +38,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->Password = '928b21ae600191'; // ← à remplacer
         $mail->Port = 2525;
 
+        // Expéditeur et destinataire
         $mail->setFrom('formulaire@bigimpro.com', "Formulaire Big'Impro");
         $mail->addAddress('test@example.com');
 
+        // Contenu
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
         $mail->Encoding = 'base64';

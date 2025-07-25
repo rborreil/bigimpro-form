@@ -56,11 +56,10 @@
         class="fixed bottom-5 left-10 z-10 hover:text-[color:var(--secondary-00)] dark:hover:text-[color:var(--secondary-00)] bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)] hover:bg-[color:var(--primary-600)] dark:hover:bg-[color:var(--primary-900)] border border-[color:var(--secondary-900)] hover:border-[color:var(--primary-800)] dark:border-[color:var(--secondary-00)] px-4 py-1 rounded-lg font-medium text-center text-l transition-smooth"
         target="_blank">Prendre RDV</a>
 
-
     <!-- Header / Nav -->
-    <header id="bg-nav"
-        class="bg-[color:var(--secondary-00-transp)] lg:bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-700)] shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-0">
+    <header id="bg-header"
+        class="bg-[color:var(--secondary-00-transp)] lg:bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-700-transp)] dark:lg:bg-[color:var(--secondary-700)] shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6">
             <!-- Sur-Nav -->
             <!-- <div id="sur-nav" class="hidden lg:flex lg:justify-between lg:border-b lg:border-dotted lg:py-2">
                 <h1>Bienvenue sur jeuformation.fr</h1>
@@ -81,7 +80,7 @@
             </div> -->
 
             <!-- Nav -->
-            <div class="flex items-center justify-around lg:justify-between">
+            <div id="nav" class="flex items-center justify-around lg:justify-between">
                 <!-- Logo -->
                 <a href="#accueil">
                     <div class="flex items-center">
@@ -163,7 +162,7 @@
             </div>
 
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden lg:hidden pb-4 overflow-y-auto">
+            <div id="mobile-menu" class="hidden lg:hidden pb-4 overflow-y-auto m-0">
                 <a data-i18n="menuTitle1" href="#accueil"
                     class="flex justify-end font-medium hover:text-[color:var(--primary-600)] py-2 transition-smooth">Accueil</a>
                 <a data-i18n="menuTitle2" href="#offre"
@@ -318,13 +317,13 @@
     <section id="formations" class="py-20 bg-[color:var(--secondary-00)] dark:bg-[color:var(--secondary-900)]">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 data-i18n="trainingsTitle" class="text-3xl font-bold">Exemples de formations possibles</h2>
+                <h2 data-i18n="trainingsTitle" class="text-3xl font-bold">Imaginez vos prochaines formations</h2>
                 <div
                     class="w-24 h-1 rounded-lg bg-[color:var(--primary-600)] dark:bg-[color:var(--primary-800)] mx-auto my-6">
                 </div>
                 <p data-i18n="trainingsSubtitle"
                     class="max-w-2xl mx-auto text-[color:var(--secondary-600)] dark:text-[color:var(--secondary-400)]">
-                    Ci-dessous une liste non exhaustive des ateliers possibles.</p>
+                    Voici quelques pistes d'ateliers que nous pouvons co-contruire.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1117,6 +1116,7 @@
         <i class="fas fa-arrow-up" aria-hidden="true"></i>
     </button>
 
+    <!-- Scripts JavaScript -->
     <script src="js/script.js"></script>
 </body>
 

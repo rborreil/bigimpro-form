@@ -19,7 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Transition Navbar
   const logo = document.getElementById("logo");
-  const bgNav = document.getElementById("bg-nav");
+  // const bgHeader = document.getElementById("bg-header");
+  const nav = document.getElementById("nav");
+  // const bgHeaderDark = document.getElementById("bg-header-dark");
   // const surNav = document.getElementById("sur-nav");
 
   let isBelowThreshold = false;
@@ -32,8 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       logo.classList.add("shrink");
 
-      bgNav.classList.remove("bg-white");
-      bgNav.classList.add("bg-white-tr");
+      nav.classList.add("lg:h-20");
+
+      // bgHeader.classList.remove("bg-white");
+      // bgHeader.classList.add("bg-white-tr");
 
       // surNav.classList.add("hidden");
 
@@ -42,8 +46,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       logo.classList.remove("shrink");
 
-      bgNav.classList.remove("bg-white-tr");
-      bgNav.classList.add("bg-white");
+      nav.classList.remove("lg:h-20");
+
+      // bgHeader.classList.remove("bg-white-tr");
+      // bgHeader.classList.add("bg-white");
 
       // surNav.classList.remove("hidden"); 
     }
@@ -149,8 +155,8 @@ document.addEventListener("DOMContentLoaded", function () {
       offerTitle3: "Un accompagnement sur-mesure",
       offerText3: "Chaque accompagnement est sur-mesure : enjeux, culture, équipes… tout est adapté pour une expérience utile, engageante et alignée avec la réalité de votre organisation.",
       // FORMATIONS
-      trainingsTitle: "Exemples de formations possibles",
-      trainingsSubtitle: "Ci-dessous une liste non exhaustive des ateliers possibles.",
+      trainingsTitle: "Imaginez vos prochaines formations",
+      trainingsSubtitle: "Voici quelques pistes d’ateliers que nous pouvons co-construire.",
       trainingTitle1: "Prise de parole en public ",
       trainingText1: "Nos ateliers améliorent la prise de parole en public en développant confiance, spontanéité et gestion du stress, pour structurer ses idées, capter l’attention et s’adapter à l’imprévu.",
       trainingTitle2: "Encourager la collaboration",
@@ -336,8 +342,8 @@ document.addEventListener("DOMContentLoaded", function () {
       offerTitle3: "A tailored support",
       offerText3: "Each program is tailor-made: goals, culture, teams… everything is adapted for a relevant, engaging, and useful experience aligned with your organization’s reality.",
       // FORMATIONS
-      trainingsTitle: "Possible training examples",
-      trainingsSubtitle: "Below is a non-exhaustive list of possible workshops.",
+      trainingsTitle: "Imagine your next trainings",
+      trainingsSubtitle: "Here are a few workshop ideas we can co-create together.",
       trainingTitle1: "Public speaking",
       trainingText1: "Our workshops improve public speaking by building confidence, spontaneity, and stress management, helping structure ideas, capture attention, and adapt to the unexpected.",
       trainingTitle2: "Foster collaboration",

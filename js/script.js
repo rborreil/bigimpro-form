@@ -247,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // footerT2Link5: "Toutes les formations",
       footerT3: "Réseaux sociaux",
       footerT4: "Aide",
-      footerCopyright: "© 2025 Big'Impro. Tous droits réservés.",
+      footerCopyright: "Tous droits réservés",
       footerLegal: "Mentions légales",
       footerPrivacy: "Politique de confidentialité",
 
@@ -325,7 +325,7 @@ document.addEventListener("DOMContentLoaded", function () {
       menuTitle2: "Offer",
       menuTitle3: "Training",
       menuTitle4: "Approach",
-      menuTitle5: "Who si Sam ?",
+      menuTitle5: "Who is Sam ?",
       menuTitle6: "Contact",
       // LANDING
       landingTitle: "Use applied improvisation and the power of play to train your teams !",
@@ -433,7 +433,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // footerT2Link5: "All our trainings",
       footerT3: "Social networks",
       footerT4: "Help",
-      footerCopyright: "© 2025 JEU Formation. All rights reserved.",
+      footerCopyright: "All rights reserved",
       footerLegal: "Legal notices",
       footerPrivacy: "Privacy policy",
 

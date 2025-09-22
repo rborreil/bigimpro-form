@@ -1,22 +1,26 @@
-name: Test SSH to o2switch
-
+name: Deploy to o2switch
 on:
   push:
-    branches:
-      - main # adapte si tu déploies depuis une autre branche
+    branches: [main]
 
 jobs:
-  test-ssh:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
+      - uses: actions/checkout@v4
+
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
-          printf "%s\n" "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          echo "${{ secrets.SSH_PRIVATE_KEY_B64 }}" | base64 -d > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Test SSH connection
+      - name: Test SSH
+        run: ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo Connected OK"
+
+      - name: Deploy files
         run: |
-          ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo Connected OK"
+          rsync -avz --delete \
+            --exclude ".git" --exclude ".github" --exclude "node_modules" \
+            ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USER }}/www/

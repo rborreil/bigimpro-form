@@ -31,3 +31,4 @@ jobs:
             --exclude "node_modules" \
             ./ \
             ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USER }}/www/
+            

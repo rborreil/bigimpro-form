@@ -1,39 +1,22 @@
-name: Deploy to o2switch
+name: Test SSH to o2switch
 
 on:
   push:
     branches:
-      - main   # adapte si ta branche par défaut est master ou autre
+      - main # adapte si tu déploies depuis une autre branche
 
 jobs:
-  deploy:
+  test-ssh:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          printf "%s\n" "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
-    - name: Test SSH connection
-      run: |
-        ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo Connected OK"
-
-
-    - name: Setup SSH
-      run: |
-        mkdir -p ~/.ssh
-        printf "%s\n" "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
-        chmod 600 ~/.ssh/id_ed25519
-        ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
-
-    - name: Test SSH
-      run: |
-        ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo Connected OK"
-
-    - name: Deploy files
-      run: |
-        rsync -avz --delete \
-          --exclude ".git" \
-          --exclude ".github" \
-          --exclude "node_modules" \
-          ./ \
-          ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USER }}/www/
+      - name: Test SSH connection
+        run: |
+          ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo Connected OK"

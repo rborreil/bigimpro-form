@@ -13,6 +13,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    - name: Debug host
+      run: |
+        echo "SSH_HOST=${{ secrets.SSH_HOST }}"
+        ping -c 3 ${{ secrets.SSH_HOST }}
+
     - name: Setup SSH
       run: |
         mkdir -p ~/.ssh

@@ -3,9 +3,9 @@ Array
     [nom] => Borreil
     [prenom] => Robin
     [entreprise] => RoBDeV Agency
-    [poste] => CEO
-    [email] => robinborreil2@gmail.com
-    [sujet] => Test RGPD
-    [message] => ejqfjqenbfhc,x
+    [poste] => 
+    [email] => contact@robinborreil.fr
+    [tel] => 0777890103
+    [message] => zrsef
     [consentement] => on
 )

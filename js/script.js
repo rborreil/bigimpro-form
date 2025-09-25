@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+
+  
   // Transition Navbar
   const logo = document.getElementById("logo");
   // const bgHeader = document.getElementById("bg-header");
@@ -54,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // surNav.classList.remove("hidden"); 
     }
   });
+
 
 
   // DARK MODE TOGGLE
@@ -229,7 +232,7 @@ document.addEventListener("DOMContentLoaded", function () {
       contactFormRGPD: "J’accepte que mes données personnelles soient traitées par JeuFormation uniquement afin de répondre à ma demande.",
       contactFormPrivacy1: "Pour en savoir plus sur la gestion de vos données personnelles et pour exercer vos droits, consultez notre ",
       contactFormPrivacy2: "Politique de confidentialité",
-      contactFormButton: "Envoyer",
+      // contactFormButton: "Envoyer",
       // FOOTER
       footerTitle: "Big'Impro",
       // footerSubtitle: "Des ateliers sur-mesure, interactifs et engageants, pour booster les soft skills de vos collaborateurs et souder vos équipes grâce au team building.",
@@ -415,7 +418,7 @@ document.addEventListener("DOMContentLoaded", function () {
       contactFormRGPD: "I agree my personal data be used by Jeu Formation only to treat my request.",
       contactFormPrivacy1: "To get further information about the treatment of your personal data and to exercise your rights, check our ",
       contactFormPrivacy2: "Privacy Policy",
-      contactFormButton: "Send",
+      // contactFormButton: "Send",
       // FOOTER
       footerTitle: "JEU Formation",
       // footerSubtitle: "Tailor-made, interactive, and engaging workshops to boost your team's soft skills and strengthen bonds through team building.",
@@ -623,35 +626,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-
-
-
-  // FORMULAIRE DE CONTACT - ENVOI AJAX
-  const form = document.getElementById("contact-form");
-  const status = document.getElementById("form-status");
-
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      const formData = new FormData(form);
-
-      fetch("sendmail.php", {
-        method: "POST",
-        body: formData
-      })
-        .then((res) => res.text())
-        .then((data) => {
-          status.textContent = "Message envoyé avec succès !";
-          status.style.display = "block";
-          console.log("Réponse PHP :", data);
-          form.reset();
-        })
-        .catch((err) => {
-          console.error("Erreur JS :", err);
-          status.textContent = "Erreur d'envoi.";
-          status.style.color = "red";
-          status.style.display = "block";
-        });
-    });
-  }
 });

@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $entreprise = isset($_POST['entreprise']) ? htmlspecialchars($_POST['entreprise'], ENT_QUOTES, 'UTF-8') : '';
     $poste = isset($_POST['poste']) ? htmlspecialchars($_POST['poste'], ENT_QUOTES, 'UTF-8') : '';
     $email = isset($_POST['email']) ? htmlspecialchars($_POST['email'], ENT_QUOTES, 'UTF-8') : '';
-    $sujet = isset($_POST['sujet']) ? htmlspecialchars($_POST['sujet'], ENT_QUOTES, 'UTF-8') : '';
+    // $sujet = isset($_POST['sujet']) ? htmlspecialchars($_POST['sujet'], ENT_QUOTES, 'UTF-8') : '';
     $message = isset($_POST['message']) ? nl2br(htmlspecialchars($_POST['message'], ENT_QUOTES, 'UTF-8')) : '';
     $consentement = isset($_POST['consentement']) ? htmlspecialchars($_POST['consentement'], ENT_QUOTES, 'UTF-8') : '';
 
@@ -32,21 +32,23 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     try {
         // Paramètres serveur
         $mail->isSMTP();
-        $mail->Host = 'smtp.mailtrap.io';
+        $mail->Host = 'yeux.o2switch.net';
         $mail->SMTPAuth = true;
-        $mail->Username = '28df134e8a78ad'; // ← à remplacer
-        $mail->Password = '928b21ae600191'; // ← à remplacer
-        $mail->Port = 2525;
+        $mail->Username = 'sam@jeuformation.fr'; // ← à remplacer
+        $mail->Password = 'Parmissx3impro45'; // ← à remplacer
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465;
 
         // Expéditeur et destinataire
-        $mail->setFrom('formulaire@bigimpro.com', "Formulaire Big'Impro");
-        $mail->addAddress('test@example.com');
+        $mail->setFrom('sam@jeuformation.fr', "Formulaire Jeu Formation");
+        $mail->addAddress('sam@jeuformation.fr');
+        $mail->addReplyTo($email, "$prenom $nom");
 
         // Contenu
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
         $mail->Encoding = 'base64';
-        $mail->Subject = "Formulaire - $sujet";
+        $mail->Subject = "Formulaire de contact - jeuformation.fr"; // On peut remplacer ou compléter par $sujet si on l'active partout
         $mail->Body = "
             <strong>Nom :</strong> $nom<br>
             <strong>Prénom :</strong> $prenom<br>
